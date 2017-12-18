@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.section {
+			position: relative;
+			width: 50%;
+			height: 100vh;
+			float: left;
+			font-size: 60px;
+			text-align: center;
+			line-height: 100vh;
+			color: #fff;
+		    -webkit-transition-property: -webkit-transform;
+		    transition-property: -webkit-transform;
+		    transition-property: transform;
+		    transition-property: transform,-webkit-transform;
+		    -webkit-transition-duration: 1s;
+		    transition-duration: 1s;
+		    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+		    will-change: transform;
+		    -webkit-backface-visibility: hidden;
+		    backface-visibility: hidden;
+		}
+		.section1 {
+			background-color: #FFE4E1;
+		}
+		.section2 {
+			background-color: #B3EE3A;
+		}
+		.section3 {
+			background-color: #838B8B;
+			-webkit-transform: translateY(100px);
+		    -ms-transform: translateY(100px);
+		    transform: translateY(100px);
+		}
+		.section4 {
+			background-color: #D6D6D6;
+			-webkit-transform: translateY(300px);
+		    -ms-transform: translateY(300px);
+		    transform: translateY(300px);
+		}
+		.section5 {
+			background-color: #E0EEE0;
+		}
+	</style>
+</head>
+<body>
+	<div class="section section1" id="section-a">section-a</div>
+	<div class="section section2" id="section-b">section-b</div>
+	<div class="section section3" id="section-c">section-c</div>
+	<div class="section section4" id="section-d">section-d</div>
+	<div class="section section5" id="section-e">section-e</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+	<script>
+		// init controller
+		var controller = new ScrollMagic.Controller();
+
+		var _timeline2 = new TimelineMax;
+        _timeline2.to(".section3", 2.8, {
+            y: "0",
+            ease: Power1.easeOut,
+        }, 0).to(".section4", 2.8, {
+            y: "0",
+            ease: Power1.easeOut
+        }, 0),
+        _scene = new ScrollMagic.Scene({
+            triggerElement: "#section-c",
+            triggerHook:0,
+            triggerHook: "onEnter",
+            duration: window.innerHeight,
+            reverse: true
+        })
+        _scene.setTween(_timeline2)
+        .addTo(controller);
+	</script>
+</body>
+</html>
