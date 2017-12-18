@@ -1,0 +1,215 @@
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-36 {
+    font-size: 36px !important;
+}
+
+.fs-56 {
+    font-size: 56px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.ml20 {
+    margin-left: 20px !important;
+}
+
+
+/* 
+    首页样式开始 
+*/
+
+
+/* banner部分 */
+
+.index-container .banner-section {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    background-color: #9c9c9c;
+}
+
+.index-container .banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -122px;
+    margin-left: -315px;
+}
+
+.index-container .banner-title h1 {
+    font-size: 60px;
+    color: #333;
+}
+
+.index-container .banner-title p {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 24px;
+    font-size: 36px;
+    line-height: 60px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* slogen部分 */
+.index-container .slogen-section {
+    width: 820px;
+    padding-top: 45px;
+    padding-bottom: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.index-container .slogen-text {
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    text-align: justify;
+}
+/* 视频部分 */
+.polylogue-section {
+    position: relative;
+    z-index: 0;
+    background-color: #fff;
+}
+.polylogue-cont {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 1;
+}
+.polylogue-bg {
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
+    overflow: hidden;
+}
+.polylogue-overlay {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
+    background-color: rgba(255,255,255,.85);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: opacity;
+}
+.polylogue-imageContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
+    overflow: hidden;
+    margin: auto;
+}
+.polylogue-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-width: 100vw;
+    height: 100vh;
+    min-height: 790px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+.polylogue-movie {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: 0;
+}
+.polylogue-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
+}
+.polylogue-body {
+    position: absolute;
+    z-index: 2;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    opacity: 0;
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
+    will-change: opacity transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.polylogue-bodyContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+.polylogue-inner {
+    width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.polylogue-subheadline {
+    font-size: 32px;
+    color: #666;
+}
+.polylogue-headline {
+    margin-top: 20px;
+    font-size: 50px;
+    color: #424242;
+}
+.polylogue-text {
+    width: 530px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4f4f4f;
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 26px;
+    color: #333;
+}
+/* 
+    首页样式结束 
+*/
