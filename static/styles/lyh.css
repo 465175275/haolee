@@ -18,6 +18,12 @@
     margin-left: 20px !important;
 }
 
+.section {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+}
 
 /* 
     首页样式开始 
@@ -76,127 +82,144 @@
     color: #666;
     text-align: justify;
 }
-/* 视频部分 */
-.polylogue-section {
+/* 视频部分，图片部分 */
+.polylogue-section,
+.people-section {
     position: relative;
+    background: #fff;
     z-index: 0;
-    background-color: #fff;
+    visibility: visible;
 }
-.polylogue-cont {
+.polylogue-containers,
+.people-containers {
+    position: relative;
+}
+.polylogue-container,
+.people-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     min-height: 790px;
     padding-top: 0;
     padding-bottom: 0;
     z-index: 1;
 }
-.polylogue-bg {
+.polylogue-bg,
+.people-bg {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     min-height: 790px;
     overflow: hidden;
 }
-.polylogue-overlay {
+.polylogue-overlay,
+.people-overlay {
     pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     min-height: 790px;
     background-color: rgba(255,255,255,.85);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    z-index: 1;
     opacity: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: opacity;
 }
-.polylogue-imageContent {
+.polylogue-imageContent,
+.people-imageContent {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     height: 100vh;
     min-height: 790px;
     overflow: hidden;
-    margin: auto;
-}
-.polylogue-image {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    min-width: 100vw;
-    height: 100vh;
-    min-height: 790px;
     margin: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
-    transition-timing-function: cubic-bezier(.215,.61,.355,1);
 }
-.polylogue-movie {
+.polylogue-image {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    margin: auto;
     width: 100%;
-    height: calc(100vh - 80px);
-    z-index: 0;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 790px;
+}
+.polylogue-movie {
+    position: absolute;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+}
+.polylogue-content,
+.people-content {
+    position: fixed;
+    top: 50%;
+    z-index: 2;
+    width: 100%;
 }
 .polylogue-content {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    min-height: 790px;
+    margin-top: -111px;
 }
-.polylogue-body {
+.people-content {
+    margin-top: -98px;
+}
+.polylogue-content.scroll,
+.people-content.scroll {
     position: absolute;
-    z-index: 2;
-    display: table;
+}
+.polylogue-body,
+.people-body {
     width: 100%;
-    height: 100vh;
-    min-height: 790px;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;
     transition-property: transform,-webkit-transform;
-    -webkit-transition-duration: .8s;
-    transition-duration: .8s;
+    -webkit-transition-duration: .6s;
+    -ms-transition-duration: .6s;
+    transition-duration: .6s;
     -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    -ms-transition-timing-function: cubic-bezier(.215,.61,.355,1);
     transition-timing-function: cubic-bezier(.215,.61,.355,1);
     opacity: 0;
-    -webkit-transform: translate3d(0,50px,0);
-    transform: translate3d(0,50px,0);
+    -webkit-transform: translate3d(0,30px,0);
+    -ms-transform: translate3d(0,30px,0);
+    transform: translate3d(0,30px,0);
+    display: table;
     will-change: opacity transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.polylogue-bodyContent {
+.polylogue-bodyContent,
+.people-bodyContent {
     display: table-cell;
     vertical-align: middle;
 }
-.polylogue-inner {
+.polylogue-inner,
+.people-inner {
     width: 1290px;
     margin-left: auto;
     margin-right: auto;
 }
-.polylogue-subheadline {
+.polylogue-subheadline,
+.people-subheadline  {
     font-size: 32px;
     color: #666;
 }
-.polylogue-headline {
+.polylogue-headline,
+.people-headline {
     margin-top: 20px;
     font-size: 50px;
     color: #424242;
@@ -209,6 +232,69 @@
     font-size: 12px;
     line-height: 26px;
     color: #333;
+}
+/* 图片部分 */
+.people-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 790px;
+}
+.people-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100vw;
+    height: 140vh;
+    overflow: hidden;
+}
+.people-images-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.people-headline {
+    line-height: 72px;
+}
+.people-images-content {
+    position: absolute;
+    margin: auto;
+}
+.people-images-group {
+    float: left;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.people-images-group:nth-of-type(2n) {
+    -webkit-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    transform: translateY(300px);
+}
+.people-images_image {
+    width: 265px;
+    height: 165px;
+    margin: 35px 17.5px;
+}
+.people-images_image img {
+    width: 100%;
+    height: auto;
 }
 /* 
     首页样式结束 

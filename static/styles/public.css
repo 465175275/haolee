@@ -4,7 +4,6 @@
 
 .container {
     width: 100%;
-    max-width: 1920px;
     padding-top: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -98,6 +97,8 @@
 /* 尾部开始 */
 
 .footer {
+    position: relative;
+    z-index: 2;
     width: 100%;
     background-color: #171717;
 }
