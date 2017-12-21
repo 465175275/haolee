@@ -54,7 +54,8 @@
 
 .index-container .banner-title p {
     display: inline-block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100%;
     height: 60px;
     padding-left: 55px;
@@ -98,105 +99,110 @@
 .people-container {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: 230vh;
     min-height: 790px;
     padding-top: 0;
     padding-bottom: 0;
-    z-index: 1;
 }
 .polylogue-bg,
 .people-bg {
-    width: 100%;
-    height: 150vh;
-    min-height: 790px;
     overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
 }
 .polylogue-overlay,
 .people-overlay {
-    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
-    height: 150vh;
+    height: 250vh;
     min-height: 790px;
     background-color: rgba(255,255,255,.85);
-    z-index: 1;
     opacity: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: opacity;
+    pointer-events: none;
 }
 .polylogue-imageContent,
 .people-imageContent {
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    min-height: 790px;
-    overflow: hidden;
     top: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    min-height: 790px;
     margin: auto;
 }
-.polylogue-image {
-    position: fixed;
+.polylogue-image,
+.people-image {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto;
     width: 100%;
-    height: 100vh;
     min-width: 100vw;
+    height: 140vh;
     min-height: 790px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 .polylogue-movie {
     position: absolute;
-    -webkit-transform: translate3d(-50%,-50%,0);
-    -ms-transform: translate3d(-50%,-50%,0);
-    transform: translate3d(-50%,-50%,0);
+    z-index: -2;
     top: 50%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -2;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
 }
 .polylogue-content,
 .people-content {
-    position: fixed;
-    top: 50%;
-    z-index: 2;
+    position: relative;
+    top: 0;
     width: 100%;
-}
-.polylogue-content {
-    margin-top: -111px;
-}
-.people-content {
-    margin-top: -98px;
-}
-.polylogue-content.scroll,
-.people-content.scroll {
-    position: absolute;
+    height: 100vh;
+    min-height: 790px;
+    margin-top: -100vh;
 }
 .polylogue-body,
 .people-body {
+    position: absolute;
+    z-index: 2;
     width: 100%;
+    height: 100vh;
+    min-height: 790px;
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;
-    transition-property: transform,-webkit-transform;
-    -webkit-transition-duration: .6s;
-    -ms-transition-duration: .6s;
-    transition-duration: .6s;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
     -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
-    -ms-transition-timing-function: cubic-bezier(.215,.61,.355,1);
     transition-timing-function: cubic-bezier(.215,.61,.355,1);
     opacity: 0;
-    -webkit-transform: translate3d(0,30px,0);
-    -ms-transform: translate3d(0,30px,0);
-    transform: translate3d(0,30px,0);
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
     display: table;
     will-change: opacity transform;
     -webkit-backface-visibility: hidden;
@@ -234,16 +240,9 @@
     color: #333;
 }
 /* 图片部分 */
-.people-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 100vh;
-    min-width: 100vw;
-    min-height: 790px;
+.people-imageContent {
+    top: 80px;
+    height: 140vh;
 }
 .people-images {
     position: absolute;
@@ -269,14 +268,14 @@
 .people-images-group {
     float: left;
     -webkit-transform: translateY(100px);
-    -ms-transform: translateY(100px);
     transform: translateY(100px);
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;
-    transition-property: transform,-webkit-transform;
+    transition-property: transform, -webkit-transform;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.215,.61,.355,1);
     transition-timing-function: cubic-bezier(.215,.61,.355,1);
     will-change: transform;
     -webkit-backface-visibility: hidden;
@@ -284,17 +283,26 @@
 }
 .people-images-group:nth-of-type(2n) {
     -webkit-transform: translateY(300px);
-    -ms-transform: translateY(300px);
     transform: translateY(300px);
 }
 .people-images_image {
-    width: 265px;
-    height: 165px;
-    margin: 35px 17.5px;
+    width: 260px;
+    height: 160px;
+    margin: 20px 10px 0 10px;
 }
 .people-images_image img {
     width: 100%;
     height: auto;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.sticky:after, .sticky:before {
+    content: '';
+    display: table;
 }
 /* 
     首页样式结束 

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/lib/common.css" />
 		<link rel="stylesheet" href="static/styles/public.css" />
@@ -68,7 +68,7 @@
 			<div class="polylogue-section section topPolylogue">
 				<div class="polylogue-containers js-containers">
 					<div class="polylogue-container">
-						<div class="polylogue-bg">
+						<div class="polylogue-bg sticky">
 							<div class="polylogue-overlay js-overlay"></div>
 							<div class="polylogue-imageContent">
 								<div class="polylogue-image">
@@ -78,7 +78,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="polylogue-content js-content">
+						<div class="polylogue-content js-content sticky">
 							<div class="polylogue-body js-body">
 								<div class="polylogue-bodyContent">
 									<div class="polylogue-inner">
@@ -100,28 +100,25 @@
 			<div class="people-section section topPeople">
 				<div class="people-containers js-containers">
 					<div class="people-container">
-						<div class="people-bg">
+						<div class="people-bg sticky">
 							<div class="people-overlay js-overlay"></div>
 							<div class="people-imageContent">
 								<div class="people-image">
 									<div class="people-images">
 										<div class="people-images-container">
 											<div class="people-images-content">
-												<div class="people-images-group js-parallax">
-													<div class="people-images_image js-peopleImage">
+												<div class="people-images-group">
+													<div class="js-peopleImage">
 														<img src="https://www.ndc.co.jp/assets/uploads/2017/09/n024_profile.jpg">
 													</div>
-													<div class="people-images_image js-peopleImage">
+													<div class="js-peopleImage">
 														<img src="https://www.ndc.co.jp/assets/uploads/2017/08/n023_profile.jpg">
 													</div>
-													<div class="people-images_image js-peopleImage">
+													<div class="js-peopleImage">
 														<img src="https://www.ndc.co.jp/assets/uploads/2017/05/n022_profile.jpg">
 													</div>
-													<div class="people-images_image js-peopleImage">
+													<div class="js-peopleImage">
 														<img src="https://www.ndc.co.jp/assets/uploads/2017/04/n021_thumb.jpg">
-													</div>
-													<div class="people-images_image js-peopleImage">
-														<img src="https://www.ndc.co.jp/assets/uploads/2017/04/n020_thumb.jpg">
 													</div>
 												</div>
 											</div>
@@ -130,7 +127,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="people-content js-content">
+						<div class="people-content js-content sticky">
 							<div class="people-body js-body">
 								<div class="people-bodyContent">
 									<div class="people-inner">
@@ -222,11 +219,15 @@
 			</div>
 		</div>
 		<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/stickyfill/2.0.3/stickyfill.min.js"></script>
     	<script src="https://cdn.bootcss.com/gsap/latest/TweenMax.min.js"></script>
     	<script src="https://cdn.bootcss.com/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 		<script src="https://cdn.bootcss.com/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 		<script>
 		$(function() {
+			/* stickyfill.js */
+			var elements = $('.sticky');
+			Stickyfill.add(elements);
 			/* scrollMagic */
 			var TopScrollSection = {
 				parallax: function(_section) {
@@ -250,7 +251,7 @@
 							ease: Power1.easeOut,
 							onComplete: function() {
 								TweenMax.to(_target + " .people-image", .4, {
-									y: "-1.5%",
+									y: "-2.5%",
 									ease: Power2.easeOut
 								})
 							}
@@ -268,7 +269,7 @@
 						triggerElement: _target,
 						triggerHook: 0,
 						duration: .5 * window.innerHeight,
-						offset: 100,
+						offset: 0,
 						reverse: 1
 					})
 					_scene.setTween(_target + " .js-overlay", 1, {
@@ -310,10 +311,10 @@
 					TopPeople._bodyWidth = 1165,
 					TopPeople._itemWidth = 265,
 					TopPeople._itemHeight = 165,
-					TopPeople._marginB = 35,
-					TopPeople._marginC = 17.5,
+					TopPeople._marginB = 20,
+					TopPeople._marginC = 10,
 					TopPeople._maxX = Math.ceil($(window).width() / (TopPeople._itemWidth + TopPeople._marginB)) + 1,
-					TopPeople._maxY = Math.ceil($(window).height() / (TopPeople._itemHeight + TopPeople._marginB)) + 2,
+					TopPeople._maxY = Math.ceil($(window).height() / (TopPeople._itemHeight + TopPeople._marginB)) + 1,
 					TopPeople._maxItem = TopPeople._maxX * TopPeople._maxY,
 					TopPeople._bodyOutHalf = ($("body").width() - TopPeople._bodyWidth) / 2
 				},
@@ -322,32 +323,24 @@
 						var _$clone = _$image.clone();
 						$(".people-images-content").append(_$clone)
 					}
-					
-					for (var _html = "", _isOdd = 1, _groupCount = 0, i = 1; i < $(".js-peopleImage").length + 1; i++) {
-						console.log(_html);
-						i % TopPeople._maxY === 1 && (_groupCount += 1 === _isOdd ? '<div class="people-images-group topPeopleImages_group--' + _groupCount + ' js-parallax">' : '<div class="people-images-group topPeopleImages_group--' + _groupCount + ' js-parallax2">');
-						_html += '<div class="people-images_image js-peopleImage">' + $(".js-peopleImage")[i - 1].innerHTML + "</div>";
+					for (var _html = "", _isOdd = 1, _groupCount = 0, i = 1; i < $(".js-peopleImage").length + 1; i++) 
+						i % TopPeople._maxY === 1 && (_html += 1 === _isOdd ? '<div class="people-images-group topPeopleImages_group--' + _groupCount + ' js-parallax">' : '<div class="people-images-group topPeopleImages_group--' + _groupCount + ' js-parallax2">'),
+						_html += '<div class="people-images_image js-peopleImage">' + $(".js-peopleImage")[i - 1].innerHTML + "</div>",
 						i % TopPeople._maxY !== 0 && i !== $(".js-peopleImage").length || (_html += "</div>",
 						_isOdd *= -1,
 						_groupCount++);
-						// (".people-images-content").html(_html);
-						// $(window).width() > TopPeople._bodyWidth && TopPeople.position()
-					}
+					$(".people-images-content").html(_html)
+					$(window).width() > TopPeople._bodyWidth && TopPeople.position()
 				},
 				position: function() {
 					$(".people-images-container").css({
 						left: 0
 					});
-					var rect = void 0;
-					window.matchMedia("(max-width:864px)").matches ? rect = document.querySelector(".topPeopleImages_group--0").getBoundingClientRect() : (rect = document.querySelector(".topPeopleImages_group--1").getBoundingClientRect(),
+					var rect = 0;
+					rect = document.querySelector(".topPeopleImages_group--1").getBoundingClientRect(),
 					$(".people-images-container").css({
 						left: -(rect.left + TopPeople._marginC - TopPeople._bodyOutHalf)
-					})),
-					// var rect = 0;
-					// rect = document.querySelector(".topPeopleImages_group--1").getBoundingClientRect();
-					// $(".people-images-container").css({
-					// 	left: -(rect.left + TopPeople._marginC - TopPeople._bodyOutHalf)
-					// });
+					});
 					$(".people-images-content").css({
 						width: (TopPeople._itemWidth + TopPeople._marginB) * $(".people-images-group").length,
 						height: $(window).height()
@@ -360,19 +353,28 @@
 			TopScrollSection.overlay('topPeople');
 			TopScrollSection.content('topPeople');
 			/* 视频播放 */
-			function getPosition() {
-				var _slogenTop = $(".slogen-section").offset().top;
-				var _slogenHeight = $(".slogen-section").height();
-				// var _peopleTop = $(".people-section").offset().top;
-				// var _peopleHeight = $(".people-section").height();
-				$(window).on('scroll', function() {
-					var _scrollTop = $(window).scrollTop();
-					if(_scrollTop >= _slogenTop + _slogenHeight) {
-						$(".js-polylogueMovie")[0].play();
-					}
-				})
+			$(window).on('scroll', function() {
+				var isInViewArea = getIsInViewArea('.topPolylogue');
+				if(isInViewArea) {
+					$(".js-polylogueMovie")[0].play();
+				} else {
+					$(".js-polylogueMovie")[0].pause();
+				}
+			})
+			/* 判断div是否在可视范围 */
+			function getIsInViewArea(ele) {
+				var ele = ele,
+					_winHeight = $(window).height(),       // 获取可视窗口高度
+					_eleOffsetTop = $(ele).offset().top,   // 获取元素的偏移高度
+					_eleOHeight = $(ele).height(),         // 获取元素高度
+					_winScrollTop = $(window).scrollTop(); // 获取滚动条高度
+				if( _winScrollTop > _eleOffsetTop + _eleOHeight || _winScrollTop < _eleOffsetTop - _winHeight ) {
+					return false // 不在可视区域
+				} else {
+					return true // 在可视区域
+				}
 			}
-			getPosition()
+			
 		})
 		</script>
 	</body>
