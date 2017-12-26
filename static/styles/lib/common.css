@@ -106,7 +106,7 @@ main {
  */
 
 figure {
-	margin: 1em 40px;
+	margin: 0px;
 }
 
 
@@ -613,7 +613,6 @@ template {
 
 .text-justify {
 	text-align: justify;  
-    text-align-last: justify;
 }
 
 .text-justify:after,
@@ -629,4 +628,34 @@ template {
 	margin-left: auto;
 	margin-right: auto;
 }
-/* iconfont字体 */
+
+/* flexbox */
+/*flexbox*/
+.flex-box {
+    display: box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+/*flex水平居中*/
+.flex-hc {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+/*flex垂直居中*/
+.flex-vc {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*两侧对齐*/
+.flex-between {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+/*平均分布*/
+.flex-around {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
