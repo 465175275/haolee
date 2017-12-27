@@ -13,7 +13,9 @@
 .fs-56 {
     font-size: 56px !important;
 }
-
+.text-333 {
+    color: #333;
+}
 .mt0 {
     margin-top: 0px !important;
 }
@@ -24,6 +26,12 @@
 
 .mt30 {
     margin-top: 30px !important;
+}
+.mt40 {
+    margin-top: 40px !important;
+}
+.mt50 {
+    margin-top: 50px !important;
 }
 .mt120 {
     margin-top: 120px !important;
@@ -39,7 +47,9 @@
 .ml40 {
     margin-left: 40px !important;
 }
-
+.ml50 {
+    margin-left: 50px !important;
+}
 .ml60 {
     margin-left: 60px !important;
 }
@@ -78,7 +88,7 @@
 .section-figure {
     width: 100%;
     height: 680px;
-    background-color: #666;
+    background-color: #9c9c9c;
 }
 
 .section-top {
@@ -97,6 +107,7 @@
     margin-top: 24px;
     margin-bottom: 35px;
     font-size: 42px;
+    line-height: 70px;
     color: #424242;
     text-align: center;
 }
@@ -550,6 +561,221 @@
 }
 .craftsmanship-section .width-1130 {
     width: 1130px;
+}
+.craftsmanship-section .width-1060 {
+    width: 1060px !important;
+}
+/* 量身定制 */
+.customize-section .section-top {
+    width: 910px;
+    padding-bottom: 180px;
+}
+.customize-section .section-top-list {
+    width: 764px;
+    margin-top: 100px;
+}
+.customize-section .section-top-list ul {
+    flex-wrap: wrap;
+}
+.customize-section .section-top-list li {
+    margin-bottom: 90px;
+}
+.customize-section .section-top-list li:nth-of-type(3n-1) {
+    margin-left: 97px;
+    margin-right: 97px;
+}
+.customize-section .customize-icon {
+    width: 190px;
+    height: 120px;
+}
+.customize-section .section-top-list li p {
+    margin-top: 20px;
+    color: #424242;
+}
+.customize-section .section-body-cont {
+    width: 1170px;
+    padding-top: 60px;
+}
+.customize-section .width-1085 {
+    width: 1085px;
+}
+.customize-section .width-790 {
+    width: 790px;
+}
+.customize-section .width-410 {
+    width: 410px;
+}
+/* 服务范围 */
+.service-section .section-top {
+    width: 1380px;
+    padding-top: 180px;
+    padding-bottom: 160px;
+}
+.service-section .section-top-list {
+    margin-top: 100px;
+}
+.service-section .section-top-list li {
+    position: relative;
+    float: left;
+}
+.service-section .service-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+.service-section .service-icon {
+    width: 345px;
+    height: 315px;
+}
+/* 定制流程 */
+.process-section .section-top {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.process-section .section-top-subtitle {
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    text-align: left;
+}
+.process-section .section-top-headline {
+    position: absolute;
+    top: 32%;
+    left: 20%;
+    font-size: 50px;
+    line-height: 68px;
+    text-align: left;
+}
+.process-section .section-body {
+    width: 1160px;
+    padding-top: 0px;
+}
+.process-section-body-text {
+    padding-left: 80px;
+    padding-right: 300px;
+    margin-top: 45px;
+    margin-bottom: 130px;
+    line-height: 30px;
+}
+.process-list {
+    width: 835px;
+    padding-top: 120px;
+}
+.process-list ul {
+    width: 345px;
+}
+.process-list li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a4a4a4;
+    margin-bottom: 100px;
+}
+.process-list .step {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #a4a4a4;
+    margin-right: 23px;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 45px;
+    color: #333;
+    text-align: center;
+}
+.process-list .step-title {
+    font-size: 26px;
+    color: #333;
+}
+.process-list .step-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+/* 案例展示 */
+.cases-section {
+    background-color: #f5f5f5;
+}
+.cases-section .section-top {
+    padding-top: 140px;
+    padding-bottom: 0px;
+}
+.cases-section .section-top-subtitle {
+    font-size: 36px;
+}
+.cases-section .section-body {
+    padding-top: 90px;
+}
+.cases-section .cases-container {
+    padding-bottom: 30px;
+}
+.cases-section .cases-item {
+    padding-right: 4.725%;
+    padding-left: 4.725%;
+}
+.cases-section .cases-item img {
+    width: 100%;
+}
+.cases-section .cases-item-info {
+    margin-top: 50px;
+    text-align: center;
+    opacity: 0;
+    transition: all .4s ease-in;
+}
+.cases-section .cases-item-info .cases-item-name {
+    font-size: 30px;
+    color: #333;
+}
+.cases-section .cases-item-info .cases-item-descr {
+    width: 615px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+}
+.open-modal-link a {
+    color: #0070c9;
+}
+.open-modal-link a:hover {
+    text-decoration: underline;
+}
+.cases-section .cases-container .swiper-slide-active .cases-item-info {
+    opacity: 1;
+    transform: translateY(20px);
+}
+.cases-section .cases-slide-btn {
+    position: absolute;
+    top: 30%;
+    z-index: 10;
+    display: none;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    line-height: 66px;
+    text-align: center;
+    color: #fff;
+    background-color: #dadada;
+    cursor: pointer;
+}
+.cases-section .cases-slide-btn i {
+    font-size: 26px;
+}
+.cases-section .cases-slide-btn.prev {
+    left: 4%;
+}
+.cases-section .cases-slide-btn.next {
+    right: 4%;
+    text-indent: -5px;
+}
+.cases-section .cases-slide-btn:hover {
+    background-color: #424242;
+}
+.cases-section .cases-container:hover .cases-slide-btn {
+    display: block;
 }
 /* 
     首页样式结束 
