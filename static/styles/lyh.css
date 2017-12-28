@@ -2,6 +2,12 @@
     font-size: 18px !important;
 }
 
+.fs-20 {
+    font-size: 20px !important;
+}
+.fs-22 {
+    font-size: 22px !important;
+}
 .fs-36 {
     font-size: 36px !important;
 }
@@ -9,13 +15,20 @@
 .fs-40 {
     font-size: 40px !important;
 }
-
+.fs-44 {
+    font-size: 44px !important;
+}
+.fs-50 {
+    font-size: 50px !important;
+}
 .fs-56 {
     font-size: 56px !important;
 }
+
 .text-333 {
     color: #333;
 }
+
 .mt0 {
     margin-top: 0px !important;
 }
@@ -27,15 +40,19 @@
 .mt30 {
     margin-top: 30px !important;
 }
+
 .mt40 {
     margin-top: 40px !important;
 }
+
 .mt50 {
     margin-top: 50px !important;
 }
+
 .mt120 {
     margin-top: 120px !important;
 }
+
 .ml20 {
     margin-left: 20px !important;
 }
@@ -47,19 +64,27 @@
 .ml40 {
     margin-left: 40px !important;
 }
+
 .ml50 {
     margin-left: 50px !important;
 }
+
 .ml60 {
     margin-left: 60px !important;
 }
 
+.nopad {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 .border-box {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .grid {
     display: table;
+    width: 100%;
 }
 
 .grid-row {
@@ -424,7 +449,8 @@
 .people-images-group {
     float: left;
     -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -ms-transform: translateY(100px);
+        transform: translateY(100px);
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;
@@ -440,7 +466,8 @@
 
 .people-images-group:nth-of-type(2n) {
     -webkit-transform: translateY(300px);
-    transform: translateY(300px);
+    -ms-transform: translateY(300px);
+        transform: translateY(300px);
 }
 
 .people-images_image {
@@ -475,6 +502,7 @@
 }
 
 .woods-section .section-top-list ul {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -522,102 +550,135 @@
     width: 445px;
 }
 
+
 /* 制作工艺部分 */
+
 .craftsmanship-section .section-top {
     width: 820px;
 }
+
 .craftsmanship-section .section-top-list {
     margin-top: 100px;
     width: 680px;
 }
+
 .craftsmanship-section .section-top-list li {
     position: relative;
 }
+
 .craftsmanship-section .section-top-list li i {
     position: absolute;
     right: -60px;
     top: 35px;
     color: #999;
 }
+
 .craftsmanship-section .section-top-list li p {
     margin-top: 10px;
     font-size: 14px;
     color: #333;
 }
+
 .craftsmanship-section .section-body-cont {
     width: 1280px;
 }
+
 .craftsmanship-section .width-410 {
     width: 410px;
 }
+
 .craftsmanship-section .width-1165 {
     width: 1165px;
 }
+
 .craftsmanship-section .width-1080 {
     width: 1080px;
 }
+
 .craftsmanship-section .width-965 {
     width: 965px;
 }
+
 .craftsmanship-section .width-1130 {
     width: 1130px;
 }
+
 .craftsmanship-section .width-1060 {
     width: 1060px !important;
 }
+
+
 /* 量身定制 */
+
 .customize-section .section-top {
     width: 910px;
     padding-bottom: 180px;
 }
+
 .customize-section .section-top-list {
     width: 764px;
     margin-top: 100px;
 }
+
 .customize-section .section-top-list ul {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
 .customize-section .section-top-list li {
     margin-bottom: 90px;
 }
+
 .customize-section .section-top-list li:nth-of-type(3n-1) {
     margin-left: 97px;
     margin-right: 97px;
 }
+
 .customize-section .customize-icon {
     width: 190px;
     height: 120px;
 }
+
 .customize-section .section-top-list li p {
     margin-top: 20px;
     color: #424242;
 }
+
 .customize-section .section-body-cont {
     width: 1170px;
     padding-top: 60px;
 }
+
 .customize-section .width-1085 {
     width: 1085px;
 }
+
 .customize-section .width-790 {
     width: 790px;
 }
+
 .customize-section .width-410 {
     width: 410px;
 }
+
+
 /* 服务范围 */
+
 .service-section .section-top {
     width: 1380px;
     padding-top: 180px;
     padding-bottom: 160px;
 }
+
 .service-section .section-top-list {
     margin-top: 100px;
 }
+
 .service-section .section-top-list li {
     position: relative;
     float: left;
 }
+
 .service-section .service-text {
     position: absolute;
     top: 50%;
@@ -628,22 +689,28 @@
     text-align: center;
     color: #fff;
 }
+
 .service-section .service-icon {
     width: 345px;
     height: 315px;
 }
+
+
 /* 定制流程 */
-.process-section .section-top {
+
+.index-container .process-section .section-top {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.process-section .section-top-subtitle {
+
+.index-container .process-section .section-top-subtitle {
     position: absolute;
     top: 29%;
     left: 20%;
     text-align: left;
 }
-.process-section .section-top-headline {
+
+.index-container .process-section .section-top-headline {
     position: absolute;
     top: 32%;
     left: 20%;
@@ -651,30 +718,36 @@
     line-height: 68px;
     text-align: left;
 }
-.process-section .section-body {
+
+.index-container .process-section .section-body {
     width: 1160px;
     padding-top: 0px;
 }
-.process-section-body-text {
+
+.index-container .process-section-body-text {
     padding-left: 80px;
     padding-right: 300px;
     margin-top: 45px;
     margin-bottom: 130px;
     line-height: 30px;
 }
-.process-list {
+
+.index-container .process-list {
     width: 835px;
     padding-top: 120px;
 }
-.process-list ul {
+
+.index-container .process-list ul {
     width: 345px;
 }
-.process-list li {
+
+.index-container .process-list li {
     padding-bottom: 10px;
     border-bottom: 1px solid #a4a4a4;
     margin-bottom: 100px;
 }
-.process-list .step {
+
+.index-container .process-list .step {
     width: 45px;
     height: 45px;
     border: 1px solid #a4a4a4;
@@ -685,50 +758,65 @@
     color: #333;
     text-align: center;
 }
-.process-list .step-title {
+
+.index-container .process-list .step-title {
     font-size: 26px;
     color: #333;
 }
-.process-list .step-text {
+
+.index-container .process-list .step-text {
     margin-top: 10px;
     font-size: 18px;
     color: #666;
 }
+
+
 /* 案例展示 */
-.cases-section {
+
+.index-container .cases-section {
     background-color: #f5f5f5;
 }
-.cases-section .section-top {
+
+.index-container .cases-section .section-top {
     padding-top: 140px;
     padding-bottom: 0px;
 }
-.cases-section .section-top-subtitle {
+
+.index-container .cases-section .section-top-subtitle {
     font-size: 36px;
 }
-.cases-section .section-body {
+
+.index-container .cases-section .section-body {
     padding-top: 90px;
 }
-.cases-section .cases-container {
+
+.index-container .cases-section .cases-container {
     padding-bottom: 30px;
 }
-.cases-section .cases-item {
+
+.index-container .cases-section .cases-item {
     padding-right: 4.725%;
     padding-left: 4.725%;
 }
-.cases-section .cases-item img {
+
+.index-container .cases-section .cases-item img {
     width: 100%;
 }
-.cases-section .cases-item-info {
+
+.index-container .cases-section .cases-item-info {
     margin-top: 50px;
     text-align: center;
     opacity: 0;
+    -webkit-transition: all .4s ease-in;
     transition: all .4s ease-in;
 }
-.cases-section .cases-item-info .cases-item-name {
+
+.index-container .cases-section .cases-item-info .cases-item-name {
     font-size: 30px;
     color: #333;
 }
-.cases-section .cases-item-info .cases-item-descr {
+
+.index-container .cases-section .cases-item-info .cases-item-descr {
     width: 615px;
     margin-top: 10px;
     margin-left: auto;
@@ -737,17 +825,23 @@
     line-height: 28px;
     color: #333;
 }
+
 .open-modal-link a {
     color: #0070c9;
 }
+
 .open-modal-link a:hover {
     text-decoration: underline;
 }
-.cases-section .cases-container .swiper-slide-active .cases-item-info {
+
+.index-container .cases-section .cases-container .swiper-slide-active .cases-item-info {
     opacity: 1;
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+        transform: translateY(20px);
 }
-.cases-section .cases-slide-btn {
+
+.index-container .cases-section .cases-slide-btn {
     position: absolute;
     top: 30%;
     z-index: 10;
@@ -761,22 +855,265 @@
     background-color: #dadada;
     cursor: pointer;
 }
-.cases-section .cases-slide-btn i {
+
+.index-container .cases-section .cases-slide-btn i {
     font-size: 26px;
 }
-.cases-section .cases-slide-btn.prev {
+
+.index-container .cases-section .cases-slide-btn.prev {
     left: 4%;
 }
-.cases-section .cases-slide-btn.next {
+
+.index-container .cases-section .cases-slide-btn.next {
     right: 4%;
     text-indent: -5px;
 }
-.cases-section .cases-slide-btn:hover {
+
+.index-container .cases-section .cases-slide-btn:hover {
     background-color: #424242;
 }
-.cases-section .cases-container:hover .cases-slide-btn {
+
+.index-container .cases-section .cases-container:hover .cases-slide-btn {
     display: block;
 }
+
+
 /* 
     首页样式结束 
+*/
+
+/* 
+    浴室柜页面样式开始 
+*/
+.cabinet-container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cabinet-container .slogen-section {
+    width: 100%;
+    max-width: 1920px;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cabinet-container .slogen-subtitle {
+    font-size: 22px;
+    color: #6d6d6d;
+}
+.cabinet-container .slogen-headline {
+    margin-top: 20px;
+    font-size: 46px;
+    color: #444;
+}
+.cabinet-container .slogen-banner {
+    margin-top: 70px;
+}
+.cabinet-container .slogen-banner img {
+    width: 100%;
+    max-width: 100%; 
+}
+.cabinet-container .design-section {
+    width: 100%;
+    padding-top: 100px;
+    background-color: #f7f7f7;
+}
+.cabinet-container .design-section .section-top {
+    width: 1185px;
+    padding-left: 130px;
+}
+.cabinet-container .design-section .section-top-subtitle {
+    font-size: 20px;
+    text-align: left;
+    color: #666;
+}
+.cabinet-container .design-section .section-top-headline {
+    margin-top: 20px;
+    text-align: left;
+    color: #333;
+}
+.cabinet-container .design-section .section-body {
+    width: 1185px;
+    padding-top: 0px;
+}
+.cabinet-container .design-section .section-body-text {
+    width: 745px;
+    margin-top: 50px;
+    margin-left: 125px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+}
+.cabinet-container .design-section .section-bottom-part {
+    position: relative;
+    width: 49.6%;
+}
+.cabinet-container .design-section .section-bottom-part-cont {
+    width: 49%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+.cabinet-container .design-section .section-bottom-title {
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+}
+.cabinet-container .design-section .section-bottom-descr {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+.cabinet-container .advantage-section {
+    padding-top: 150px;
+    padding-bottom: 130px;
+}
+.cabinet-container .advantage-section .section-top {
+    width: 705px;
+}
+.cabinet-container .advantage-sec-figure {
+    margin-top: 65px;
+}
+.cabinet-container .advantage-section .section-body {
+    padding-top: 60px;
+    padding-bottom: 0px;
+}
+.cabinet-container .advantage-item {
+    width: 49.8%;
+    margin-bottom: .37%;
+    height: 460px;
+    background-color: #fafafa;
+}
+.cabinet-container .advantage-item:first-child,
+.cabinet-container .advantage-item:last-child {
+    background-color: #f5f5f5;
+}
+.cabinet-container .advantage-item-cont {
+    width: 275px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.cabinet-container .advantage-item-icon {
+    display: inline-block;
+    width: 115px;
+    height: 105px;
+}
+.cabinet-container .advantage-item-title {
+    margin-top: 20px;
+    font-size: 26px;
+    color: #404040;
+}
+.cabinet-container .advantage-item-descr {
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    color: #666;
+}
+.cabinet-container .material-section {
+    padding-top: 70px;
+    background-color: #f7f7f7;
+}
+.cabinet-container .material-section .section-top-text {
+    width: 710px;
+    margin-top: 45px;
+}
+.cabinet-container .material-section .section-top-text p {
+    font-size: 16px;
+    color: #666;
+}
+.cabinet-container .material-section .section-top-list {
+    width: 955px;
+    margin-top: 74px;
+}
+.cabinet-container .material-icon {
+    width: 108px;
+    height: 108px;
+}
+.cabinet-container .material-text {
+    margin-top: 25px;
+    font-size: 26px;
+    color: #666;
+    text-align: center;
+}
+.cabinet-container .material-section .dropmenu-content {
+    background-color: #f2f2f2;
+}
+.cabinet-container .material-section .section-body-cont {
+    width: 935px;
+}
+.cabinet-container .width-420 {
+    width: 420px;
+}
+.cabinet-container .width-740 {
+    width: 740px;
+}
+.cabinet-container .width-950 {
+    width: 950px;
+}
+.cabinet-container .section-body-cont .part .part-title {
+    font-size: 34px;
+    color: #262626;
+}
+.cabinet-container .section-body-cont .part .part-descr {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.cabinet-container .craftsmanship-section {
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+.cabinet-container .craftsmanship-section .section-top {
+    width: 580px;
+}
+.cabinet-container .craftsmanship-section .section-top-headline {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cabinet-container .craftsmanship-section .section-top-text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+}
+.cabinet-container .craftsmanship-sec-figure {
+    margin-top: 75px;
+}
+.cabinet-container .craftsmanship-section .section-body {
+    width: 1470px;
+    margin-top: 110px;
+    background-color: #fafafa;
+}
+.cabinet-container .craftsmanship-list {
+    padding: 110px 230px 20px 230px;
+}
+.cabinet-container .craftsmanship-item {
+    width: 420px;
+    min-height: 380px;
+    text-align: center;
+}
+.cabinet-container .craftsmanship-item-icon {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+}
+.cabinet-container .craftsmanship-item-title {
+    margin-top: 50px;
+    font-size: 34px;
+    color: #262626;
+}
+.cabinet-container .craftsmanship-item-descr {
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+}
+/* 
+    浴室柜页面样式结束 
 */
