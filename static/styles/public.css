@@ -176,57 +176,81 @@
 
 
 /* 点击展开按钮 */
+
 .open-dropmenu-btn {
-	position: absolute;
-	bottom: 108px;
-	left: 50%;
-	width: 38px;
-	height: 38px;
-	line-height: 38px;
-	margin-left: -18px;
-	text-align: center;
-	color: #000;
-	border-radius: 50%;
-	background-color: #333;
-	z-index: 10;
+    position: absolute;
+    bottom: 108px;
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: -18px;
+    text-align: center;
+    color: #000;
+    border-radius: 50%;
+    background-color: #333;
+    z-index: 10;
 }
 
 .open-dropmenu-btn i {
-	font-size: 22px;
-	cursor: pointer;
-	color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
 }
 
 .open-dropmenu-btn.text-black {
-	color: #040710;
+    color: #040710;
 }
 
 .open-dropmenu-btn.text-white {
-	color: #fff;
+    color: #fff;
 }
 
 .open-dropmenu-tip {
-	position: absolute;
-	bottom: 70px;
-	left: 50%;
-	z-index: 10;
-	width: 200px;
-	margin-left: -100px;
-	color: #666;
-	text-align: center;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    z-index: 10;
+    width: 200px;
+    margin-left: -100px;
+    color: #666;
+    text-align: center;
+}
+
+.for-more-btn {
+    display: inline-block;
+    width: 142px;
+    height: 50px;
+    margin-top: 60px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #212121;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.for-more-btn i {
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.for-more-btn span {
+    vertical-align: top;
 }
 
 .rotate-trans {
-	-webkit-transition: background-color .3s 0s, transform 1s 0s;
-	-moz-transition: background-color .3s 0s, transform 1s 0s;
-	-ms-transition: background-color .3s 0s, transform 1s 0s;
-	transition: background-color .3s 0s, transform 1s 0s;
+    -webkit-transition: background-color .3s 0s, transform 1s 0s;
+    -webkit-transition: background-color .3s 0s, -webkit-transform 1s 0s;
+    transition: background-color .3s 0s, -webkit-transform 1s 0s;
+    transition: background-color .3s 0s, transform 1s 0s;
+    transition: background-color .3s 0s, transform 1s 0s, -webkit-transform 1s 0s;
 }
 
 .open-dropmenu-btn.active {
-	background-color: #dadada;
-	-webkit-transform: translateY(190px) rotateZ(45deg);
-	-moz-transform: translateY(190px) rotateZ(45deg);
-	-ms-transform: translateY(190px) rotateZ(45deg);
-	transform: translateY(190px) rotateZ(45deg);
+    background-color: #dadada;
+    -webkit-transform: translateY(190px) rotateZ(45deg);
+    -ms-transform: translateY(190px) rotateZ(45deg);
+    transform: translateY(190px) rotateZ(45deg);
 }

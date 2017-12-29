@@ -176,7 +176,10 @@
     width: 100%;
     margin-top: 45px;
 }
-
+.common-link {
+    font-size: 20px;
+    color: #208bff;
+}
 
 /* 
     首页样式开始 
@@ -890,6 +893,11 @@
     margin-left: auto;
     margin-right: auto;
 }
+.cabinet-container .section-top-text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+}
 .cabinet-container .slogen-section {
     width: 100%;
     max-width: 1920px;
@@ -974,7 +982,7 @@
     padding-bottom: 130px;
 }
 .cabinet-container .advantage-section .section-top {
-    width: 705px;
+    width: 630px;
 }
 .cabinet-container .advantage-sec-figure {
     margin-top: 65px;
@@ -1025,10 +1033,6 @@
     width: 710px;
     margin-top: 45px;
 }
-.cabinet-container .material-section .section-top-text p {
-    font-size: 16px;
-    color: #666;
-}
 .cabinet-container .material-section .section-top-list {
     width: 955px;
     margin-top: 74px;
@@ -1077,11 +1081,6 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.cabinet-container .craftsmanship-section .section-top-text p {
-    font-size: 16px;
-    line-height: 28px;
-    color: #666;
-}
 .cabinet-container .craftsmanship-sec-figure {
     margin-top: 75px;
 }
@@ -1113,6 +1112,150 @@
     font-size: 16px;
     line-height: 28px;
     color: #666;
+}
+.cabinet-container .style-section {
+    padding-top: 140px;
+    padding-bottom: 170px;
+    background-color: #f7f7f7;
+}
+.cabinet-container .style-section-wrapper {
+    width: 1500px;
+}
+.cabinet-container .style-section .section-top {
+    width: 530px;
+    margin-top: 60px;
+}
+.cabinet-container .style-section .section-top-headline {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cabinet-container .style-section .section-body {
+    width: 800px;
+}
+.cabinet-container .style-section .style-list-item {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 220px;
+    background-color: #909090;
+}
+.cabinet-container .style-section .style-list-item:first-child,
+.cabinet-container .style-section .style-list-item:last-child {
+    background-color: #4d4d4d;
+}
+.cabinet-container .style-section .style-list-item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 38px;
+    color: #f7f7f7;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+.cabinet-container .process-section {
+    padding-top: 160px;
+    padding-bottom: 210px;
+}
+.cabinet-container .process-section .section-top {
+    width: 630px;
+}
+.cabinet-container .process-section .section-body {
+    width: 1070px;
+}
+.cabinet-container .process-section .process-figure {
+    width: 1070px;
+    height: 680px;
+    margin-top: 63px;
+}
+.cabinet-container .process-list-item {
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    padding-left: 100px;
+    margin-top: 90px;
+}
+.cabinet-container .process-list-item .step {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #a4a4a4;
+    margin-right: 32px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 38px;
+    color: #333;
+    text-align: center;
+}
+
+.cabinet-container .process-list-item .step-title {
+    font-size: 24px;
+    color: #404040;
+}
+
+.cabinet-container .process-list-item .step-text {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #666;
+}
+.cabinet-container .cases-section {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-color: #f7f7f7;
+}
+.cabinet-container .cases-section .section-top-subtitle {
+    text-indent: -44px;
+}
+.cabinet-container .cases-section .section-top-headline {
+    margin-bottom: 20px;
+}
+.cabinet-container .cases-list-container {
+    width: 1140px;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+.cabinet-container .cases-item {
+    padding-left: 150px;
+    padding-right: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.cabinet-container .cases-item-info {
+    width: 340px;
+}
+.cabinet-container .cases-item-name {
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color: #333;
+}
+.cabinet-container .cases-item-descr {
+    min-height: 160px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.cabinet-container .cases-item-img {
+    width: 420px;
+    height: 455px;
+}
+.cabinet-container .cases-slide-btn {
+    position: absolute;
+    top: 41%;
+    z-index: 10;
+    cursor: pointer;
+}
+.cabinet-container .cases-slide-btn i {
+    font-size: 36px;
+}
+.cabinet-container .cases-slide-btn-prev {
+    left: 0px;
+}
+.cabinet-container .cases-slide-btn-next {
+    right: 0px;
+}
+.cabinet-container .swiper-pagination-bullet-active {
+    background: #4d4d4d;
 }
 /* 
     浴室柜页面样式结束 

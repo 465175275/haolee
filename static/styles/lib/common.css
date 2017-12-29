@@ -116,7 +116,8 @@ figure {
  */
 
 hr {
-	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
 	/* 1 */
 	height: 0;
 	/* 1 */
@@ -170,7 +171,8 @@ abbr[title] {
 	/* 1 */
 	text-decoration: underline;
 	/* 2 */
-	text-decoration: underline dotted;
+	-webkit-text-decoration: underline dotted;
+	        text-decoration: underline dotted;
 	/* 2 */
 }
 
@@ -366,6 +368,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button;
+	border: none;
 	/* 2 */
 }
 
@@ -412,7 +415,8 @@ fieldset {
  */
 
 legend {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	/* 1 */
 	color: inherit;
 	/* 2 */
@@ -456,7 +460,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	/* 1 */
 	padding: 0;
 	/* 2 */
@@ -600,19 +605,19 @@ template {
 /* 字体对齐 */
 
 .text-left {
-	text-align: center;
+	text-align: left !important;
 }
 
 .text-center {
-	text-align: center;
+	text-align: center !important;
 }
 
 .text-right {
-	text-align: right;
+	text-align: right !important;
 }
 
 .text-justify {
-	text-align: justify;  
+	text-align: justify !important;  
 }
 
 .text-justify:after,
@@ -632,30 +637,32 @@ template {
 /* flexbox */
 /*flexbox*/
 .flex-box {
-    display: box;
+	display: -ms-flexbox;
+	display: flex;
     display: -webkit-box;
     display: -webkit-flex;
-    display: flex;
+    
 }
 /*flex水平居中*/
 .flex-hc {
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 /*flex垂直居中*/
 .flex-vc {
     -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 /*两侧对齐*/
 .flex-between {
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 /*平均分布*/
 .flex-around {
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
