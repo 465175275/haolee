@@ -154,7 +154,8 @@
 }
 
 .section-body-cont .part-img img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .section-body-cont .part {
@@ -452,7 +453,6 @@
 .people-images-group {
     float: left;
     -webkit-transform: translateY(100px);
-    -ms-transform: translateY(100px);
         transform: translateY(100px);
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
@@ -469,7 +469,6 @@
 
 .people-images-group:nth-of-type(2n) {
     -webkit-transform: translateY(300px);
-    -ms-transform: translateY(300px);
         transform: translateY(300px);
 }
 
@@ -840,7 +839,6 @@
 .index-container .cases-section .cases-container .swiper-slide-active .cases-item-info {
     opacity: 1;
     -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
         transform: translateY(20px);
 }
 
@@ -963,7 +961,6 @@
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
 }
 .cabinet-container .design-section .section-bottom-title {
@@ -1150,7 +1147,6 @@
     font-size: 38px;
     color: #f7f7f7;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
 .cabinet-container .process-section {
@@ -1260,3 +1256,226 @@
 /* 
     浴室柜页面样式结束 
 */
+
+/* 合作加盟 */
+.cooperation-container .slogen-section {
+    position: relative;
+}
+.cooperation-container .slogen-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21%;
+    z-index: 9;
+}
+.cooperation-container .slogen-subtitle {
+    font-size: 60px;
+    color: #fff;
+}
+.cooperation-container .slogen-headline {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.cooperation-container .slogen-descr {
+    width: 880px;
+    padding-top: 65px;
+    padding-bottom: 140px;
+    font-size: 18px;
+    color: #333;
+    line-height: 32px;
+    text-align: center;
+}
+.cooperation-container .section-top-subtitle {
+    font-size: 30px;
+    text-align: left;
+    color: #e5e5e5;
+}
+.cooperation-container .section-top-headline {
+    font-size: 40px;
+    text-align: left;
+    color: #fff;
+}
+.cooperation-container .advantage-section .section-top-header {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    right: 0;
+    padding-left: 490px;
+}
+.cooperation-container .advantage-section .section-body {
+    width: 960px;
+}
+.cooperation-container .section-body-paragraph {
+    width: 610px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333;
+}
+.cooperation-container .advantage-section .section-body-list {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 140px;
+}
+.cooperation-container .advantage-section .section-body-list ul li {
+    position: relative;
+    float: left;
+    width: 440px;
+    margin-bottom: 150px;
+}
+.cooperation-container .advantage-section .section-body-list ul li:nth-of-type(even) {
+    float: right;
+}
+.cooperation-container .advantage-item {
+    padding-left: 100px;
+}
+.cooperation-container .advantage-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.cooperation-container .advantage-item h4 {
+    padding-top: 10px;
+    font-size: 34px;
+    color: #000;
+}
+.cooperation-container .advantage-item p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
+}
+.cooperation-container .advantage-section .bottom-line-wrapper {
+    overflow: hidden;
+    width: 360px;
+    height: 2px;
+    margin-top: 28px;
+    margin-left: 80px;
+}
+.bottom-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+}
+.cooperation-container .training-section {
+    padding-top: 170px;
+    padding-bottom: 250px;
+    background-color: #fafafa;
+}
+.cooperation-container .training-section .section-body {
+    width: 1260px;
+}
+.cooperation-container .training-figure {
+    width: 640px;
+    height: 545px;
+}
+.cooperation-container .training-section .section-body-cont {
+    width: 520px;
+}
+.cooperation-container .training-section .section-body-cont-headline {
+    margin-top: 70px;
+    font-size: 30px;
+    color: #333;
+}
+.cooperation-container .training-section .section-body-cont-subtitle {
+    margin-top: 20px;
+    font-size: 42px;
+    color: #000;
+}
+.cooperation-container .training-section .section-body-cont-text {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333;
+}
+.cooperation-container .demand-figure {
+    width: 100%;
+    height: 615px;
+}
+.cooperation-container .demand-section .section-top {
+    position: absolute;
+    top: 7%;
+    left: 490px;
+}
+.cooperation-container .demand-section .section-top-headline {
+    line-height: 50px;
+}
+.cooperation-container .demand-section .section-body {
+    width: 1180px;
+    padding-top: 60px;
+    padding-bottom: 210px;
+}
+.cooperation-container .demand-section .section-body-paragraph {
+    margin-left: 110px;
+}
+.cooperation-container .demand-section .part {
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
+.cooperation-container .demand-section .part-img {
+    width: 575px;
+    height: 380px;
+}
+.cooperation-container .demand-section .part-descr {
+    margin-top: 20px;
+}
+.cooperation-container .demand-section .width-515 {
+    width: 515px;
+}
+.cooperation-container .process-section {
+    padding-bottom: 150px;
+    background-color: #fafafa;
+}
+.cooperation-container .process-section .section-top {
+    width: 750px;
+    padding-top: 108px;
+    padding-bottom: 90px;
+}
+.cooperation-container .process-section .section-top-headline {
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+.cooperation-container .process-section .section-top-subtitle {
+    margin-top: -30px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+    text-align: center;
+}
+.cooperation-container .process-section .process-list-container {
+    width: 820px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 110px;
+}
+.cooperation-container .process-section .process-list-container li {
+    text-align: center;
+}
+.cooperation-container .process-section .process-list-container li p {
+    margin-top: 50px;
+    color: #000;
+}
+.cooperation-container .process-section .slide-btn {
+    position: absolute;
+    top: 30%;
+}
+.cooperation-container .process-section .slide-btn i {
+    font-size: 24px;
+}
+.cooperation-container .process-section .slide-btn-prev {
+    left: 0px;
+}
+.cooperation-container .process-section .slide-btn-next {
+    right: 0px;
+}
+.cooperation-container .process-section .swiper-pagination-bullet {
+    width: 30px;
+    height: 2px;
+    background: #a9a9a9;
+    opacity: 1;
+    border-radius: 0px;
+}
+.cooperation-container .process-section .swiper-pagination-bullet-active {
+    background: #000;
+}
