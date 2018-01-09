@@ -11,3 +11,4 @@ $(".open-dropmenu-btn").on('click', function() {
 		easing: 'swing'
 	});
 });
+
