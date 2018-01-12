@@ -3806,20 +3806,28 @@ figure {
 .stairs6-box {
 	margin: 0 auto;
 	max-width: 1500px;
-	overflow: hidden;
 }
 
 .stairs6-l1 {
-	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.stairs6-l1 li {
 	width: 50%;
-	padding: 0 10px 0 0;
+	float: left;
+	padding: 20px 10px 0 0;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
 
-.stairs6-l1 li {
-	padding: 115px 16.5% 110px;
-	margin-top: 20px;
+.stairs6-l1 li:nth-child(2n+0) {
+	float: right;
+	padding: 20px 0 0 10px;
+}
+
+.stairs6-box2 {
+	padding: 115px 16% 110px;
 	background: #fafafa;
 }
 
@@ -3834,9 +3842,7 @@ figure {
 }
 
 .stairs6-l2 li {
-	/*padding: 145px 118px 138px;*/
-	margin-top: 20px;
-	background: #fafafa;
+	background: #666;
 }
 
 
