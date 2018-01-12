@@ -265,19 +265,25 @@
 	margin-top: 140px;
 }
 
+.pub-margin-top205{
+	margin-top: 205px !important;
+}
+
 .pub-margin-top220{
 	margin-top: 220px;
 }
 
 .pub-margin-top240{
-	margin-top: 240px;
+	margin-top: 240px !important;
 }
 
 .pub-margin-top265{
 	margin-top: 265px;
 }
 
-
+.pub-margin-top280{
+	margin-top: 280px !important;
+}
 
 .pub-margin-bottom60 {
 	margin-bottom: 60px;
@@ -2348,6 +2354,8 @@
 
 
 /* 解决text-align不处理块内的最后一块文本 */
+.hholdlist-container .type-6 .hholdlist-item-img:after,
+.hholdlist-container .household-list-col4:after,
 .doorlist-container .doorlist-col4:after,
 .doorlist-container .type-3 .doorlist-item-img:after,
 .inHolee-container .i-sec4-info:after,
@@ -3371,7 +3379,6 @@
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 230px;
 	text-align: justify;
 }
 
@@ -3459,6 +3466,130 @@
 	margin-top: 70px;
 	padding-left: 60px;
 	box-sizing: border-box;
+}
+
+.type-3{
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 160px;
+	overflow: hidden;
+}
+
+.type-3 .hholdlist-item-info{
+	max-width: 510px;
+	padding-top: 169px;
+	float: left;
+}
+
+.type-3 .hholdlist-item-img{
+	width: 650px;
+	height: 740px;
+	float: right;
+}
+
+.type-4{
+	width: 100%;
+	margin-top: 240px;
+}
+
+.type-4 .hholdlist-item-img{
+	width: 100%;
+	height: 800px;
+}
+
+.type-4 .hholdlist-item-info{
+	max-width: 755px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	text-align: center;
+}
+
+.household-list-col4{
+	width: 1290px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 195px;
+	text-align: justify;
+}
+
+.type-5{
+	max-width: 630px;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.type-5 .hholdlist-item-img{
+	width: 100%;
+	height: 570px;
+	margin-top: 60px;
+}
+
+.type-5 .hholdlist-item-info{
+	max-width: 504px;
+	height: auto;
+	margin-left: 40px;
+}
+
+.type-6{
+	width: 1300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 270px;
+}
+
+.type-6 .hholdlist-item-info{
+	max-width: 1050px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.type-6 .hholdlist-item-img{
+	width: 100%;
+	height: auto;
+	margin-top: 70px;
+	text-align: justify;
+}
+
+.type-6 .hholdlist-item-img .child-img{
+	width: 590px;
+	height: 490px;
+	display: inline-block;
+}
+
+.type-6 .hholdlist-item-img .update-img{
+	width: 380px;
+	height: 475px;
+}
+
+.type-7{
+	max-width: 1300px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 265px;
+	margin-bottom: 175px;
+}
+
+.type-7 .hholdlist-item-info{
+	max-width: 750px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.type-7 .hholdlist-item-img{
+	width: 100%;
+	height: 680px;
+	margin-top: 75px;
 }
 
 /* 整体家居案例 -- 结束 */
