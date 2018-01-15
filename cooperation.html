@@ -6,7 +6,6 @@
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_x.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_thyn3s7cajxajor.css">
 	</head>
 	<body>
@@ -60,7 +59,7 @@
                 </div>
             </div>
             <!-- 四大优势 -->
-            <div class="advantage-section section parallax-section2">
+            <div class="advantage-section section">
                 <div class="section-top block-center nopad">
                     <figure class="advantage" style="width: 100%; height:615px; background-color:#999;"></figure>
                     <div class="section-top-header js-parallax" style="transition: all 1.5s ease-in-out;">
@@ -304,10 +303,13 @@
 		</div>
         <script src="static/scripts/require.js"></script>
         <script src="static/scripts/main.js"></script>
-        
 		<script>
-			require(['jquery', 'parallax', 'Swiper', 'china', 'echarts'], function($, parallax, Swiper, china, echarts) {
+			require(['jquery', 'parallax', 'Swiper', 'china', 'echarts', 'wow'], function($, parallax, Swiper, china, echarts) {
                 $(function() {
+                    /* 初始化WOW效果 */
+                    if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+                        new WOW().init();
+                    }
                     /* 定义视差效果模块数组参数 */
                     var parallaxArr = [
                         {
@@ -315,12 +317,6 @@
                             top: 0, 
                             bottom: 50, 
                             duration: 1
-                        },
-                        {
-                            target: 'parallax-section2', 
-                            top: -50, 
-                            bottom: 50, 
-                            duration: .5
                         }
                     ]
                     parallaxArr.forEach(function(item) {
