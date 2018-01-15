@@ -470,6 +470,7 @@
 					scrollTop = $(window).scrollTop();
 				showFullImg(winWidth, winHeight, scrollTop);
 			});
+
 			function showFullImg(winWidth, winHeight, scrollTop) {
 				$('.bg-mark').each(function() {
 					var percent, originPercent,
@@ -477,10 +478,14 @@
 						originWidthRate = 0.20,
 						offsetTop = $(this).offset().top,
 						diffHeight = (winHeight + scrollTop) - offsetTop;
+					diffHeight2 = $(this).height();
+					console.log(diffHeight2);
 					originPercent = originWidthRate * 100 + '%';
 					if(offsetTop <= scrollTop + winHeight) {
 						percent = (winWidth * originWidthRate - diffHeight * rate) / winWidth * 100 + '%';
-						console.log(winWidth)
+
+						//percent = diffHeight2 / diffHeight * originWidthRate * 100 + '%';
+						console.log(percent)
 						if(parseInt(percent) < -10) {} else {
 
 						}
