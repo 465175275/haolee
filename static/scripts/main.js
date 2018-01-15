@@ -36,6 +36,6 @@ requirejs.config({
         /** 引入wow依赖css文件 */
         'wow': ['css!../styles/lib/animate.css'],
         /** 引入aos依赖css文件 */
-        'aos': ['jquery', 'ease','css!https://cdn.bootcss.com/aos/2.2.0/aos.css']
+        'aos': ['css!https://cdn.bootcss.com/aos/2.2.0/aos.css', 'ease']
     }
 })
