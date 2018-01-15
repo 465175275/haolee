@@ -6,7 +6,6 @@
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="static/styles/lib/aos.css">
 	</head>
 
 	<body aos-easing="ease-out-back" aos-duration="1000" aos-delay="0">
@@ -594,46 +593,49 @@
 			</div>
 		</div>
 		<!--js-->
-		<script src="static/scripts/lib/jquery-1.8.3.min.js"></script>
-		<script src="static/scripts/lib/jquery.easing.min.js"></script>
-		<script src="static/scripts/lib/aos.js"></script>
+		<script src="static/scripts/require.js"></script>
+        <script src="static/scripts/main.js"></script>
 		<script>
-			if((navigator.userAgent.indexOf('MSIE') >= 0) && (navigator.userAgent.indexOf('Opera') < 0)) {
-
-			} else {
-				AOS.init({
+			require(['jquery', 'aos'], function($, AOS) {
+				/* AOS初始化 */
+				var aos = AOS.init({
 					easing: 'ease-out-back',
 					duration: 1000
 				});
-			}
-			$(document).ready(function() {
+				/* AOS初始化 */
+				var aos = AOS.init({
+					easing: 'ease-out-back',
+					duration: 1000
+				});
+					console.log(aos)
+				$(document).ready(function() {
+					//进入时滚动条位置
+					if(window.location.hash == "#0") {
+						$("body,html").animate({
+							scrollTop: 0
+						}, 600, 'easeInOutExpo');
+					} else {
+						var cotentOffset = $(window).height();
+						$("body,html").animate({
+							scrollTop: cotentOffset - 100
+						}, 1000, 'easeInOutExpo');
+					}
 
-				//进入时滚动条位置
-				if(window.location.hash == "#0") {
-					$("body,html").animate({
-						scrollTop: 0
-					}, 600, 'easeInOutExpo');
-				} else {
-					var cotentOffset = $(window).height();
-					$("body,html").animate({
-						scrollTop: cotentOffset - 100
-					}, 1000, 'easeInOutExpo');
-				}
-
-				//nav色块位置
-				var liActive = $(".proNav li.active").index();
-				$(".proNav .bg").animate({
-					left: liActive * $(".proNav .bg").width()
-				}, 500, 'easeInOutExpo')
-				$(".proNav li").hover(function() {
-					$(".proNav .bg").stop(false, true).animate({
-						left: $(this).index() * $(".proNav .bg").width()
-					}, 500, 'easeInOutExpo');
-				})
-				$(".proNav").mouseleave(function() {
+					//nav色块位置
+					var liActive = $(".proNav li.active").index();
 					$(".proNav .bg").animate({
 						left: liActive * $(".proNav .bg").width()
 					}, 500, 'easeInOutExpo')
+					$(".proNav li").hover(function() {
+						$(".proNav .bg").stop(false, true).animate({
+							left: $(this).index() * $(".proNav .bg").width()
+						}, 500, 'easeInOutExpo');
+					})
+					$(".proNav").mouseleave(function() {
+						$(".proNav .bg").animate({
+							left: liActive * $(".proNav .bg").width()
+						}, 500, 'easeInOutExpo')
+					})
 				})
 			})
 		</script>
