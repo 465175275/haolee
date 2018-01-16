@@ -596,7 +596,6 @@
 		<script src="static/scripts/require.js"></script>
         <script src="static/scripts/main.js"></script>
 		<script>
-<<<<<<< HEAD
 			require(['jquery', 'aos'], function($, AOS) {
 				$(document).ready(function() {
 					/* AOS初始化 */
@@ -620,28 +619,6 @@
 							scrollTop: cotentOffset - 100
 						}, 1000, 'easeInOutExpo');
 					}
-=======
-			if((navigator.userAgent.indexOf('MSIE') >= 0) && (navigator.userAgent.indexOf('Opera') < 0)) {
-
-			} else {
-				AOS.init({
-					easing: 'ease-out-back',
-					duration: 1000
-				});
-			}
-			$(document).ready(function() {
-				//进入时滚动条位置
-				if(window.location.hash == "#0") {
-					$("body,html").animate({
-						scrollTop: 0
-					}, 600, 'easeInOutExpo');
-				} else {
-					var cotentOffset = $(window).height();
-					$("body,html").animate({
-						scrollTop: cotentOffset - 100
-					}, 1000, 'easeInOutExpo');
-				}
->>>>>>> origin/dev2
 
 					//nav色块位置
 					var liActive = $(".proNav li.active").index();
