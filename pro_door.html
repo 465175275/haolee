@@ -5,9 +5,7 @@
 		<title>套装门</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_z.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 		<link rel="stylesheet" href="//at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
-		<link rel="stylesheet" href="static/styles/lib/animate.css" />
 	</head>
 	<body>
 		<div class="door-container">
@@ -430,28 +428,29 @@
 			</section>
 		</div>
 	</body>
-	<script type="text/javascript" src="static/scripts/lib/jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="static/scripts/require.js"></script>
+	<script type="text/javascript" src="static/scripts/main.js"></script>
 	<script type="text/javascript" src="static/scripts/common.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-	<script type="text/javascript" src="static/scripts/lib/wow.min.js" ></script>
 </html>
 <script>
-	$(function(){
-		new WOW().init();
-		// 案例展示 -- 轮播图初始化
-		var swiper = new Swiper('.js-swiper2', { 
-			slidesPerView: 2, 
-			spaceBetween: 20, 
-			slidesPerGroup: 2,
-			pagination:{ 
-				el: '.d-section9 .swiper-pagination',
-				clickable: true
-			},
-			navigation: {
-				nextEl: '.d-section9 .swiper-buttons-next',
-				prevEl: '.d-section9 .swiper-buttons-prev',
-			}
-			
+	require(['jquery','Swiper','wow'],function($,Swiper){
+		$(function(){
+			new WOW().init();
+			// 案例展示 -- 轮播图初始化
+			var swiper = new Swiper('.js-swiper2', { 
+				slidesPerView: 2, 
+				spaceBetween: 20, 
+				slidesPerGroup: 2,
+				pagination:{ 
+					el: '.d-section9 .swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.d-section9 .swiper-buttons-next',
+					prevEl: '.d-section9 .swiper-buttons-prev',
+				}
+				
+			});
 		});
 	});
 </script>

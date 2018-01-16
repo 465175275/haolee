@@ -5,8 +5,6 @@
 		<title>楼梯</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_z.css"/>
-		<link rel="stylesheet" href="static/styles/lib/animate.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 		<link rel="stylesheet" href="//at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 	<body>
@@ -478,68 +476,70 @@
 			</section>
 		</div>
 	</body>
-	<script type="text/javascript" src="static/scripts/lib/jquery-1.8.3.min.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script type="text/javascript" src="static/scripts/require.js"></script>
+	<script type="text/javascript" src="static/scripts/main.js"></script>
 	<script type="text/javascript" src="static/scripts/common.js" ></script>
-	<script type="text/javascript" src="static/scripts/lib/wow.min.js" ></script>
 </html>
 <script>
-	$(function(){
-		new WOW().init();
-		// 制版 -- 轮播图初始化
-		var swiper = new Swiper('.js-swiper', { 
-			slidesPerView: 5, 
-			spaceBetween: 40, 
-			centeredSlides: true, 
-			pagination:{ 
-				el: '.s-section6 .swiper-pagination',
-				clickable: true
-			},
-			navigation: {
-				nextEl: '.s-section6 .swiper-button-next',
-				prevEl: '.s-section6 .swiper-button-prev',
-			}
+	require(['jquery','Swiper','wow'],function($,Swiper){
+		$(function(){
+			new WOW().init();
+			// 制版 -- 轮播图初始化
+			var swiper = new Swiper('.js-swiper', { 
+				slidesPerView: 5, 
+				spaceBetween: 40, 
+				centeredSlides: true, 
+				pagination:{ 
+					el: '.s-section6 .swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.s-section6 .swiper-button-next',
+					prevEl: '.s-section6 .swiper-button-prev',
+				}
+			});
+			
+			// 服务流程 -- 轮播图初始化
+			var swiper = new Swiper('.js-swiper1', { 
+				slidesPerView: 3, 
+				spaceBetween: 40, 
+				slidesPerGroup: 3,
+				pagination:{ 
+					el: '.s-section8 .swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.s-section8 .swiper-button-next',
+					prevEl: '.s-section8 .swiper-button-prev',
+				}
+			});
+			
+			// 案例展示 -- 轮播图初始化
+			var swiper = new Swiper('.js-swiper2', { 
+				slidesPerView: 2, 
+				spaceBetween: 35, 
+				slidesPerGroup: 4,
+				pagination:{ 
+					el: '.s-section9 .swiper-pagination',
+					clickable: true
+				},
+				navigation: {
+					nextEl: '.s-section9 .swiper-button-next',
+					prevEl: '.s-section9 .swiper-button-prev',
+				}
+			});
+			
 		});
+	});	
 		
-		// 服务流程 -- 轮播图初始化
-		var swiper = new Swiper('.js-swiper1', { 
-			slidesPerView: 3, 
-			spaceBetween: 40, 
-			slidesPerGroup: 3,
-			pagination:{ 
-				el: '.s-section8 .swiper-pagination',
-				clickable: true
-			},
-			navigation: {
-				nextEl: '.s-section8 .swiper-button-next',
-				prevEl: '.s-section8 .swiper-button-prev',
-			}
-		});
+	//s-section6的轮播图右点击
+	$('.s-section6 .swiper-button-next').click(function(){
+		leftRightBtn();
+	});
 		
-		// 案例展示 -- 轮播图初始化
-		var swiper = new Swiper('.js-swiper2', { 
-			slidesPerView: 2, 
-			spaceBetween: 35, 
-			slidesPerGroup: 4,
-			pagination:{ 
-				el: '.s-section9 .swiper-pagination',
-				clickable: true
-			},
-			navigation: {
-				nextEl: '.s-section9 .swiper-button-next',
-				prevEl: '.s-section9 .swiper-button-prev',
-			}
-		});
-		
-		//s-section6的轮播图右点击
-		$('.s-section6 .swiper-button-next').click(function(){
-			leftRightBtn();
-		});
-		
-		//s-section6的轮播图左点击
-		$('.s-section6 .swiper-button-prev').click(function(){
-			leftRightBtn();
-		});
+	//s-section6的轮播图左点击
+	$('.s-section6 .swiper-button-prev').click(function(){
+		leftRightBtn();
 	});
 	function leftRightBtn() {
 		$('.s-section6 .swiper-slide .child-info').removeClass('dis-block');

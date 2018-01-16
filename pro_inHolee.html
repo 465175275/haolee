@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>走进豪利</title>
-		<link rel="stylesheet" href="static/styles/lib/common.css" />
-		<link rel="stylesheet" href="static/styles/style.css" />
-		<link rel="stylesheet" href="static/styles/lib/swiper.min.css" />
+		<link rel="stylesheet" href="static/styles/public.css" />
+		<link rel="stylesheet" href="static/styles/style_z.css" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 	<body>
 		<div class="inHolee-container">
@@ -242,20 +242,22 @@
 			</section>
 		</div>
 	</body>
-	<script type="text/javascript" src="static/scripts/lib/jquery-1.8.3.min.js" ></script>
-	<script type="text/javascript" src="static/scripts/lib/swiper.min.js" ></script>
+	<script type="text/javascript" src="static/scripts/require.js" ></script>
+	<script type="text/javascript" src="static/scripts/main.js" ></script>
 </html>
-<script>$(function() {
-	$(function(){
-		//生产基地 初始化swiper
-		var swiper = new Swiper('.js-swiper', {
-			slidesPerView: 3,
-			spaceBetween: 20,
-			slidesPerGroup: 3,
-			navigation: {
-				prevEl: '.i-section3 .swiper-buttons-prev',
-				nextEl: '.i-section3 .swiper-buttons-next',
-			}
+<script>
+	require(['jquery','Swiper'],function($,Swiper){
+		$(function(){
+			//生产基地 初始化swiper
+			var swiper = new Swiper('.js-swiper', {
+				slidesPerView: 3,
+				spaceBetween: 20,
+				slidesPerGroup: 3,
+				navigation: {
+					prevEl: '.i-section3 .swiper-buttons-prev',
+					nextEl: '.i-section3 .swiper-buttons-next',
+				}
+			});
 		});
 		
 		$('.i-sec4-info>div').hover(function(){
@@ -268,4 +270,4 @@
 			$(this).children('.info').fadeOut(300);
 		});
 	});
-});</script>
+</script>

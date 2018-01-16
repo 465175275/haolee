@@ -358,20 +358,21 @@
 	$(function(){
 		//列表页全屏图片收缩
 		$(window).on('scroll', function() {
-			var winWidth = $(window).width(),
-				winHeight = $(window).height(),
-				scrollTop = $(window).scrollTop();
+			var winWidth = $(window).width(),//浏览器窗口的宽度
+				winHeight = $(window).height(),//浏览器窗口的高度
+				scrollTop = $(window).scrollTop();//滚动的距离
 			showFullImg(winWidth, winHeight, scrollTop);
 
 		});
 		function showFullImg(winWidth, winHeight, scrollTop) {
 			$('.bg-mark').each(function() {
 				var percent, originPercent,
-					rate = 0.5,
-					originWidthRate = 0.20,
-					offsetTop = $(this).offset().top,
-					diffHeight = (winHeight + scrollTop) - offsetTop;
+					rate = 0.5,//比率
+					originWidthRate = 0.20,//刚开始的宽度比率
+					offsetTop = $(this).offset().top,//距离顶部的距离
+					diffHeight = (winHeight + scrollTop) - offsetTop,
 					originPercent = originWidthRate * 100 + '%';
+					
 				if(offsetTop <= scrollTop + winHeight) {
 					percent = (winWidth * originWidthRate - diffHeight * rate) / winWidth * 100 + '%';
 					if(parseInt(percent) <= 0) {

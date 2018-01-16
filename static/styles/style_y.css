@@ -28,6 +28,7 @@ p {
 }
 
 body {
+	height: auto!important;
 	line-height: 1.5;
 }
 
@@ -161,6 +162,10 @@ figure {
 
 .section-open {
 	display: none;
+}
+
+.hidden {
+	overflow: hidden;
 }
 
 
@@ -564,7 +569,7 @@ figure {
 
 .furniture-l1 {
 	margin: 80px auto 140px;
-	width: 990px;
+	width: 1015px;
 	overflow: hidden;
 }
 
@@ -573,12 +578,15 @@ figure {
 	float: left;
 	width: 330px;
 	height: 285px;
+	margin: 4px;
+	overflow: hidden;
 }
 
 .furniture-l1 a {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 10;
 	width: 100%;
 	height: 100%;
 	font-size: 34px;
@@ -589,13 +597,20 @@ figure {
 }
 
 .furniture-l1 li:last-child {
-	width: 660px;
+	width: 668px;
 }
 
 .furniture-l1 img {
 	display: block;
 	width: 100%;
 	height: 100%;
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+}
+
+.furniture-l1 li:hover img {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
 }
 
 
@@ -619,11 +634,32 @@ figure {
 	margin: 0 80px 50px;
 }
 
-.flow-l img {
-	display: block;
+.icon {
 	margin: 0 auto;
 	width: 110px;
 	height: 110px;
+	background-size: 100% 100%!important;
+	background-repeat: no-repeat!important;
+}
+
+.flow-icon1 {
+	background: url(../images/black.jpg);
+}
+
+.flow-icon2 {
+	background: url(../images/furniture/tu1.jpg);
+}
+
+.flow-icon3 {
+	background: url(../images/black.jpg);
+}
+
+.flow-icon4 {
+	background: url(../images/furniture/tu1.jpg);
+}
+
+.flow-icon5 {
+	background: url(../images/black.jpg);
 }
 
 .flow-l h1 {
@@ -665,6 +701,11 @@ figure {
 	margin-top: 15px;
 	font-size: 20px;
 	color: #208bff;
+	transition: color .3s ease;
+}
+
+.case-more:hover {
+	color: #54a0ff;
 }
 
 .swiper-case {
@@ -696,6 +737,24 @@ figure {
 .swiper-case .swiper-slide {
 	width: 420px;
 	padding: 0 30px;
+}
+
+.case-img {
+	position: relative;
+}
+
+.case-img:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .4);
+}
+
+.swiper-slide-active .case-img:after {
+	background: none;
 }
 
 .case-prev,
@@ -751,15 +810,28 @@ figure {
 /*第一屏-整体橱柜*/
 
 .cupboard-box1 {
+	position: relative;
 	width: 100%;
 	height: 900px;
-	background: url(../images/furniture/tu1.jpg) center no-repeat;
-	background-size: 100% 100%;
 	overflow: hidden;
 }
 
+.cupboard1-figure {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 1100px;
+	background: url(../images/furniture/tu2.jpg) center no-repeat;
+}
+
 .cupboard-c1 {
-	margin-top: 180px;
+	position: absolute;
+	left: 0;
+	top: 180px;
+	z-index: 2;
+	width: 100%;
 	color: #fff;
 	text-align: center;
 }
@@ -909,11 +981,15 @@ figure {
 
 /*第四屏-自身优点*/
 
-.cupboard4-figure {
-	margin-top: 25px;
-	width: 100%;
+.cupboard4-figurebox {
 	height: 650px;
-	background: url(../images/furniture/tu1.jpg);
+	overflow: hidden;
+}
+
+.cupboard4-figure {
+	width: 100%;
+	height: 750px;
+	background: url(../images/furniture/tu2.jpg);
 }
 
 .cupboard4-c {
@@ -942,7 +1018,7 @@ figure {
 	overflow: hidden;
 }
 
-.cupboard4-l li:nth-child(2n+0) img {
+.cupboard4-l li:nth-child(2n+0) .cupboard4-img {
 	float: right;
 }
 
@@ -950,7 +1026,7 @@ figure {
 	float: left;
 }
 
-.cupboard4-l img {
+.cupboard4-img {
 	float: left;
 	display: block;
 	width: 460px;
@@ -994,7 +1070,8 @@ figure {
 
 .cupboard5-l {
 	width: 1490px;
-	margin: 10px auto 150px;
+	margin: 10px auto 120px;
+	padding-bottom: 30px;
 	overflow: hidden;
 }
 
@@ -1007,6 +1084,16 @@ figure {
 	background: #f2f2f2;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
+}
+
+.cupboard5-l li:hover {
+	-webkit-box-shadow: 0px 10px 20px rgba(226, 226, 226, .8);
+	box-shadow: 0px 10px 20px rgba(226, 226, 226, .8);
+	-webkit-transform: translate3d(0, -10px, 0);
+	-moz-transform: translate3d(0, -10px, 0);
+	transform: translate3d(0, -10px, 0);
 }
 
 .cupboard5-l li:nth-child(2n+0) {
@@ -1036,10 +1123,9 @@ figure {
 /*第六屏-工艺技术*/
 
 .cupboard6-figure {
-	margin-top: 50px;
 	width: 100%;
-	height: 650px;
-	background: url(../images/furniture/tu1.jpg);
+	height: 750px;
+	background: url(../images/furniture/tu2.jpg);
 }
 
 .cupboard6-l {
@@ -1138,11 +1224,16 @@ figure {
 	font-weight: bold;
 }
 
+.cupboard8-figurebox {
+	height: 570px;
+	overflow: hidden;
+}
+
 .cupboard8-figure {
 	margin-top: 50px;
 	width: 100%;
 	height: 570px;
-	background: url(../images/furniture/tu1.jpg);
+	background: url(../images/furniture/tu2.jpg);
 }
 
 .cupboard8-c {
@@ -1337,6 +1428,14 @@ figure {
 	border: 2px solid #e8e8e8;
 	border-radius: 100%;
 	cursor: pointer;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+.carousel-container #carousel-left:hover,
+.carousel-container #carousel-right:hover {
+	color: #fff;
+	background: #e8e8e8;
 }
 
 #carousel-left {
@@ -1540,6 +1639,7 @@ figure {
 /*第一屏-概括*/
 
 .building1-box {
+	position: relative;
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
@@ -1547,13 +1647,23 @@ figure {
 	align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
-	height: 910px;
-	background: url(../images/furniture/tu1.jpg) center no-repeat;
-	background-size: 100% 100%;
+	height: 900px;
 	overflow: hidden;
 }
 
+.building1-figure {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 50%;
+	margin-left: -960px;
+	width: 1920px;
+	height: 910px;
+}
+
 .building1-t {
+	position: relative;
+	z-index: 5;
 	color: #fff;
 	text-align: center;
 }
@@ -1641,6 +1751,7 @@ figure {
 /*第一屏-概括*/
 
 .news1-box {
+	position: relative;
 	display: flex;
 	display: -webkit-flex;
 	justify-content: center;
@@ -1649,12 +1760,22 @@ figure {
 	-webkit-align-items: center;
 	width: 100%;
 	height: 560px;
-	background: url(../images/furniture/tu1.jpg) center no-repeat;
-	background-size: 100% 100%;
 	overflow: hidden;
 }
 
+.news1-figure {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 50%;
+	margin-left: -960px;
+	width: 1920px;
+	height: 620px;
+}
+
 .news1-t {
+	position: relative;
+	z-index: 3;
 	color: #fff;
 	text-align: center;
 }
@@ -1787,6 +1908,11 @@ figure {
 	margin-bottom: 85px;
 }
 
+.enter-l li:hover img {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+}
+
 .enter-l li:nth-child(2n+0) {
 	margin-left: 55px;
 }
@@ -1801,6 +1927,8 @@ figure {
 	display: block;
 	width: 100%;
 	height: 100%;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
 }
 
 .enter-c {
@@ -1819,7 +1947,7 @@ figure {
 	text-indent: -.5em;
 }
 
-.enter-l h1 a {
+.enter-l h1 {
 	display: block;
 	padding: 0 10px;
 	font-size: 20px;
@@ -1828,6 +1956,10 @@ figure {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.enter-l a {
+	display: block;
 }
 
 
@@ -1868,8 +2000,8 @@ figure {
 	display: block;
 	width: 100%;
 	height: 100%;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
 }
 
 .enter2-l p {
@@ -1898,12 +2030,20 @@ figure {
 }
 
 .enter4-l li {
-	padding: 30px 100px;
 	border-bottom: 1px solid #b1b1b1;
 	overflow: hidden;
 	font-size: 16px;
 	line-height: 28px;
 	color: #4c4c4c;
+}
+
+.enter4-l li:hover img {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+}
+
+.enter4-l li:hover a {
+	color: #000;
 }
 
 .enter4-img {
@@ -1912,15 +2052,19 @@ figure {
 	width: 320px;
 	height: 220px;
 	margin-right: 70px;
+	overflow: hidden;
 }
 
 .enter4-img img {
 	display: block;
 	width: 100%;
 	height: 100%;
+	margin-right: 70px;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
 }
 
-.enter4-l h1 a {
+.enter4-l h1 {
 	margin-top: 14px;
 	display: block;
 	font-size: 20px;
@@ -1929,6 +2073,15 @@ figure {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.enter4-l a {
+	display: block;
+	padding: 30px 100px;
+	color: #666;
+	overflow: hidden;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
 }
 
 .enter3-c {
@@ -1945,14 +2098,25 @@ figure {
 /*第五屏-活动专区*/
 
 .enter5-section {
+	position: relative;
 	margin-top: 90px;
 	margin-bottom: 160px;
+	height: 680px;
+}
+
+.enter5-figure {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 	background: #666;
-	overflow: hidden;
 }
 
 .enter5-t {
-	margin: 105px 0 0;
+	position: relative;
+	z-index: 3;
+	padding: 105px 0 0;
 	color: #fff;
 	text-align: center;
 }
@@ -2002,17 +2166,31 @@ figure {
 	opacity: 0;
 	transition: opacity .3s ease;
 	-webkit-transition: opacity .3s ease;
+	overflow: hidden;
 }
 
 .enter5-box4:hover .enter5-box3 {
 	opacity: 1;
 }
 
+.enter5-box4:hover .enter5-line {
+	left: 0;
+}
+
+.enter5-line1 {
+	width: 46px;
+	overflow: hidden;
+}
+
 .enter5-line {
+	position: relative;
+	left: -46px;
 	width: 46px;
 	height: 2px;
 	margin: 109px 0 20px 3px;
 	background: #f05d4e;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
 }
 
 .enter-prev,
@@ -2059,8 +2237,13 @@ figure {
 
 /*第一屏*/
 
-.cuplist1-figure {
+.cuplist1-figurebox {
 	height: 790px;
+	overflow: hidden;
+}
+
+.cuplist1-figure {
+	height: 890px;
 }
 
 .cuplist1-box2 {
@@ -2505,6 +2688,7 @@ figure {
 .auxl4-l {
 	max-width: 1280px;
 	margin: 5px auto 0;
+	overflow: hidden;
 }
 
 .auxl4-l li {
@@ -2938,6 +3122,10 @@ figure {
 
 /*第十屏*/
 
+.furnl10-l {
+	overflow: hidden;
+}
+
 .furnl10-l li {
 	display: flex;
 	display: -webkit-flex;
@@ -3138,8 +3326,13 @@ figure {
 
 /*第一屏*/
 
-.cellar1-figure {
+.cellar1-figurebox {
 	height: 930px;
+	overflow: hidden;
+}
+
+.cellar1-figure {
+	height: 1130px;
 }
 
 
@@ -3419,6 +3612,7 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	background: #fafafa;
+	overflow: hidden;
 }
 
 .bath2-box2 {
@@ -3478,6 +3672,7 @@ figure {
 .bath4-box {
 	flex-direction: row-reverse;
 	-webkit-flex-direction: row-reverse;
+	overflow: hidden;
 }
 
 .bath4-box .bath2-box2 {
@@ -3548,7 +3743,6 @@ figure {
 	width: 1280px;
 	padding-left: 20px;
 	margin: 230px auto 260px;
-	overflow: hidden;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
@@ -3585,7 +3779,6 @@ figure {
 	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 130px;
-	overflow: hidden;
 }
 
 .bath7-box3 {
@@ -3627,6 +3820,7 @@ figure {
 	background: #fafafa;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	overflow: hidden;
 }
 
 .bath9-l li {
@@ -3862,6 +4056,30 @@ figure {
 .stairs7-c h1 {
 	font-size: 46px;
 	color: #000;
+}
+
+
+/**/
+
+.bg-mark {
+	position: relative;
+}
+
+.left-mark,
+.right-mark {
+	position: absolute;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	background: #fff;
+}
+
+.left-mark {
+	left: 0;
+}
+
+.right-mark {
+	right: 0;
 }
 
 
