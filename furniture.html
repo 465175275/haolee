@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>豪利</title>
-		<link rel="stylesheet" href="static/styles/lib/swiper-3.4.2.min.css" />
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="static/styles/lib/animate.css" />
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 
@@ -138,10 +136,12 @@
 							<h1>水曲柳</h1>
 						</li>
 					</ul>
-					<div class="open-dropmenu-btn js-open-dropmenu-btn select-none rotate-trans">
-						<i class="iconfont icon-add rotate-trans"></i>
+					<div class="open-dropmenu-wrapper">
+						<div class="open-dropmenu-btn js-open-dropmenu-btn select-none rotate-trans">
+							<i class="iconfont icon-add rotate-trans"></i>
+						</div>
+						<p class="open-dropmenu-tip reverse text-black">展开以进一步了解</p>
 					</div>
-					<p class="open-dropmenu-tip reverse text-black">展开以进一步了解</p>
 				</div>
 				<div class="bg-f2 section-open">
 					<div class="furn-box1">
@@ -183,7 +183,6 @@
 						</div>
 					</div>
 				</div>
-
 			</section>
 			<!--第五屏-制作工艺-->
 			<div class="bg-fff section">
@@ -360,28 +359,17 @@
 					<div class="case-next iconfont icon-arrow-right"></div>
 				</div>
 			</div>
-			<!--js-->
-			<script src="static/scripts/lib/jquery-1.8.3.min.js"></script>
-			<script src="static/scripts/lib/swiper-3.4.2.min.js"></script>
-			<script src="static/scripts/lib/wow.min.js"></script>
-			<script src="static/scripts/lib/skrollr.min.js"></script>
-			<script src="static/scripts/lib/jquery.featureCarousel2.min.js"></script>
-			<script type="text/javascript">
+		</div>
+		<!--js-->
+		<script src="static/scripts/require.js"></script>
+		<script src="static/scripts/main.js"></script>
+		<script type="text/javascript">
+			require(['jquery', 'Swiper', 'featureCarousel2', 'wow', 'openDropmenu'], function($, Swiper, featureCarousel) {
 				$(document).ready(function() {
 					//进入动画初始化
 					if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
 						new WOW().init();
 					}
-					//视差效果
-					var s = skrollr.init({
-						edgeStrategy: 'set',
-						easing: {
-							WTF: Math.random,
-							inverted: function(p) {
-								return 1 - p;
-							}
-						}
-					});
 					//第一屏特效
 					$(".timber-jumpnav").click(function() { //点击事件触发
 						var jumptop = document.documentElement.clientHeight * .8; //获取某个元素距顶部的距离
@@ -393,19 +381,15 @@
 						var ws = $(window).scrollTop() //获取当前滚动高度
 						if(ws > 50) {
 							$(".timber-jumpnav").addClass("active")
-
 						} else {
 							$(".timber-jumpnav").removeClass("active")
-
 						}
 						if(ws > 100) {
 							$(".timber-figure1").addClass("active");
 							$(".timber-c1").addClass("active");
-
 						} else {
 							$(".timber-figure1").removeClass("active");
 							$(".timber-c1").removeClass("active");
-
 						}
 					})
 					//第五屏轮播
@@ -418,43 +402,18 @@
 						topPadding: 0,
 						smallFeatureOffset: -75,
 					});
-
 					//第八屏轮播
 					var mySwiper = new Swiper('.swiper-case', {
 						pagination: '.swiper-pagination',
 						slidesPerView: 'auto',
 						centeredSlides: true,
-						prevButton: '.case-prev',
-						nextButton: '.case-next',
+						navigation: {
+							nextEl: '.case-next',
+							prevEl: '.case-prev',
+						}
 					})
-					/* 展开详情 */
-					$(".open-dropmenu-btn").on('click', function() {
-						$(this).next().toggle('fast');
-						$(this).toggleClass("active");
-						$(this).parent().next().slideToggle({
-							duration: 1000,
-							easing: 'swing',
-						});
-					})
-
-					$('.roundabout_box ul').roundabout({
-						duration: 1000,
-						minScale: .9,
-						autoplay: false,
-						autoplayDuration: 5000,
-						minOpacity: 0,
-						maxOpacity: 1,
-						reflect: false,
-						startingChild: 3,
-						autoplayInitialDelay: 5000,
-						autoplayPauseOnHover: true,
-						enableDrag: true,
-						btnPrev: ".prev",
-						btnNext: ".next",
-					});
-
 				})
-			</script>
+			})
+		</script>
 	</body>
-
 </html>

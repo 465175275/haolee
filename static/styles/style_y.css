@@ -212,9 +212,13 @@ figure {
 }
 
 .timber-box1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	min-height: 100vh;
 }
@@ -240,9 +244,13 @@ figure {
 }
 
 .timber-box2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	margin-top: -20vh;
 	min-height: 100vh;
@@ -306,6 +314,8 @@ figure {
 }
 
 .design-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	float: left;
@@ -342,7 +352,9 @@ figure {
 }
 
 .design-c1 {
-	flex: 5;
+	-webkit-box-flex: 5;
+	    -ms-flex: 5;
+	        flex: 5;
 }
 
 
@@ -701,6 +713,7 @@ figure {
 	margin-top: 15px;
 	font-size: 20px;
 	color: #208bff;
+	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
 }
 
@@ -709,8 +722,8 @@ figure {
 }
 
 .swiper-case {
-	margin-top: 60px;
-	padding-bottom: 180px;
+	margin-top: 60px !important;
+	padding-bottom: 180px !important;
 }
 
 .swiper-case img {
@@ -1034,11 +1047,17 @@ figure {
 }
 
 .cupboard4-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
 	float: right;
 	width: 420px;
@@ -1092,7 +1111,6 @@ figure {
 	-webkit-box-shadow: 0px 10px 20px rgba(226, 226, 226, .8);
 	box-shadow: 0px 10px 20px rgba(226, 226, 226, .8);
 	-webkit-transform: translate3d(0, -10px, 0);
-	-moz-transform: translate3d(0, -10px, 0);
 	transform: translate3d(0, -10px, 0);
 }
 
@@ -1465,6 +1483,8 @@ figure {
 .auxiliary-tab {
 	position: relative;
 	z-index: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	width: 100%;
@@ -1479,15 +1499,24 @@ figure {
 	display: block;
 	width: 100%;
 	height: 100%;
-	flex-shrink: 0;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
-	flex-direction: column;
-	-webkit-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	font-size: 14px;
 	color: #fff;
 	cursor: pointer;
@@ -1640,11 +1669,17 @@ figure {
 
 .building1-box {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
 	height: 900px;
@@ -1696,18 +1731,26 @@ figure {
 }
 
 .build-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-bottom: 170px;
 	overflow: hidden;
 }
 
 .build-l li:nth-child(2n+0) {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .build2-img {
@@ -1752,11 +1795,17 @@ figure {
 
 .news1-box {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
 	height: 560px;
@@ -1932,9 +1981,13 @@ figure {
 }
 
 .enter-c {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 40px 0 12px;
 	padding: 0 10px;
 	font-size: 16px;
@@ -2346,26 +2399,37 @@ figure {
 }
 
 .cup2-l {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-top: 260px;
 }
 
 .cup2-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	flex-shrink: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 	-webkit-flex-shrink: 0;
 	width: 450px;
 	padding: 0 23px;
 }
 
 .cup2-l li:nth-child(2n+0) {
-	flex-direction: column-reverse;
-	-webkit-flex-direction: column-reverse;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: column-reverse;
+	        flex-direction: column-reverse;
 }
 
 .cup2-l img {
@@ -2375,13 +2439,21 @@ figure {
 }
 
 .cuplist2-box4 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
 	height: 350px;
 	padding: 0 25px;
@@ -2436,12 +2508,17 @@ figure {
 }
 
 .cup4-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 }
 
 .cup4-l li:nth-child(2n+0) {
-	flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .cup4-l li:nth-child(2n+0) .cuplist4-left {
@@ -2449,7 +2526,10 @@ figure {
 }
 
 .cup4-l li:nth-child(2n+0) .cuplist4-box {
-	flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .cup4-l li:nth-child(2n+0) .cuplist4-c {
@@ -2469,9 +2549,13 @@ figure {
 }
 
 .cuplist4-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	width: 50%;
 	box-sizing: border-box;
@@ -2562,9 +2646,13 @@ figure {
 }
 
 .auxlist1-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	background: #eeeaeb;
 }
@@ -2581,13 +2669,18 @@ figure {
 	display: block;
 	min-width: 100%;
 	height: 620px;
-	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	        transform: translate(-50%);
 }
 
 .auxlist1-box2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	width: 50%;
 }
@@ -2692,9 +2785,13 @@ figure {
 }
 
 .auxl4-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 245px;
 }
@@ -2705,9 +2802,13 @@ figure {
 }
 
 .auxl4-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	margin-left: 55px;
 }
@@ -2725,17 +2826,26 @@ figure {
 /*第五屏*/
 
 .auxl5-l {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
 	margin: 285px auto 0;
 }
 
 .auxl5-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	padding: 0 20px;
 	max-width: 400px;
 }
@@ -2774,22 +2884,32 @@ figure {
 /*第六屏*/
 
 .auxl6-l {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	margin: 50px auto 0;
 	width: 1180px;
 }
 
 .auxl6-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	flex-shrink: 0;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 	-webkit-flex-shrink: 0;
 	margin-top: 215px;
 	padding: 0 10px;
@@ -2901,11 +3021,15 @@ figure {
 }
 
 .furnl2-box2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 }
 
 .furnl2-box3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	width: 50%;
@@ -2925,7 +3049,10 @@ figure {
 }
 
 .furnl2-t {
-	flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .furnl2-t p {
@@ -2961,7 +3088,7 @@ figure {
 }
 
 .swiper-furnl1 .swiper-pagination {
-	bottom: 250px;
+	bottom: 250px !important;
 }
 
 .swiper-furnl1 .swiper-pagination-bullet {
@@ -3007,9 +3134,13 @@ figure {
 }
 
 .furnl4-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 220px;
 }
@@ -3020,9 +3151,13 @@ figure {
 }
 
 .furnl4-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 }
 
@@ -3085,9 +3220,12 @@ figure {
 /*第八屏*/
 
 .furnl8-l {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 }
 
@@ -3127,21 +3265,29 @@ figure {
 }
 
 .furnl10-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 220px;
 }
 
 .furnl10-l li:nth-child(2n+0) {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .furnl10-l li:nth-child(2n+0) .furnl4-box {
-	flex-direction: row;
-	-webkit-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .furnl10-l li:nth-child(2n+0) .auxlist3-c {
@@ -3149,8 +3295,10 @@ figure {
 }
 
 .furnl10-l .furnl4-box {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 	width: 50%;
 }
 
@@ -3274,9 +3422,13 @@ figure {
 /*分页*/
 
 .pagintion2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
 	margin: 80px 0 135px;
 	text-align: center;
@@ -3339,6 +3491,8 @@ figure {
 /*第二屏*/
 
 .cellar2-box1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	height: 820px;
@@ -3347,10 +3501,14 @@ figure {
 }
 
 .cellar2-box2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 50%;
 	padding: 0 17px 0 0;
 	box-sizing: border-box;
@@ -3362,11 +3520,17 @@ figure {
 }
 
 .cellar2-box3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
 	height: 50%;
 }
@@ -3380,6 +3544,8 @@ figure {
 /*第三屏*/
 
 .cellar3-l {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	width: 1280px;
@@ -3387,10 +3553,14 @@ figure {
 }
 
 .cellar3-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	width: 40%;
 	padding: 0 17px 0 0;
 	box-sizing: border-box;
@@ -3415,16 +3585,20 @@ figure {
 /*第四屏*/
 
 .cellar4-box .cellar2-box2 {
-	flex-direction: column-reverse;
-	-webkit-flex-direction: column-reverse;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: column-reverse;
+	        flex-direction: column-reverse;
 }
 
 
 /*第五屏*/
 
 .cellar5-l {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .cellar5-l li:nth-child(1) {
@@ -3463,13 +3637,17 @@ figure {
 }
 
 .cellar7-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 }
 
 .cellar7-l li:nth-child(2n+0) {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .cellar7-l li:nth-child(2n+0) .cellar7-left {
@@ -3477,8 +3655,10 @@ figure {
 }
 
 .cellar7-l li:nth-child(2n+0) .cellar7-box {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .cellar7-l li:nth-child(2n+0) .cellar7-c {
@@ -3499,11 +3679,17 @@ figure {
 }
 
 .cellar7-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	-webkit-justify-content: center;
 	width: 50%;
 	padding: 0 30px 0 0;
@@ -3609,6 +3795,8 @@ figure {
 /*第二屏*/
 
 .bath2-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	background: #fafafa;
@@ -3616,11 +3804,17 @@ figure {
 }
 
 .bath2-box2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 	width: 50%;
 }
@@ -3635,10 +3829,16 @@ figure {
 
 .bath3-box {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 670px;
 }
 
@@ -3670,14 +3870,18 @@ figure {
 /*第四屏*/
 
 .bath4-box {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 	overflow: hidden;
 }
 
 .bath4-box .bath2-box2 {
-	flex-direction: row;
-	-webkit-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .bath4-box .cuplist4-c {
@@ -3748,11 +3952,17 @@ figure {
 }
 
 .bath7-box1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	-webkit-align-items: flex-end;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 }
 
@@ -3774,9 +3984,13 @@ figure {
 }
 
 .bath7-box2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 130px;
 }
@@ -3824,11 +4038,17 @@ figure {
 }
 
 .bath9-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 180px;
 }
@@ -3849,8 +4069,10 @@ figure {
 }
 
 .bath9-l li:nth-child(2n+0) {
-	flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
 }
 
 .bath9-l li:first-child {
@@ -3858,9 +4080,13 @@ figure {
 }
 
 .bath9-l li:first-child {
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	-webkit-align-items: flex-start;
 }
 
@@ -3871,11 +4097,17 @@ figure {
 }
 
 .bath9-c2 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	width: 100%;
 }
@@ -3933,9 +4165,13 @@ figure {
 }
 
 .stairs3-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	-webkit-justify-content: space-between;
 	padding: 135px 115px 135px 90px;
 	margin-top: 20px;
@@ -3950,9 +4186,13 @@ figure {
 }
 
 .stairs3-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-align-items: center;
 }
 
