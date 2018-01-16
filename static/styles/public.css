@@ -1332,3 +1332,24 @@ template {
 .text_whlie:hover {
 	color: #FFFFFF;
 }
+
+.bg-mark{
+	position: relative;
+}
+
+.left-mark,
+.right-mark {
+	position: absolute;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	background: #fff;
+}
+
+.left-mark {
+	left: 0;
+}
+
+.right-mark {
+	right: 0;
+}

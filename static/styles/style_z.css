@@ -435,7 +435,7 @@
 }
 
 .update-width4 {
-	width: 194px !important;
+	width: 193px !important;
 }
 
 .update-width5 {
@@ -545,7 +545,9 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
 	overflow: hidden;
 	transition: opacity 1s;
 	opacity: 1;
@@ -595,6 +597,7 @@
 	text-align: center;
 	font-size: 60px;
 	transform: translateX(-50%) translateY(-100%);
+	transition: all .6s;
 	z-index: 2;
 }
 
@@ -655,25 +658,30 @@
 
 .modify .section1 {
 	transform: translateY(-190px);
+	transition: all .6s;
 }
 
 .modify .section1-back:after {
 	opacity: 1;
+	transition: all .6s;
 }
 
 .modify .section2-content {
 	opacity: 1;
 	transform: translateY(100px);
+	transition: all .6s;
 }
 
 .modify .section1-subline {
 	opacity: 1;
 	transform: translateX(0);
+	transition: all .6s;
 }
 
 .modify .section1-title {
 	transform: translateX(-50%) translateY(20%);
 	color: #333;
+	transition: all .6s;
 }
 
 
@@ -1310,6 +1318,14 @@
 	margin-top: 30px;
 }
 
+.household-container .col6-img-title{
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	text-align: center;
+}
+
 
 /* 案例展示 */
 
@@ -1402,6 +1418,14 @@
 	color: #fff;
 	font-size: 28px;
 	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all .3s;
+}
+
+.household-container .section7-div2 .swiper-buttons-prev:hover,
+.household-container .section7-div2 .swiper-buttons-next:hover{
+	background-color: #000;
 }
 
 .household-container .section7-col6>div>img {
@@ -1410,6 +1434,12 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
+	transition: all .3s;
+}
+
+.household-container .section7-col6>div>img:hover{
+	transform: scale(1.1);
+	transition: all .3s;
 }
 
 .household-container .swiper-pagination-bullet-active {
@@ -1461,7 +1491,6 @@
 	color: #b1b1b1;
 	position: relative;
 }
-
 
 /* 整体家居--结束 */
 
@@ -2981,6 +3010,22 @@
 	text-align: center;
 }
 
+.cellar-container .c-section8 .swiper-buttons-prev:hover,
+.cellar-container .c-section8 .swiper-buttons-next:hover{
+	background-color: #000;
+}
+
+.cellar-container .c-section4 .update-swiper-prev{
+	right: 28%!important;
+	left: auto!important;
+	transform: rotate(180deg);
+}
+
+.cellar-container .c-section4 .update-swiper-next{
+	left: 28%!important;
+	transform: rotate(180deg);
+}
+
 /* 酒窖 -- 结束  */
 
 /* 走进豪利 -- 开始 */
@@ -3428,47 +3473,47 @@
 /* 套装门 案例 -- 结束 */
 
 /* 整体家居案例 --开始 */
-.type-0 .hholdlist-item-info{
+.hholdlist-container .type-0 .hholdlist-item-info{
 	padding-top: 115px;
 	text-align: center;
 }
 
-.type-1 .hholdlist-item-img{
+.hholdlist-container .type-1 .hholdlist-item-img{
 	width: 100%;
 	height: 800px;
 	margin-top: 80px;
 }
 
-.type-1 .hholdlist-item-info{
+.hholdlist-container .type-1 .hholdlist-item-info{
 	margin-top: 75px;
 }
 
-.type-1 .type-width{
+.hholdlist-container .type-1 .type-width{
 	max-width: 750px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.type-2 {
+.hholdlist-container .type-2 {
 	width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.type-2 .hholdlist-item-img{
+.hholdlist-container .type-2 .hholdlist-item-img{
 	width: 100%;
 	height: 770px;
 	margin-top: 160px;
 }
 
-.type-2 .hholdlist-item-info{
+.hholdlist-container .type-2 .hholdlist-item-info{
 	max-width: 790px;
 	margin-top: 70px;
 	padding-left: 60px;
 	box-sizing: border-box;
 }
 
-.type-3{
+.hholdlist-container .type-3{
 	max-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -3476,29 +3521,29 @@
 	overflow: hidden;
 }
 
-.type-3 .hholdlist-item-info{
+.hholdlist-container .type-3 .hholdlist-item-info{
 	max-width: 510px;
 	padding-top: 169px;
 	float: left;
 }
 
-.type-3 .hholdlist-item-img{
+.hholdlist-container .type-3 .hholdlist-item-img{
 	width: 650px;
 	height: 740px;
 	float: right;
 }
 
-.type-4{
+.hholdlist-container .type-4{
 	width: 100%;
 	margin-top: 240px;
 }
 
-.type-4 .hholdlist-item-img{
+.hholdlist-container .type-4 .hholdlist-item-img{
 	width: 100%;
 	height: 800px;
 }
 
-.type-4 .hholdlist-item-info{
+.hholdlist-container .type-4 .hholdlist-item-info{
 	max-width: 755px;
 	height: auto;
 	margin-left: auto;
@@ -3507,7 +3552,7 @@
 	text-align: center;
 }
 
-.household-list-col4{
+.hholdlist-container .household-list-col4{
 	width: 1290px;
 	height: auto;
 	margin-left: auto;
@@ -3516,26 +3561,26 @@
 	text-align: justify;
 }
 
-.type-5{
+.hholdlist-container .type-5{
 	max-width: 630px;
 	height: auto;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.type-5 .hholdlist-item-img{
+.hholdlist-container .type-5 .hholdlist-item-img{
 	width: 100%;
 	height: 570px;
 	margin-top: 60px;
 }
 
-.type-5 .hholdlist-item-info{
+.hholdlist-container .type-5 .hholdlist-item-info{
 	max-width: 504px;
 	height: auto;
 	margin-left: 40px;
 }
 
-.type-6{
+.hholdlist-container .type-6{
 	width: 1300px;
 	height: auto;
 	margin-left: auto;
@@ -3543,7 +3588,7 @@
 	margin-top: 270px;
 }
 
-.type-6 .hholdlist-item-info{
+.hholdlist-container .type-6 .hholdlist-item-info{
 	max-width: 1050px;
 	height: auto;
 	margin-left: auto;
@@ -3551,25 +3596,25 @@
 	text-align: center;
 }
 
-.type-6 .hholdlist-item-img{
+.hholdlist-container .type-6 .hholdlist-item-img{
 	width: 100%;
 	height: auto;
 	margin-top: 70px;
 	text-align: justify;
 }
 
-.type-6 .hholdlist-item-img .child-img{
+.hholdlist-container .type-6 .hholdlist-item-img .child-img{
 	width: 590px;
 	height: 490px;
 	display: inline-block;
 }
 
-.type-6 .hholdlist-item-img .update-img{
+.hholdlist-container .type-6 .hholdlist-item-img .update-img{
 	width: 380px;
 	height: 475px;
 }
 
-.type-7{
+.hholdlist-container .type-7{
 	max-width: 1300px;
 	height: auto;
 	margin-left: auto;
@@ -3578,7 +3623,7 @@
 	margin-bottom: 175px;
 }
 
-.type-7 .hholdlist-item-info{
+.hholdlist-container .type-7 .hholdlist-item-info{
 	max-width: 750px;
 	height: auto;
 	margin-left: auto;
@@ -3586,7 +3631,7 @@
 	text-align: center;
 }
 
-.type-7 .hholdlist-item-img{
+.hholdlist-container .type-7 .hholdlist-item-img{
 	width: 100%;
 	height: 680px;
 	margin-top: 75px;

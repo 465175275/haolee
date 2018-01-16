@@ -3,21 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>整体家居</title>
-		<link rel="stylesheet" href="static/styles/lib/common.css" />
-		<link rel="stylesheet" href="static/styles/style.css"/>
-		<link rel="stylesheet" href="static/styles/lib/swiper.min.css"/>
-		<style>
-			.header-nav{
-				height:190px;
-				width: 100%;
-				background-color:#f00;
-			}
-			
-			
-		</style>
+		<link rel="stylesheet" href="static/styles/public.css"/>
+		<link rel="stylesheet" href="static/styles/style_z.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
+		<link rel="stylesheet" href="static/styles/lib/animate.css" />
 	</head>
 	<body>
-		<header class="header-nav"></header>
+		<header class="header-nav" style="top: 0;"></header>
 		<div class="household-container">
 			<!-- 整体家居 -->
 			<section class="section1">
@@ -48,7 +41,7 @@
 						<img src="static/images/cd-background-1.jpg" alt=""/>
 					</div>
 					<div class="section3-foot">
-						<div class="section3-foot-left">
+						<div class="section3-foot-left wow fadeInLefts" data-wow-duration=".5s" data-wow-delay=".3s" data-wow-offset="30">
 							<div class="foot-left-img">
 								<img src="static/images/cd-background-1.jpg" alt=""/>
 							</div>
@@ -57,7 +50,7 @@
 								<p>通过功能、风水、价格、风格、施工等五 个方面完成前期工作，锁定了总体方向。</p>
 							</div>
 						</div>
-						<div class="section3-foot-center">
+						<div class="section3-foot-center wow fadeInLefts" data-wow-duration=".7s" data-wow-delay=".5s" data-wow-offset="30">
 							<div class="foot-left-img">
 								<img src="static/images/cd-background-1.jpg" alt=""/>
 							</div>
@@ -66,7 +59,7 @@
 								<p>将整体效果通过规范的图纸形式并配以文 字说明表出来，形成了“完全设计方案。</p>
 							</div>
 						</div>
-						<div class="section3-foot-right">
+						<div class="section3-foot-right wow fadeInLefts" data-wow-duration=".9s" data-wow-delay=".7s" data-wow-offset="30">
 							<div class="foot-left-img">
 								<img src="static/images/cd-background-1.jpg" alt=""/>
 							</div>
@@ -165,19 +158,19 @@
 						<p>整体家居的工艺流程，每一个环节起到了十分重要的作用，缺 一不可。正是这些制作工艺，成就了一个又一个经典。</p>
 					</div>
 					<div class="section4-div1-col4">
-						<div class="section4-col4-child">
+						<div class="section4-col4-child wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="30">
 							<img src="static/images/cd-background-1.jpg" alt=""/>
 							<span>备料</span>
 						</div>
-						<div class="section4-col4-child add-margin">
+						<div class="section4-col4-child add-margin wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="30">
 							<img src="static/images/cd-background-1.jpg" alt=""/>
 							<span>木工</span>
 						</div>
-						<div class="section4-col4-child add-margin">
+						<div class="section4-col4-child add-margin wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".6s" data-wow-offset="30">
 							<img src="static/images/cd-background-1.jpg" alt=""/>
 							<span>涂装</span>
 						</div>
-						<div class="section4-col4-child add-margin">
+						<div class="section4-col4-child add-margin wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".8s" data-wow-offset="30">
 							<img src="static/images/cd-background-1.jpg" alt=""/>
 							<span>包装</span>
 						</div>
@@ -347,25 +340,41 @@
 				            <div class="swiper-slide">
 				            	<div class="section7-col6">
 									<div class="pub-back5c">
-										<!--<img src="static/images/cd-background-1.jpg" alt=""/>-->
-										宫廷法式
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<span class="col6-img-title">
+											宫廷法式
+										</span>
 									</div>
 									<div class="pub-back82">
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<span class="col6-img-title">
 										欧式古典
+										</span>
 									</div>
 									<div class="pub-back5c">
-										<!--<img src="static/images/cd-background-1.jpg" alt=""/>-->
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<span class="col6-img-title">
 										经典美式
+										</span>
 									</div>
 									<div class="pub-back82">
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<span class="col6-img-title">
 										传统中式
+										</span>
 									</div>
 									<div class="pub-back5c">
-										<!--<img src="static/images/cd-background-1.jpg" alt=""/>-->
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<span class="col6-img-title">
 										乡村田园
+										</span>
 									</div>
 									<div class="pub-back82">
+										<img src="static/images/cd-background-1.jpg" alt=""/>
+										<span class="col6-img-title">
 										简欧风尚
+										</span>
 									</div>
 								</div>
 				            </div>
@@ -391,10 +400,13 @@
 </html>
 <script type="text/javascript" src="static/scripts/lib/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="static/scripts/common.js" ></script>
-<script type="text/javascript" src="static/scripts/lib/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+<script type="text/javascript" src="static/scripts/lib/wow.min.js" ></script>
 <script>
 	$(function(){
-		// 获取文档的高度 
+		//动画js初始化
+		new WOW().init();
+		// 获取文档的高度
 		getFirstHeight();
 		//swiper初始化
 		var swiper = new Swiper('.swiper-container', {
@@ -418,6 +430,11 @@
 			$('body').removeClass('modify');
 		}
 	}
+	$('.swiper-buttons-next,.swiper-buttons-prev').hover(function(){
+		$(this).children().css({'color':'#fff'});
+	},function(){
+		$(this).children().css({'color':'#b1b1b1'});
+	})
 	// 获取文档的高度 
 	function getFirstHeight() {
 		var bodyHeight = $(window).height();
