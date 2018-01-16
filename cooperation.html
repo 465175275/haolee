@@ -1,13 +1,154 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_x.css">
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_thyn3s7cajxajor.css">
+		<style>
+			@-webkit-keyframes bounceInUp1 {
+				0%,
+				100%,
+				60%,
+				75%,
+				90% {
+					-webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+					animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+				}
+				0% {
+					-webkit-transform: translateY(50px);
+					transform: translateY(50px);
+					opacity: 0;
+				}
+				100% {
+					-webkit-transform: translateY(0);
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+			
+			@keyframes bounceInUp1 {
+				0%,
+				100%,
+				60%,
+				75%,
+				90% {
+					-webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+					animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+				}
+				0% {
+					-webkit-transform: translateY(50px);
+					transform: translateY(50px);
+					opacity: 0;
+				}
+				100% {
+					-webkit-transform: translateY(0);
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+			
+			.bounceInUp1 {
+				-webkit-animation-name: bounceInUp1;
+				animation-name: bounceInUp1;
+			}
+			
+			@-webkit-keyframes bounceInLeft1 {
+				0%,
+				100%,
+				60%,
+				75%,
+				90% {
+					-webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+					transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+				}
+				0% {
+					-webkit-transform: translateX(-100%);
+					transform: translateX(-100%);
+					opacity: 0;
+				}
+				100% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+			
+			@keyframes bounceInLeft1 {
+				0%,
+				100%,
+				60%,
+				75%,
+				90% {
+					-webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+					transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+				}
+				0% {
+					-webkit-transform: translateX(-100%);
+					transform: translateX(-100%);
+					opacity: 0;
+				}
+				100% {
+					-webkit-transform: translateX(0);
+					transform: translateX(0);
+					opacity: 1;
+				}
+			}
+			
+			.bounceInLeft1 {
+				-webkit-animation-name: bounceInLeft1;
+				animation-name: bounceInLeft1;
+			}
+			
+			.plan-box2 {
+				overflow: hidden;
+				width: 100%;
+				color: #fff;
+				position: relative;
+			}
+			
+			.plan-box2 img {
+				width: 100%;
+				-webkit-transition: 500ms linear;
+				transition: 500ms linear;
+				-webkit-filter: blur(10px);
+				filter: blur(10px);
+			}
+			
+			.plan-box2.active img {
+				-webkit-filter: blur(0px);
+				filter: blur(0px);
+			}
+			
+			.plan-box2-2 {
+				-webkit-transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+				transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+				opacity: 0;
+				-webkit-transform: translateY(calc(0));
+				-ms-transform: translateY(calc(0));
+				transform: translateY(calc(0));
+				color: #fff;
+				font-size: 40px;
+				line-height: 64px;
+				margin-top: 160px;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -490px;
+			}
+			
+			.plan-box2.active .plan-box2-2 {
+				opacity: 1;
+				-webkit-transform: translateY(-60px);
+				-ms-transform: translateY(-60px);
+				transform: translateY(-60px);
+			}
+		</style>
 	</head>
+
 	<body>
 		<!-- 头部 -->
 		<div class="header-nav">
@@ -26,21 +167,21 @@
 				</div>
 				<!-- 导航 -->
 				<div class="header-nav-li">
-					<ul >
+					<ul>
 						<li>
-							<a href="" >首页</a>
+							<a href="">首页</a>
 						</li>
 						<li class="active">
-							<a href="" >产品目录</a>
+							<a href="">产品目录</a>
 						</li>
 						<li>
-							<a href="" >案例展示</a>
+							<a href="">案例展示</a>
 						</li>
 						<li>
-							<a href="" >合作加盟</a>
+							<a href="">合作加盟</a>
 						</li>
 						<li>
-							<a href="" >豪利品牌</a>
+							<a href="">豪利品牌</a>
 						</li>
 					</ul>
 				</div>
@@ -48,181 +189,188 @@
 		</div>
 		<!-- 主体部分 -->
 		<div class="cooperation-container container">
-            <div class="slogen-section section parallax-section1">
-                <div class="slogen-header text-center js-parallax" style="transition: all 1.5s ease-in-out;">
-                    <p class="slogen-subtitle">合作共赢</p>
-                    <h2 class="slogen-headline">豪利致力于打造双赢的合作模式</h2>
-                </div>
-                <div class="slogen-banner text-center" style="width: 100%; height:615px;background-color:#666;"></div>
-                <div class="slogen-descr block-center">
-                    <p>原木定制家居是一个具有广阔市场前景的新兴朝阳行业，若想在此行业开辟一片新的天空，需要经营者具备科学先进的营销理念与销售策略，更需要具有一个能使终端消费者感到满意、贴心的服务态度。因此，我们处于对意向性加盟商自身以及终端消费者负责的角度，将严格甄选每一位加盟者，选择真正渴求发展、有实力、有远见、讲诚信、具备高度服务意识的投资者合作，以确保后期双方能够进行愉快、顺利的合作，共同迈向成功，同时也是确保每一位选择豪利的顾客，都能享受到豪利出色的品质与专业化的服务。</p>
-                </div>
-            </div>
-            <!-- 四大优势 -->
-            <div class="advantage-section section">
-                <div class="section-top block-center nopad">
-                    <figure class="advantage" style="width: 100%; height:615px; background-color:#999;"></figure>
-                    <div class="section-top-header js-parallax" style="transition: all 1.5s ease-in-out;">
-                        <div class="section-top-subtitle">四大优势</div>
-                        <div class="section-top-headline">打造原木家居第一品牌</div>
-                    </div>
-                </div>
-                <div class="section-body block-center">
-                    <div class="section-body-paragraph">
-                        <p>豪利近20年历史铸就的不仅是专业品质，更多是经过与每个设计师的分享，才慢慢堆砌出这些如天才般的产品设计。豪利将这些不同概念的灵感都置入品牌中，从古典欧式到现代感十足的简欧系列，在豪利的产品线中，顾客能轻易挑选到适合自己需求的设计，产品被广泛应用于全国各地的高端住宅区、别墅区与各种商业空间内。</p>
-                    </div>
-                    <div class="section-body-list">
-                        <ul>
-                            <li>
-                                <div class="advantage-item wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
-                                    <img src="static/images/cooperation/advantage_icon1.png">
-                                    <h4>品牌战略</h4>
-                                    <p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
-                                </div>
-                                <div class="bottom-line-wrapper">
-                                    <div class="bottom-line wow bounceInLeft animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="advantage-item wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
-                                    <img src="static/images/cooperation/advantage_icon2.png">
-                                    <h4>工厂保障</h4>
-                                    <p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
-                                </div>
-                                <div class="bottom-line-wrapper">
-                                    <div class="bottom-line wow bounceInLeft animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="advantage-item wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
-                                    <img src="static/images/cooperation/advantage_icon3.png">
-                                    <h4>产品研发</h4>
-                                    <p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
-                                </div>
-                                <div class="bottom-line-wrapper">
-                                    <div class="bottom-line wow bounceInLeft animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="advantage-item wow bounceInUp" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
-                                    <img src="static/images/cooperation/advantage_icon4.png">
-                                    <h4>服务保障</h4>
-                                    <p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
-                                </div>
-                                <div class="bottom-line-wrapper">
-                                    <div class="bottom-line wow bounceInLeft animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- 培训体系 -->
-            <div class="training-section section">
-                <div class="section-body nopad block-center clearfix">
-                    <figure class="training-figure pull-left" style="background-color: #999;"></figure>
-                    <div class="section-body-cont pull-right">
-                        <div class="section-body-cont-headline">培训体系</div>
-                        <div class="section-body-cont-subtitle">专业的培训造就人才</div>
-                        <div class="section-body-cont-text">
-                            <p>豪利始终把人才作为公司最重要的财富，尤其作为豪利重要组成成员的加盟商及其团队，也是我们人才体系中的重要组成部分。公司整合集团内外部资源，为加盟商及其团队提供分类、分层的培训体系，从理念到行动、方法到工具等多维度、系统性的培训。培训内容涵盖产品知识、产品设计、活动策划、营销技巧、店面管理等方面专业的培训。对于大型工程项目，豪利总部可委派区域经理协助促成签单以及安排专业设计师提供设计支持。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 加盟要求 -->
-            <div class="demand-section section">
-                <figure class="demand-figure" style="background-color:#999;"></figure>
-                <div class="section-top nopad">
-                    <div class="section-top-subtitle">加盟要求</div>
-                    <div class="section-top-headline">良好的地理位置</br>是营销成功的先决条件</p>
-                    </div>
-                </div>
-                <div class="section-body block-center">
-                    <div class="section-body-paragraph">
-                        <p>原木定制家居是一个具有广阔市场前景的新兴朝阳行业，若想在此行业开辟一片新的天空，需要经营者具备科学先进的营销理念与销售策略，更需要具有一个能使终端消费者感到满意、贴心的服务态度。因此，我们处于对意向性加盟商自身以及终端消费者负责的角度，将严格甄选每一位加盟者，选择真正渴求发展、有实力、有远见、讲诚信、具备高度服务意识的投资者合作。同时店面具备良好的地理位置是营销取得成功的先决条件。</p>
-                    </div>
-                    <div class="section-body-cont">
-                        <div class="grid part">
-                            <div class="grid-row">
-                                <div class="grid-cell vc">
-                                    <div class="part-cont">
-                                        <div class="part-title">投资人要求</div>
-                                        <div class="part-descr">
-                                            <p>1.具有独立合法的法人或自然人资格</p>
-                                            <p>2.认同并接受豪利企业文化理念、经销加盟模式和运营规范</p>
-                                            <p>3.具备丰厚的投资实力和传播豪利品牌文化的热情</p>
-                                            <p>4.具备零售运营经验与品牌经营意识，能够接受豪利的运营管理模式</p>
-                                            <p>5.具备理性投资心态和承担风险的能力，能够客观地看待投资与回报的关系</p>
-                                            <p>6.对家居建材行业有一定的了解，最好在当地拥有一定社会资源</p>
-                                            <p>7.具备符合加盟要求的经营场所</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid-cell">
-                                    <div class="part-img pull-right" style="background-color:#999;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid part">
-                            <div class="grid-row">
-                                <div class="grid-cell">
-                                    <div class="part-img" style="background-color:#999;"></div>
-                                </div>
-                                <div class="grid-cell vc">
-                                    <div class="part-cont">
-                                        <div class="part-title">店面要求</div>
-                                        <div class="part-descr">
-                                            <p>1.经销店面须位于专业家居建材商场或商业街主干道</p>
-                                            <p>2.专卖店面积应不低于150平米</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 加盟流程 -->
-            <div class="process-section section">
-                <div class="section-top block-center">
-                    <div class="section-top-headline">加盟流程</div>
-                    <div class="section-top-subtitle">
-                        <p>为确保生产商与加盟商的权益得到完善的保障，豪利制定了科学完善的加盟合作流程，在确保双方对对方实力、理念与筹备进度完全了解的基础上，加盟程序得以透明地执行，并确保双方权益受到法律保护。在加盟前后，豪利总部将与您共同完成每一个流程，确保您得到最完善的支持。</p>
-                    </div>
-                </div>
-                <div class="section-body nopad">
-                    <div class="section-body-cont">
-                        <div class="process-list-container swiper-container">
-                            <ul class="swiper-wrapper">
-                                <li class="swiper-slide">
-                                    <img src="static/images/cooperation/process_icon1.png">
-                                    <p>意向性沟通</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="static/images/cooperation/process_icon2.png">
-                                    <p>提交加盟申请</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="static/images/cooperation/process_icon3.png">
-                                    <p>初次会面洽谈</p>
-                                </li>
-                                <li class="swiper-slide">
-                                    <img src="static/images/cooperation/process_icon4.png">
-                                    <p>双向实地考察</p>
-                                </li>
-                            </ul>
-                            <div class="swiper-pagination"></div>
-                            <!-- 导航按钮 -->
-                            <div class="slide-btn slide-btn-prev"><i class="iconfont icon-arrow-left"></i></div>
-                            <div class="slide-btn slide-btn-next"><i class="iconfont icon-arrow-right"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 网点查询 -->
-            <div class="map-container" id="map-container"></div>
+			<div class="slogen-section section parallax-section1">
+				<div class="slogen-header text-center js-parallax" style="transition: all 1.5s ease-in-out;">
+					<p class="slogen-subtitle">合作共赢</p>
+					<h2 class="slogen-headline">豪利致力于打造双赢的合作模式</h2>
+				</div>
+				<div class="slogen-banner text-center" style="width: 100%; height:615px;background-color:#666;"></div>
+				<div class="slogen-descr block-center wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10">
+					<p>原木定制家居是一个具有广阔市场前景的新兴朝阳行业，若想在此行业开辟一片新的天空，需要经营者具备科学先进的营销理念与销售策略，更需要具有一个能使终端消费者感到满意、贴心的服务态度。因此，我们处于对意向性加盟商自身以及终端消费者负责的角度，将严格甄选每一位加盟者，选择真正渴求发展、有实力、有远见、讲诚信、具备高度服务意识的投资者合作，以确保后期双方能够进行愉快、顺利的合作，共同迈向成功，同时也是确保每一位选择豪利的顾客，都能享受到豪利出色的品质与专业化的服务。</p>
+				</div>
+			</div>
+			<!-- 四大优势 -->
+			<div class="advantage-section section">
+				<div class="section-top block-center nopad">
+					<div class="plan-box2">
+						<img src="http://img.xiaomafeiteng.com/tpl/static/newhome/assets/images/plan/plan-section3-1.jpg">
+						<div class="wp1 plan-box2-2">
+							<div class="section-top-subtitle">四大优势</div>
+							<div class="section-top-headline">打造原木家居第一品牌</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="section-body block-center">
+					<div class="section-body-paragraph wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="10">
+						<p>豪利近20年历史铸就的不仅是专业品质，更多是经过与每个设计师的分享，才慢慢堆砌出这些如天才般的产品设计。豪利将这些不同概念的灵感都置入品牌中，从古典欧式到现代感十足的简欧系列，在豪利的产品线中，顾客能轻易挑选到适合自己需求的设计，产品被广泛应用于全国各地的高端住宅区、别墅区与各种商业空间内。</p>
+					</div>
+					<div class="section-body-list">
+						<ul>
+							<li>
+								<div class="advantage-item wow bounceInUp1" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
+									<img src="static/images/cooperation/advantage_icon1.png">
+									<h4>品牌战略</h4>
+									<p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
+								</div>
+								<div class="bottom-line-wrapper">
+									<div class="bottom-line wow bounceInLeft1 animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20"></div>
+								</div>
+							</li>
+							<li>
+								<div class="advantage-item wow bounceInUp1" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
+									<img src="static/images/cooperation/advantage_icon2.png">
+									<h4>工厂保障</h4>
+									<p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
+								</div>
+								<div class="bottom-line-wrapper">
+									<div class="bottom-line wow bounceInLeft1 animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20">
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="advantage-item wow bounceInUp1" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
+									<img src="static/images/cooperation/advantage_icon3.png">
+									<h4>产品研发</h4>
+									<p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
+								</div>
+								<div class="bottom-line-wrapper">
+									<div class="bottom-line wow bounceInLeft1 animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20"></div>
+								</div>
+							</li>
+							<li>
+								<div class="advantage-item wow bounceInUp1" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="20">
+									<img src="static/images/cooperation/advantage_icon4.png">
+									<h4>服务保障</h4>
+									<p>22年品牌文化沉淀，不惧无人问津。致力于打造艺术收藏级文化家居品牌。</p>
+								</div>
+								<div class="bottom-line-wrapper">
+									<div class="bottom-line wow bounceInLeft1 animated" data-wow-duration="1s" data-wow-delay="0s" data-wow-offset="20"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 培训体系 -->
+			<div class="training-section section">
+				<div class="section-body nopad block-center clearfix">
+					<figure class="training-figure pull-left" style="background-color: #999;"></figure>
+					<div class="section-body-cont pull-right">
+						<div class="section-body-cont-headline">培训体系</div>
+						<div class="section-body-cont-subtitle">专业的培训造就人才</div>
+						<div class="section-body-cont-text">
+							<p>豪利始终把人才作为公司最重要的财富，尤其作为豪利重要组成成员的加盟商及其团队，也是我们人才体系中的重要组成部分。公司整合集团内外部资源，为加盟商及其团队提供分类、分层的培训体系，从理念到行动、方法到工具等多维度、系统性的培训。培训内容涵盖产品知识、产品设计、活动策划、营销技巧、店面管理等方面专业的培训。对于大型工程项目，豪利总部可委派区域经理协助促成签单以及安排专业设计师提供设计支持。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 加盟要求 -->
+			<div class="demand-section section">
+				
+				<div class="plan-box2">
+						<img src="http://img.xiaomafeiteng.com/tpl/static/newhome/assets/images/plan/plan-section3-1.jpg">
+						<div class="wp1 plan-box2-2">
+							<div class="section-top-subtitle">加盟要求</div>
+					<div class="section-top-headline">良好的地理位置</br>是营销成功的先决条件</p>
+						</div>
+					</div>
+				
+			
+				<div class="section-body block-center">
+					<div class="section-body-paragraph" style="width: 750px;">
+						<p>原木定制家居是一个具有广阔市场前景的新兴朝阳行业，若想在此行业开辟一片新的天空，需要经营者具备科学先进的营销理念与销售策略，更需要具有一个能使终端消费者感到满意、贴心的服务态度。因此，我们处于对意向性加盟商自身以及终端消费者负责的角度，将严格甄选每一位加盟者，选择真正渴求发展、有实力、有远见、讲诚信、具备高度服务意识的投资者合作。同时店面具备良好的地理位置是营销取得成功的先决条件。</p>
+					</div>
+					<div class="section-body-cont">
+						<div class="grid part">
+							<div class="grid-row">
+								<div class="grid-cell vc">
+									<div class="part-cont">
+										<div class="part-title">投资人要求</div>
+										<div class="part-descr">
+											<p>1.具有独立合法的法人或自然人资格</p>
+											<p>2.认同并接受豪利企业文化理念、经销加盟模式和运营规范</p>
+											<p>3.具备丰厚的投资实力和传播豪利品牌文化的热情</p>
+											<p>4.具备零售运营经验与品牌经营意识，能够接受豪利的运营管理模式</p>
+											<p>5.具备理性投资心态和承担风险的能力，能够客观地看待投资与回报的关系</p>
+											<p>6.对家居建材行业有一定的了解，最好在当地拥有一定社会资源</p>
+											<p>7.具备符合加盟要求的经营场所</p>
+										</div>
+									</div>
+								</div>
+								<div class="grid-cell">
+									<div class="part-img pull-right" style="background-color:#999;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="grid part">
+							<div class="grid-row">
+								<div class="grid-cell">
+									<div class="part-img" style="background-color:#999;"></div>
+								</div>
+								<div class="grid-cell vc">
+									<div class="part-cont">
+										<div class="part-title">店面要求</div>
+										<div class="part-descr">
+											<p>1.经销店面须位于专业家居建材商场或商业街主干道</p>
+											<p>2.专卖店面积应不低于150平米</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 加盟流程 -->
+			<div class="process-section section">
+				<div class="section-top block-center" style="position: initial;">
+					<div class="section-top-headline">加盟流程</div>
+					<div class="section-top-subtitle">
+						<p>为确保生产商与加盟商的权益得到完善的保障，豪利制定了科学完善的加盟合作流程，在确保双方对对方实力、理念与筹备进度完全了解的基础上，加盟程序得以透明地执行，并确保双方权益受到法律保护。在加盟前后，豪利总部将与您共同完成每一个流程，确保您得到最完善的支持。</p>
+					</div>
+				</div>
+				<div class="section-body nopad" style="margin: 0 auto;">
+					<div class="section-body-cont">
+						<div class="process-list-container swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<img src="static/images/cooperation/process_icon1.png">
+									<p>意向性沟通</p>
+								</li>
+								<li class="swiper-slide">
+									<img src="static/images/cooperation/process_icon2.png">
+									<p>提交加盟申请</p>
+								</li>
+								<li class="swiper-slide">
+									<img src="static/images/cooperation/process_icon3.png">
+									<p>初次会面洽谈</p>
+								</li>
+								<li class="swiper-slide">
+									<img src="static/images/cooperation/process_icon4.png">
+									<p>双向实地考察</p>
+								</li>
+							</ul>
+							<div class="swiper-pagination"></div>
+							<!-- 导航按钮 -->
+							<div class="slide-btn slide-btn-prev"><i class="iconfont icon-arrow-left"></i></div>
+							<div class="slide-btn slide-btn-next"><i class="iconfont icon-arrow-right"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 网点查询 -->
+			<div class="map-container" id="map-container"></div>
 		</div>
 		<!-- 尾部 -->
 		<div class="footer">
@@ -301,354 +449,363 @@
 				</div>
 			</div>
 		</div>
-        <script src="static/scripts/require.js"></script>
-        <script src="static/scripts/main.js"></script>
+		<script src="static/scripts/require.js"></script>
+		<script src="static/scripts/main.js"></script>
 		<script>
 			require(['jquery', 'parallax', 'Swiper', 'china', 'echarts', 'wow'], function($, parallax, Swiper, china, echarts) {
-                $(function() {
-                    /* 初始化WOW效果 */
-                    if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
-                        new WOW().init();
-                    }
-                    /* 定义视差效果模块数组参数 */
-                    var parallaxArr = [
-                        {
-                            target: 'parallax-section1', 
-                            top: 0, 
-                            bottom: 50, 
-                            duration: 1
-                        }
-                    ]
-                    parallaxArr.forEach(function(item) {
-                        parallax(item.target, item.top, item.bottom, item.duration)
-                    })
-                    /* 初始化swiper */
-                    var swiper = new Swiper('.process-list-container',{
-                        noSwiping : true,
-                        slidesPerView: 4,
-                        pagination: {
-                            el: '.swiper-pagination', 
-                        },
-                        navigation: {
-                            nextEl: '.cases-slide-btn-next',
-                            prevEl: '.cases-slide-btn-prev',
-                        },
-                    });
-                    // 初始化网点地图
-                    initMap('map-container');
-                    /* paramas: container,地图容器的id  */
-                    function initMap (container) {
-                        var geoCoordMap = {
-                            '海门':[121.15,31.89],
-                            '鄂尔多斯':[109.781327,39.608266],
-                            '招远':[120.38,37.35],
-                            '舟山':[122.207216,29.985295],
-                            '齐齐哈尔':[123.97,47.33],
-                            '盐城':[120.13,33.38],
-                            '赤峰':[118.87,42.28],
-                            '青岛':[120.33,36.07],
-                            '乳山':[121.52,36.89],
-                            '金昌':[102.188043,38.520089],
-                            '泉州':[118.58,24.93],
-                            '莱西':[120.53,36.86],
-                            '日照':[119.46,35.42],
-                            '胶南':[119.97,35.88],
-                            '南通':[121.05,32.08],
-                            '拉萨':[91.11,29.97],
-                            '云浮':[112.02,22.93],
-                            '梅州':[116.1,24.55],
-                            '文登':[122.05,37.2],
-                            '上海':[121.48,31.22],
-                            '攀枝花':[101.718637,26.582347],
-                            '威海':[122.1,37.5],
-                            '承德':[117.93,40.97],
-                            '厦门':[118.1,24.46],
-                            '汕尾':[115.375279,22.786211],
-                            '潮州':[116.63,23.68],
-                            '丹东':[124.37,40.13],
-                            '太仓':[121.1,31.45],
-                            '曲靖':[103.79,25.51],
-                            '烟台':[121.39,37.52],
-                            '福州':[119.3,26.08],
-                            '瓦房店':[121.979603,39.627114],
-                            '即墨':[120.45,36.38],
-                            '抚顺':[123.97,41.97],
-                            '玉溪':[102.52,24.35],
-                            '张家口':[114.87,40.82],
-                            '阳泉':[113.57,37.85],
-                            '莱州':[119.942327,37.177017],
-                            '湖州':[120.1,30.86],
-                            '汕头':[116.69,23.39],
-                            '昆山':[120.95,31.39],
-                            '宁波':[121.56,29.86],
-                            '湛江':[110.359377,21.270708],
-                            '揭阳':[116.35,23.55],
-                            '荣成':[122.41,37.16],
-                            '连云港':[119.16,34.59],
-                            '葫芦岛':[120.836932,40.711052],
-                            '常熟':[120.74,31.64],
-                            '东莞':[113.75,23.04],
-                            '河源':[114.68,23.73],
-                            '淮安':[119.15,33.5],
-                            '泰州':[119.9,32.49],
-                            '南宁':[108.33,22.84],
-                            '营口':[122.18,40.65],
-                            '惠州':[114.4,23.09],
-                            '江阴':[120.26,31.91],
-                            '蓬莱':[120.75,37.8],
-                            '韶关':[113.62,24.84],
-                            '嘉峪关':[98.289152,39.77313],
-                            '广州':[113.23,23.16],
-                            '延安':[109.47,36.6],
-                            '太原':[112.53,37.87],
-                            '清远':[113.01,23.7],
-                            '中山':[113.38,22.52],
-                            '昆明':[102.73,25.04],
-                            '寿光':[118.73,36.86],
-                            '盘锦':[122.070714,41.119997],
-                            '长治':[113.08,36.18],
-                            '深圳':[114.07,22.62],
-                            '珠海':[113.52,22.3],
-                            '宿迁':[118.3,33.96],
-                            '咸阳':[108.72,34.36],
-                            '铜川':[109.11,35.09],
-                            '平度':[119.97,36.77],
-                            '佛山':[113.11,23.05],
-                            '海口':[110.35,20.02],
-                            '江门':[113.06,22.61],
-                            '章丘':[117.53,36.72],
-                            '肇庆':[112.44,23.05],
-                            '大连':[121.62,38.92],
-                            '临汾':[111.5,36.08],
-                            '吴江':[120.63,31.16],
-                            '石嘴山':[106.39,39.04],
-                            '沈阳':[123.38,41.8],
-                            '苏州':[120.62,31.32],
-                            '茂名':[110.88,21.68],
-                            '嘉兴':[120.76,30.77],
-                            '长春':[125.35,43.88],
-                            '胶州':[120.03336,36.264622],
-                            '银川':[106.27,38.47],
-                            '张家港':[120.555821,31.875428],
-                            '三门峡':[111.19,34.76],
-                            '锦州':[121.15,41.13],
-                            '南昌':[115.89,28.68],
-                            '柳州':[109.4,24.33],
-                            '三亚':[109.511909,18.252847],
-                            '自贡':[104.778442,29.33903],
-                            '吉林':[126.57,43.87],
-                            '阳江':[111.95,21.85],
-                            '泸州':[105.39,28.91],
-                            '西宁':[101.74,36.56],
-                            '宜宾':[104.56,29.77],
-                            '呼和浩特':[111.65,40.82],
-                            '成都':[104.06,30.67],
-                            '大同':[113.3,40.12],
-                            '镇江':[119.44,32.2],
-                            '桂林':[110.28,25.29],
-                            '张家界':[110.479191,29.117096],
-                            '宜兴':[119.82,31.36],
-                            '北海':[109.12,21.49],
-                            '西安':[108.95,34.27],
-                            '金坛':[119.56,31.74],
-                            '东营':[118.49,37.46],
-                            '牡丹江':[129.58,44.6],
-                            '遵义':[106.9,27.7],
-                            '绍兴':[120.58,30.01],
-                            '扬州':[119.42,32.39],
-                            '常州':[119.95,31.79],
-                            '潍坊':[119.1,36.62],
-                            '重庆':[106.54,29.59],
-                            '台州':[121.420757,28.656386],
-                            '南京':[118.78,32.04],
-                            '滨州':[118.03,37.36],
-                            '贵阳':[106.71,26.57],
-                            '无锡':[120.29,31.59],
-                            '本溪':[123.73,41.3],
-                            '克拉玛依':[84.77,45.59],
-                            '渭南':[109.5,34.52],
-                            '马鞍山':[118.48,31.56],
-                            '宝鸡':[107.15,34.38],
-                            '焦作':[113.21,35.24],
-                            '句容':[119.16,31.95],
-                            '北京':[116.46,39.92],
-                            '徐州':[117.2,34.26],
-                            '衡水':[115.72,37.72],
-                            '包头':[110,40.58],
-                            '绵阳':[104.73,31.48],
-                            '乌鲁木齐':[87.68,43.77],
-                            '枣庄':[117.57,34.86],
-                            '杭州':[120.19,30.26],
-                            '淄博':[118.05,36.78],
-                            '鞍山':[122.85,41.12],
-                            '溧阳':[119.48,31.43],
-                            '库尔勒':[86.06,41.68],
-                            '安阳':[114.35,36.1],
-                            '开封':[114.35,34.79],
-                            '济南':[117,36.65],
-                            '德阳':[104.37,31.13],
-                            '温州':[120.65,28.01],
-                            '九江':[115.97,29.71],
-                            '邯郸':[114.47,36.6],
-                            '临安':[119.72,30.23],
-                            '兰州':[103.73,36.03],
-                            '沧州':[116.83,38.33],
-                            '临沂':[118.35,35.05],
-                            '南充':[106.110698,30.837793],
-                            '天津':[117.2,39.13],
-                            '富阳':[119.95,30.07],
-                            '泰安':[117.13,36.18],
-                            '诸暨':[120.23,29.71],
-                            '郑州':[113.65,34.76],
-                            '哈尔滨':[126.63,45.75],
-                            '聊城':[115.97,36.45],
-                            '芜湖':[118.38,31.33],
-                            '唐山':[118.02,39.63],
-                            '平顶山':[113.29,33.75],
-                            '邢台':[114.48,37.05],
-                            '德州':[116.29,37.45],
-                            '济宁':[116.59,35.38],
-                            '荆州':[112.239741,30.335165],
-                            '宜昌':[111.3,30.7],
-                            '义乌':[120.06,29.32],
-                            '丽水':[119.92,28.45],
-                            '洛阳':[112.44,34.7],
-                            '秦皇岛':[119.57,39.95],
-                            '株洲':[113.16,27.83],
-                            '石家庄':[114.48,38.03],
-                            '莱芜':[117.67,36.19],
-                            '常德':[111.69,29.05],
-                            '保定':[115.48,38.85],
-                            '湘潭':[112.91,27.87],
-                            '金华':[119.64,29.12],
-                            '岳阳':[113.09,29.37],
-                            '长沙':[113,28.21],
-                            '衢州':[118.88,28.97],
-                            '廊坊':[116.7,39.53],
-                            '菏泽':[115.480656,35.23375],
-                            '合肥':[117.27,31.86],
-                            '武汉':[114.31,30.52],
-                            '大庆':[125.03,46.58]
-                        };
-                        // 定义数组
-                        var myData = [
-                            {
-                                name: '无锡',
-                                title: '无锡豪利',
-                                manager: '王总',
-                                address: '江苏省无锡市锡沪路280号华夏家居港C011号'
-                            },
-                            {
-                                name: '深圳',
-                                title: '深圳豪利',
-                                manager: '赵总',
-                                address: '广东省深圳市宝安区'
-                            },
-                            {
-                                name: '南昌',
-                                title: '南昌豪利',
-                                manager: '钱总',
-                                address: '江西省南昌市小兰经济开发区'
-                            },
-                            {
-                                name: '长沙',
-                                title: '长沙豪利',
-                                manager: '钱总',
-                                address: '湖南省长沙市小兰经济开发区'
-                            }
-                        ]
-                        var convertData = function (data) {
-                            var res = [];
-                            for (var i = 0; i < data.length; i++) {
-                                var geoCoord = geoCoordMap[data[i].name];
-                                if (geoCoord) {
-                                    res.push({
-                                        title: data[i].title,
-                                        name: data[i].name,
-                                        manager: data[i].manager,
-                                        address: data[i].address,
-                                        value: geoCoord
-                                    });
-                                }
-                            }
-                            return res;
-                        };
-                        var mapChart = echarts.init(document.getElementById(container));
-                        mapChart.setOption({
-                            // 标题设置
-                            title: {
-                                top: '10%',
-                                text: '网点查询',
-                                textStyle: {
-                                    color: '#fff',
-                                    fontSize: 30,
-                                    fontWeight: 'lighter'
-                                },
-                                itemGap: 20,
-                                subtext: '更多代理，见证实力',
-                                subtextStyle: {
-                                    color: '#fff',
-                                    fontSize: 42
-                                },
-                                x:'center'
-                            },
-                            // 地理坐标系组件
-                            geo: {
-                                map: 'china',
-                                top: '20%',
-                                zoom: .8,
-                                label: {
-                                    emphasis: {
-                                        show: false
-                                    }
-                                },
-                                itemStyle: {					// 定义样式
-                                    normal: {					// 普通状态下的样式
-                                        areaColor: '#fff',
-                                        borderColor: '#999'
-                                    },
-                                    emphasis: {					// 高亮状态下的样式
-                                        areaColor: '#f2f2f2'
-                                    }
-                                }
-                            },
-                            // 系列列表
-                            series: [
-                                {
-                                    name: '', // series名称
-                                    type: 'scatter', // series图表类型
-                                    coordinateSystem: 'geo', // series坐标系类型
-                                    data: convertData(myData), // series数据内容
-                                    symbolSize: 10,
-                                    label: {
-                                        normal: {
-                                            formatter: '{b}',
-                                            position: 'right',
-                                            fontSize: 14,
-                                            color: '#414141',
-                                            show: true
-                                        }
-                                    },
-                                    itemStyle: {
-                                        normal: {
-                                            color: '#fd8888'
-                                        }
-                                    }
-                                }
-                            ],
-                            tooltip: {
-                                trigger: 'item',
-                                padding: 10,
-                                formatter: function (params) {
-                                    return `<div class="toolDiv"><p><span>${params.data.title}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>${params.data.manager}</span></p><p>${params.data.address}</p></div>`
-                                }
-                            },
-                            // 背景色
-                            backgroundColor: '#a7b1ca', // 背景颜色
-                        });
-                    }
-                })
-            })
+				$(function() {
+					/* 初始化WOW效果 */
+					if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+						new WOW().init();
+					}
+					/* 定义视差效果模块数组参数 */
+					var parallaxArr = [{
+						target: 'parallax-section1',
+						top: 0,
+						bottom: 50,
+						duration: 1
+					}]
+					parallaxArr.forEach(function(item) {
+						parallax(item.target, item.top, item.bottom, item.duration)
+					})
+					/* 初始化swiper */
+					var swiper = new Swiper('.process-list-container', {
+						noSwiping: true,
+						slidesPerView: 4,
+						pagination: {
+							el: '.swiper-pagination',
+						},
+						navigation: {
+							nextEl: '.cases-slide-btn-next',
+							prevEl: '.cases-slide-btn-prev',
+						},
+					});
+					//背景加滤镜效果
+					var ele = $('.plan-box2');
+					var win = $(window);
+					win.scroll(function() {
+						ele.each(function() {
+							if($(this).offset().top <= win.scrollTop() + 550) {
+								$(this).addClass("active");
+							} else {
+								$(this).removeClass("active");
+							}
+						})
+					})
+
+					// 初始化网点地图
+					initMap('map-container');
+					/* paramas: container,地图容器的id  */
+					function initMap(container) {
+						var geoCoordMap = {
+							'海门': [121.15, 31.89],
+							'鄂尔多斯': [109.781327, 39.608266],
+							'招远': [120.38, 37.35],
+							'舟山': [122.207216, 29.985295],
+							'齐齐哈尔': [123.97, 47.33],
+							'盐城': [120.13, 33.38],
+							'赤峰': [118.87, 42.28],
+							'青岛': [120.33, 36.07],
+							'乳山': [121.52, 36.89],
+							'金昌': [102.188043, 38.520089],
+							'泉州': [118.58, 24.93],
+							'莱西': [120.53, 36.86],
+							'日照': [119.46, 35.42],
+							'胶南': [119.97, 35.88],
+							'南通': [121.05, 32.08],
+							'拉萨': [91.11, 29.97],
+							'云浮': [112.02, 22.93],
+							'梅州': [116.1, 24.55],
+							'文登': [122.05, 37.2],
+							'上海': [121.48, 31.22],
+							'攀枝花': [101.718637, 26.582347],
+							'威海': [122.1, 37.5],
+							'承德': [117.93, 40.97],
+							'厦门': [118.1, 24.46],
+							'汕尾': [115.375279, 22.786211],
+							'潮州': [116.63, 23.68],
+							'丹东': [124.37, 40.13],
+							'太仓': [121.1, 31.45],
+							'曲靖': [103.79, 25.51],
+							'烟台': [121.39, 37.52],
+							'福州': [119.3, 26.08],
+							'瓦房店': [121.979603, 39.627114],
+							'即墨': [120.45, 36.38],
+							'抚顺': [123.97, 41.97],
+							'玉溪': [102.52, 24.35],
+							'张家口': [114.87, 40.82],
+							'阳泉': [113.57, 37.85],
+							'莱州': [119.942327, 37.177017],
+							'湖州': [120.1, 30.86],
+							'汕头': [116.69, 23.39],
+							'昆山': [120.95, 31.39],
+							'宁波': [121.56, 29.86],
+							'湛江': [110.359377, 21.270708],
+							'揭阳': [116.35, 23.55],
+							'荣成': [122.41, 37.16],
+							'连云港': [119.16, 34.59],
+							'葫芦岛': [120.836932, 40.711052],
+							'常熟': [120.74, 31.64],
+							'东莞': [113.75, 23.04],
+							'河源': [114.68, 23.73],
+							'淮安': [119.15, 33.5],
+							'泰州': [119.9, 32.49],
+							'南宁': [108.33, 22.84],
+							'营口': [122.18, 40.65],
+							'惠州': [114.4, 23.09],
+							'江阴': [120.26, 31.91],
+							'蓬莱': [120.75, 37.8],
+							'韶关': [113.62, 24.84],
+							'嘉峪关': [98.289152, 39.77313],
+							'广州': [113.23, 23.16],
+							'延安': [109.47, 36.6],
+							'太原': [112.53, 37.87],
+							'清远': [113.01, 23.7],
+							'中山': [113.38, 22.52],
+							'昆明': [102.73, 25.04],
+							'寿光': [118.73, 36.86],
+							'盘锦': [122.070714, 41.119997],
+							'长治': [113.08, 36.18],
+							'深圳': [114.07, 22.62],
+							'珠海': [113.52, 22.3],
+							'宿迁': [118.3, 33.96],
+							'咸阳': [108.72, 34.36],
+							'铜川': [109.11, 35.09],
+							'平度': [119.97, 36.77],
+							'佛山': [113.11, 23.05],
+							'海口': [110.35, 20.02],
+							'江门': [113.06, 22.61],
+							'章丘': [117.53, 36.72],
+							'肇庆': [112.44, 23.05],
+							'大连': [121.62, 38.92],
+							'临汾': [111.5, 36.08],
+							'吴江': [120.63, 31.16],
+							'石嘴山': [106.39, 39.04],
+							'沈阳': [123.38, 41.8],
+							'苏州': [120.62, 31.32],
+							'茂名': [110.88, 21.68],
+							'嘉兴': [120.76, 30.77],
+							'长春': [125.35, 43.88],
+							'胶州': [120.03336, 36.264622],
+							'银川': [106.27, 38.47],
+							'张家港': [120.555821, 31.875428],
+							'三门峡': [111.19, 34.76],
+							'锦州': [121.15, 41.13],
+							'南昌': [115.89, 28.68],
+							'柳州': [109.4, 24.33],
+							'三亚': [109.511909, 18.252847],
+							'自贡': [104.778442, 29.33903],
+							'吉林': [126.57, 43.87],
+							'阳江': [111.95, 21.85],
+							'泸州': [105.39, 28.91],
+							'西宁': [101.74, 36.56],
+							'宜宾': [104.56, 29.77],
+							'呼和浩特': [111.65, 40.82],
+							'成都': [104.06, 30.67],
+							'大同': [113.3, 40.12],
+							'镇江': [119.44, 32.2],
+							'桂林': [110.28, 25.29],
+							'张家界': [110.479191, 29.117096],
+							'宜兴': [119.82, 31.36],
+							'北海': [109.12, 21.49],
+							'西安': [108.95, 34.27],
+							'金坛': [119.56, 31.74],
+							'东营': [118.49, 37.46],
+							'牡丹江': [129.58, 44.6],
+							'遵义': [106.9, 27.7],
+							'绍兴': [120.58, 30.01],
+							'扬州': [119.42, 32.39],
+							'常州': [119.95, 31.79],
+							'潍坊': [119.1, 36.62],
+							'重庆': [106.54, 29.59],
+							'台州': [121.420757, 28.656386],
+							'南京': [118.78, 32.04],
+							'滨州': [118.03, 37.36],
+							'贵阳': [106.71, 26.57],
+							'无锡': [120.29, 31.59],
+							'本溪': [123.73, 41.3],
+							'克拉玛依': [84.77, 45.59],
+							'渭南': [109.5, 34.52],
+							'马鞍山': [118.48, 31.56],
+							'宝鸡': [107.15, 34.38],
+							'焦作': [113.21, 35.24],
+							'句容': [119.16, 31.95],
+							'北京': [116.46, 39.92],
+							'徐州': [117.2, 34.26],
+							'衡水': [115.72, 37.72],
+							'包头': [110, 40.58],
+							'绵阳': [104.73, 31.48],
+							'乌鲁木齐': [87.68, 43.77],
+							'枣庄': [117.57, 34.86],
+							'杭州': [120.19, 30.26],
+							'淄博': [118.05, 36.78],
+							'鞍山': [122.85, 41.12],
+							'溧阳': [119.48, 31.43],
+							'库尔勒': [86.06, 41.68],
+							'安阳': [114.35, 36.1],
+							'开封': [114.35, 34.79],
+							'济南': [117, 36.65],
+							'德阳': [104.37, 31.13],
+							'温州': [120.65, 28.01],
+							'九江': [115.97, 29.71],
+							'邯郸': [114.47, 36.6],
+							'临安': [119.72, 30.23],
+							'兰州': [103.73, 36.03],
+							'沧州': [116.83, 38.33],
+							'临沂': [118.35, 35.05],
+							'南充': [106.110698, 30.837793],
+							'天津': [117.2, 39.13],
+							'富阳': [119.95, 30.07],
+							'泰安': [117.13, 36.18],
+							'诸暨': [120.23, 29.71],
+							'郑州': [113.65, 34.76],
+							'哈尔滨': [126.63, 45.75],
+							'聊城': [115.97, 36.45],
+							'芜湖': [118.38, 31.33],
+							'唐山': [118.02, 39.63],
+							'平顶山': [113.29, 33.75],
+							'邢台': [114.48, 37.05],
+							'德州': [116.29, 37.45],
+							'济宁': [116.59, 35.38],
+							'荆州': [112.239741, 30.335165],
+							'宜昌': [111.3, 30.7],
+							'义乌': [120.06, 29.32],
+							'丽水': [119.92, 28.45],
+							'洛阳': [112.44, 34.7],
+							'秦皇岛': [119.57, 39.95],
+							'株洲': [113.16, 27.83],
+							'石家庄': [114.48, 38.03],
+							'莱芜': [117.67, 36.19],
+							'常德': [111.69, 29.05],
+							'保定': [115.48, 38.85],
+							'湘潭': [112.91, 27.87],
+							'金华': [119.64, 29.12],
+							'岳阳': [113.09, 29.37],
+							'长沙': [113, 28.21],
+							'衢州': [118.88, 28.97],
+							'廊坊': [116.7, 39.53],
+							'菏泽': [115.480656, 35.23375],
+							'合肥': [117.27, 31.86],
+							'武汉': [114.31, 30.52],
+							'大庆': [125.03, 46.58]
+						};
+						// 定义数组
+						var myData = [{
+								name: '无锡',
+								title: '无锡豪利',
+								manager: '王总',
+								address: '江苏省无锡市锡沪路280号华夏家居港C011号'
+							},
+							{
+								name: '深圳',
+								title: '深圳豪利',
+								manager: '赵总',
+								address: '广东省深圳市宝安区'
+							},
+							{
+								name: '南昌',
+								title: '南昌豪利',
+								manager: '钱总',
+								address: '江西省南昌市小兰经济开发区'
+							},
+							{
+								name: '长沙',
+								title: '长沙豪利',
+								manager: '钱总',
+								address: '湖南省长沙市小兰经济开发区'
+							}
+						]
+						var convertData = function(data) {
+							var res = [];
+							for(var i = 0; i < data.length; i++) {
+								var geoCoord = geoCoordMap[data[i].name];
+								if(geoCoord) {
+									res.push({
+										title: data[i].title,
+										name: data[i].name,
+										manager: data[i].manager,
+										address: data[i].address,
+										value: geoCoord
+									});
+								}
+							}
+							return res;
+						};
+						var mapChart = echarts.init(document.getElementById(container));
+						mapChart.setOption({
+							// 标题设置
+							title: {
+								top: '10%',
+								text: '网点查询',
+								textStyle: {
+									color: '#fff',
+									fontSize: 30,
+									fontWeight: 'lighter'
+								},
+								itemGap: 20,
+								subtext: '更多代理，见证实力',
+								subtextStyle: {
+									color: '#fff',
+									fontSize: 42
+								},
+								x: 'center'
+							},
+							// 地理坐标系组件
+							geo: {
+								map: 'china',
+								top: '20%',
+								zoom: .8,
+								label: {
+									emphasis: {
+										show: false
+									}
+								},
+								itemStyle: { // 定义样式
+									normal: { // 普通状态下的样式
+										areaColor: '#fff',
+										borderColor: '#999'
+									},
+									emphasis: { // 高亮状态下的样式
+										areaColor: '#f2f2f2'
+									}
+								}
+							},
+							// 系列列表
+							series: [{
+								name: '', // series名称
+								type: 'scatter', // series图表类型
+								coordinateSystem: 'geo', // series坐标系类型
+								data: convertData(myData), // series数据内容
+								symbolSize: 10,
+								label: {
+									normal: {
+										formatter: '{b}',
+										position: 'right',
+										fontSize: 14,
+										color: '#414141',
+										show: true
+									}
+								},
+								itemStyle: {
+									normal: {
+										color: '#fd8888'
+									}
+								}
+							}],
+							tooltip: {
+								trigger: 'item',
+								padding: 10,
+								formatter: function(params) {
+									return `<div class="toolDiv"><p><span>${params.data.title}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>${params.data.manager}</span></p><p>${params.data.address}</p></div>`
+								}
+							},
+							// 背景色
+							backgroundColor: '#a7b1ca', // 背景颜色
+						});
+					}
+				})
+			})
 		</script>
 	</body>
+
 </html>
