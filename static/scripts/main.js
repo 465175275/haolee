@@ -25,7 +25,17 @@ requirejs.config({
         /** wow CDN */
         'wow': 'https://cdn.bootcss.com/wow/1.1.2/wow.min',
         /** aos CDN */
-        'aos': 'https://cdn.bootcss.com/aos/2.2.0/aos'
+        'aos': 'https://cdn.bootcss.com/aos/2.2.0/aos',
+        /** 打开弹窗效果 */
+        'openModal': 'modal',
+        /** 下切效果 */
+        'openDropmenu': 'dropmenu',
+        /** 全屏缩放图片效果 */
+        'showFullImg': 'showFullImg',
+        /** 3d旋转轮播效果1 */
+        'featureCarousel1': 'lib/jquery.featureCarousel.min',
+        /** 3d旋转轮播效果2 */
+        'featureCarousel2': 'lib/jquery.featureCarousel2.min'
     },
     shim: {
         /** 引入swiper依赖css文件 */
@@ -36,6 +46,8 @@ requirejs.config({
         /** 引入wow依赖css文件 */
         'wow': ['css!../styles/lib/animate.css'],
         /** 引入aos依赖css文件 */
-        'aos': ['css!https://cdn.bootcss.com/aos/2.2.0/aos.css', 'ease']
+        'aos': ['css!https://cdn.bootcss.com/aos/2.2.0/aos.css', 'ease'],
+        'featureCarousel1': ['jquery'],
+        'featureCarousel2': ['jquery'],
     }
 })

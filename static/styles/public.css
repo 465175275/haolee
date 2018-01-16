@@ -946,7 +946,6 @@ template {
 .open-dropmenu-btn.active {
 	background-color: #dadada;
 	-webkit-transform: translateY(190px) rotateZ(45deg);
-	-ms-transform: translateY(190px) rotateZ(45deg);
 	transform: translateY(190px) rotateZ(45deg);
 }
 
@@ -964,7 +963,6 @@ template {
 @-webkit-keyframes animate-layer-in {
 	from {
 		-webkit-transform: translateY(100%);
-		-ms-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 	to {
@@ -976,7 +974,6 @@ template {
 @keyframes animate-layer-in {
 	from {
 		-webkit-transform: translateY(100%);
-		-ms-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 	to {
@@ -1017,7 +1014,6 @@ template {
 	}
 	to {
 		-webkit-transform: translateY(100%);
-		-ms-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 }
@@ -1029,7 +1025,6 @@ template {
 	}
 	to {
 		-webkit-transform: translateY(100%);
-		-ms-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 }
@@ -1066,7 +1061,6 @@ template {
 	background-color: #fff;
 	overflow-y: scroll;
 	-webkit-transform: translateY(calc(100vh + 2px));
-	-ms-transform: translateY(calc(100vh + 2px));
 	transform: translateY(calc(100vh + 2px))
 }
 
@@ -1074,7 +1068,6 @@ template {
 	position: relative;
 	z-index: 1;
 	-webkit-transform-origin: 50vw 50vh;
-	-ms-transform-origin: 50vw 50vh;
 	transform-origin: 50vw 50vh;
 }
 
@@ -1111,7 +1104,8 @@ template {
 }
 
 .modal-will-open.modal-enable-transition-in [data-modal-background-content] {
-	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
 	-webkit-animation: animate-background-in;
 	animation: animate-background-in;
 	-webkit-animation-duration: .5s;
@@ -1123,7 +1117,6 @@ template {
 .modal-animating .layer-content {
 	will-change: transform;
 	-webkit-transform: translateY(100%);
-	-ms-transform: translateY(100%);
 	transform: translateY(100%)
 }
 
@@ -1178,7 +1171,10 @@ template {
 	margin-left: -25px;
 	color: #fff;
 	-webkit-transition: transform .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-webkit-transition: -webkit-transform .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: -webkit-transform .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 	transition: transform .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: transform .5s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform .5s cubic-bezier(0.645, 0.045, 0.355, 1);
 	cursor: pointer;
 }
 
@@ -1331,4 +1327,10 @@ template {
 
 .text_whlie:hover {
 	color: #FFFFFF;
+}
+.img-trans {
+    -webkit-transition: -webkit-transform 1s 0s ease;
+    transition: -webkit-transform 1s 0s ease;
+    transition: transform 1s 0s ease;
+    transition: transform 1s 0s ease, -webkit-transform 1s 0s ease;
 }
