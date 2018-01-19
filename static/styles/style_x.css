@@ -175,7 +175,7 @@
 }
 
 .section-body-cont .part-img img {
-	width: 100%;
+	max-width: 100%;
 	height: 100%;
 }
 
@@ -913,7 +913,7 @@
 */
 
 .cabinet-container {
-	max-width: 1920px;
+	max-width: 2560px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -926,7 +926,6 @@
 
 .cabinet-container .slogen-section {
 	width: 100%;
-	max-width: 1920px;
 	padding-top: 150px;
 	padding-bottom: 60px;
 	margin-left: auto;
@@ -950,7 +949,6 @@
 
 .cabinet-container .slogen-banner img {
 	width: 100%;
-	max-width: 100%;
 }
 
 .cabinet-container .design-section {
@@ -995,8 +993,13 @@
 	width: 49.6%;
 }
 
+.cabinet-container .design-section .section-bottom-part img {
+	width: 100%;
+	height: auto;
+}
+
 .cabinet-container .design-section .section-bottom-part-cont {
-	width: 49%;
+	width: 50%;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -1206,29 +1209,22 @@
 }
 
 .cabinet-container .style-section .section-body {
-	width: 800px;
+	width: 814px;
 }
 
 .cabinet-container .style-section .style-list-item {
 	position: relative;
 	float: left;
-	width: 400px;
-	height: 220px;
+	margin-bottom: 5px;
+	margin-left: 5px;
 	background-color: #909090;
-}
-
-.style-lcbox {}
-
-.cabinet-container .style-section .style-list-item:first-child,
-.cabinet-container .style-section .style-list-item:last-child {
-	background-color: #4d4d4d;
 }
 
 .cabinet-container .style-section .style-list-item p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	font-size: 38px;
+	font-size: 28px;
 	color: #f7f7f7;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);

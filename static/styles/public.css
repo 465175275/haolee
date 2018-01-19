@@ -944,7 +944,7 @@ template {
 }
 
 .open-dropmenu-btn.active {
-	background-color: #dadada;
+	background-color: #dadada !important;
 	-webkit-transform: translateY(190px) rotateZ(45deg);
 	transform: translateY(190px) rotateZ(45deg);
 }
@@ -1327,6 +1327,27 @@ template {
 
 .text_whlie:hover {
 	color: #FFFFFF;
+}
+
+.bg-mark{
+	position: relative;
+}
+
+.left-mark,
+.right-mark {
+	position: absolute;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	background: #fff;
+}
+
+.left-mark {
+	left: 0;
+}
+
+.right-mark {
+	right: 0;
 }
 .img-trans {
     -webkit-transition: -webkit-transform 1s 0s ease;
