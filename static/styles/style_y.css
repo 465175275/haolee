@@ -16,6 +16,12 @@
 	width: 1270px;
 }
 
+.wp3 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+}
+
 h1 {
 	font-weight: inherit;
 	font-size: inherit;
@@ -114,6 +120,10 @@ button {
 	color: #666!important;
 }
 
+.color-f {
+	color: #fff!important;
+}
+
 .img-block {
 	display: block;
 	width: 100%;
@@ -147,7 +157,7 @@ figure {
 }
 
 .figure {
-	background-size: 100% 100%!important;
+	background-size: auto 100%!important;
 	background-position: center!important;
 	background-repeat: no-repeat!important;
 }
@@ -166,6 +176,11 @@ figure {
 
 .hidden {
 	overflow: hidden;
+}
+
+.left-mark,
+.right-mark {
+	z-index: 3;
 }
 
 
@@ -217,8 +232,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	min-height: 100vh;
 }
@@ -249,8 +264,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	margin-top: -20vh;
 	min-height: 100vh;
@@ -300,7 +315,7 @@ figure {
 
 .design-box {
 	margin: 80px auto 130px;
-	padding: 75px 145px;
+	padding: 90px 0;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	max-width: 1520px;
@@ -309,6 +324,8 @@ figure {
 }
 
 .design-l {
+	width: 1040px;
+	margin: 0 auto;
 	padding-left: 0;
 	overflow: hidden;
 }
@@ -321,40 +338,40 @@ figure {
 	float: left;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	margin: 85px 0;
-	padding-right: 4%;
+	margin: 70px 0;
+	padding-right: 100px;
 	width: 50%;
 }
 
 .design-l li:nth-child(2n+0) {
-	padding-left: 4%;
+	padding-left: 100px;
 	padding-right: 0;
 }
 
 .design-l img {
 	display: block;
-	width: 140px;
-	height: 140px;
-	margin-right: 12%;
+	width: 80px;
+	height: 80px;
+	margin-right: 30px;
 	border-radius: 100%;
 }
 
 .design-l h1 {
-	font-size: 34px;
+	font-size: 26px;
 	color: #262626;
 }
 
 .design-l p {
 	margin-top: 7px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #666;
-	line-height: 26px;
+	line-height: 24px;
 }
 
 .design-c1 {
 	-webkit-box-flex: 5;
-	    -ms-flex: 5;
-	        flex: 5;
+	-ms-flex: 5;
+	flex: 5;
 }
 
 
@@ -411,8 +428,8 @@ figure {
 .merit-l img {
 	display: block;
 	margin: 0 auto;
-	width: 110px;
-	height: 110px;
+	width: 80px;
+	height: 80px;
 	border-radius: 100%;
 }
 
@@ -440,8 +457,8 @@ figure {
 .texture-l img {
 	display: block;
 	margin: 0 auto;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 
 .texture-l h1 {
@@ -489,9 +506,37 @@ figure {
 	color: #666666;
 }
 
+
+/*第五屏*/
+
+.texture-l2 {
+	margin: 60px 0 0;
+	padding-bottom: 160px;
+	text-align: center;
+}
+
+.texture-l2 li {
+	display: inline-block;
+	width: 150px;
+}
+
+.texture-l2 img {
+	display: block;
+	margin: 0 auto;
+	width: 70px;
+	height: 70px;
+}
+
+.texture-l2 h1 {
+	margin-top: 25px;
+	font-size: 22px;
+	color: #4c4c4c;
+}
+
 .carousel-container1 {
 	position: relative;
 	width: 850px;
+	height: 950px;
 	margin: 75px auto 0;
 	font-size: 28px;
 }
@@ -606,6 +651,7 @@ figure {
 	display: block;
 	text-align: center;
 	line-height: 285px;
+	background: rgba(000, 000, 000, .35);
 }
 
 .furniture-l1 li:last-child {
@@ -648,8 +694,8 @@ figure {
 
 .icon {
 	margin: 0 auto;
-	width: 110px;
-	height: 110px;
+	width: 83px;
+	height: 83px;
 	background-size: 100% 100%!important;
 	background-repeat: no-repeat!important;
 }
@@ -836,7 +882,7 @@ figure {
 	z-index: 1;
 	width: 100%;
 	height: 1100px;
-	background: url(../images/furniture/tu2.jpg) center no-repeat;
+	background: url(../images/cupboard/overview/1.jpg);
 }
 
 .cupboard-c1 {
@@ -921,8 +967,8 @@ figure {
 .cupboard2-l img {
 	display: block;
 	margin: 0 auto 15px;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	border-radius: 100%;
 }
 
@@ -975,13 +1021,13 @@ figure {
 .cupboard3-l img {
 	display: block;
 	margin: 0 auto;
-	width: 85px;
-	height: 85px;
+	width: 70px;
+	height: 70px;
 	border-radius: 100%;
 }
 
 .cupboard3-l h1 {
-	margin: 18px 0 10px;
+	margin: 18px 0 13px;
 	font-size: 30px;
 	color: #343434;
 	text-align: center;
@@ -1002,7 +1048,7 @@ figure {
 .cupboard4-figure {
 	width: 100%;
 	height: 750px;
-	background: url(../images/furniture/tu2.jpg);
+	background: url(../images/cupboard/overview/4.jpg);
 }
 
 .cupboard4-c {
@@ -1053,11 +1099,11 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	float: right;
 	width: 420px;
@@ -1143,7 +1189,7 @@ figure {
 .cupboard6-figure {
 	width: 100%;
 	height: 750px;
-	background: url(../images/furniture/tu2.jpg);
+	background: url(../images/cupboard/overview/13.jpg);
 }
 
 .cupboard6-l {
@@ -1251,7 +1297,7 @@ figure {
 	margin-top: 50px;
 	width: 100%;
 	height: 570px;
-	background: url(../images/furniture/tu2.jpg);
+	background: url(../images/cupboard/overview/21.jpg);
 }
 
 .cupboard8-c {
@@ -1500,23 +1546,23 @@ figure {
 	width: 100%;
 	height: 100%;
 	-ms-flex-negative: 0;
-	    flex-shrink: 0;
+	flex-shrink: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	font-size: 14px;
 	color: #fff;
 	cursor: pointer;
@@ -1535,7 +1581,7 @@ figure {
 	top: 0;
 	height: 100vh;
 	width: 100%;
-	background-size: auto 100%!important;
+	background-size: cover!important;
 	background-position: center!important;
 	background-repeat: no-repeat!important;
 	background-attachment: fixed!important;
@@ -1543,14 +1589,14 @@ figure {
 
 .proNav {
 	width: 100%;
-	background: #808080;
+	background: #454545;
 	overflow: hidden;
 	position: relative
 }
 
 .proNav .bg {
 	width: 12.5%;
-	background: #666;
+	background: #353535;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -1674,12 +1720,12 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
 	height: 900px;
@@ -1736,12 +1782,12 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	margin-bottom: 170px;
 	overflow: hidden;
 }
@@ -1749,8 +1795,8 @@ figure {
 .build-l li:nth-child(2n+0) {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .build2-img {
@@ -1800,12 +1846,10 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
 	height: 560px;
@@ -1826,7 +1870,6 @@ figure {
 	position: relative;
 	z-index: 3;
 	color: #fff;
-	text-align: center;
 }
 
 .news1-t h1 {
@@ -1986,8 +2029,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	margin: 40px 0 12px;
 	padding: 0 10px;
 	font-size: 16px;
@@ -2071,7 +2114,7 @@ figure {
 	white-space: nowrap;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	background: rgba(255, 255, 255, .37);
+	background: rgba(0, 0, 0, .5);
 }
 
 
@@ -2404,8 +2447,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	margin-top: 260px;
 }
 
@@ -2416,10 +2459,10 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-ms-flex-negative: 0;
-	    flex-shrink: 0;
+	flex-shrink: 0;
 	-webkit-flex-shrink: 0;
 	width: 450px;
 	padding: 0 23px;
@@ -2428,8 +2471,8 @@ figure {
 .cup2-l li:nth-child(2n+0) {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: column-reverse;
-	        flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
 }
 
 .cup2-l img {
@@ -2445,15 +2488,15 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	height: 350px;
 	padding: 0 25px;
@@ -2517,8 +2560,8 @@ figure {
 .cup4-l li:nth-child(2n+0) {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .cup4-l li:nth-child(2n+0) .cuplist4-left {
@@ -2528,8 +2571,8 @@ figure {
 .cup4-l li:nth-child(2n+0) .cuplist4-box {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .cup4-l li:nth-child(2n+0) .cuplist4-c {
@@ -2554,8 +2597,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	width: 50%;
 	box-sizing: border-box;
@@ -2642,7 +2685,7 @@ figure {
 }
 
 .swiper-aux1 {
-	padding-bottom: 80px;
+	padding-bottom: 80px!important;
 }
 
 .auxlist1-box {
@@ -2651,8 +2694,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	background: #eeeaeb;
 }
@@ -2670,7 +2713,7 @@ figure {
 	min-width: 100%;
 	height: 620px;
 	-webkit-transform: translate(-50%);
-	        transform: translate(-50%);
+	transform: translate(-50%);
 }
 
 .auxlist1-box2 {
@@ -2679,14 +2722,14 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	width: 50%;
 }
 
 .auxlist1-c {
-	width: 435px;
+	width: 500px;
 	margin-left: 14%;
 }
 
@@ -2790,8 +2833,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 245px;
 }
@@ -2807,8 +2850,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	margin-left: 55px;
 }
@@ -2831,8 +2874,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	margin: 285px auto 0;
 }
@@ -2844,8 +2887,8 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	padding: 0 20px;
 	max-width: 400px;
 }
@@ -2889,11 +2932,11 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	margin: 50px auto 0;
 	width: 1180px;
@@ -2906,10 +2949,10 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-ms-flex-negative: 0;
-	    flex-shrink: 0;
+	flex-shrink: 0;
 	-webkit-flex-shrink: 0;
 	margin-top: 215px;
 	padding: 0 10px;
@@ -2935,8 +2978,69 @@ figure {
 
 /*第七屏*/
 
+.auxl8-l {
+	width: 1220px;
+	margin: 30px auto 0;
+	overflow: hidden;
+}
+
+.auxl8-l li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	margin-top: 230px;
+}
+
+.auxl8-l li:nth-child(2n+0) {
+	flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+}
+
+.auxl8-img {
+	width: 595px;
+	height: 480px;
+}
+
+.auxl8-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.auxl8-style {
+	margin-top: 20px!important;
+	font-size: 16px!important;
+	color: #4c4c4c!important;
+}
+
+.auxl8-box .auxlist3-c {
+	margin: 0;
+	width: 450px;
+}
+
+.auxl8-box p {
+	margin-top: 0;
+}
+
+.auxl8-box h1 {
+	margin-bottom: 15px;
+}
+
+
+/*第八屏*/
+
 .auxl7-box {
-	margin: 245px auto 195px;
+	margin: 240px auto 195px;
 	width: 1170px;
 	height: 830px;
 	background: #fafafa;
@@ -3051,8 +3155,8 @@ figure {
 .furnl2-t {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .furnl2-t p {
@@ -3105,18 +3209,19 @@ figure {
 .furnl-next {
 	position: absolute;
 	z-index: 200;
-	top: 333px;
+	top: 50%;
+	margin-top: -189px;
 	font-size: 50px!important;
-	color: #cbcbcb;
+	color: #e7e7e7;
 	cursor: pointer;
 }
 
 .furnl-prev {
-	left: 280px;
+	left: 13.7%;
 }
 
 .furnl-next {
-	right: 280px;
+	right: 13.7%;
 }
 
 .furnl-prev.swiper-button-disabled,
@@ -3139,8 +3244,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 220px;
 }
@@ -3156,8 +3261,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 }
 
@@ -3225,7 +3330,7 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 }
 
@@ -3270,8 +3375,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 220px;
 }
@@ -3279,15 +3384,15 @@ figure {
 .furnl10-l li:nth-child(2n+0) {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .furnl10-l li:nth-child(2n+0) .furnl4-box {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 }
 
 .furnl10-l li:nth-child(2n+0) .auxlist3-c {
@@ -3297,8 +3402,8 @@ figure {
 .furnl10-l .furnl4-box {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 	width: 50%;
 }
 
@@ -3396,7 +3501,8 @@ figure {
 	width: 100%;
 	height: 70px;
 	padding: 0 5px 0 10px;
-	background: rgba(255, 255, 255, .74);
+	color: #fff;
+	background: rgba(12, 12, 12, .5);
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
@@ -3404,7 +3510,6 @@ figure {
 .furnl12-c h1 {
 	margin: 7px 0 4px;
 	font-size: 20px;
-	color: #000;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -3412,7 +3517,6 @@ figure {
 
 .furnl12-c p {
 	font-size: 16px;
-	color: #333;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -3427,8 +3531,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	margin: 80px 0 135px;
 	text-align: center;
@@ -3452,7 +3556,8 @@ figure {
 	-webkit-transition: all .3s ease;
 }
 
-.pagintion2 a:hover {
+.pagintion2 a:hover,
+.pagintion2 a.active {
 	color: #fff;
 	border-color: #1f2738;
 	background: #1f2738;
@@ -3507,8 +3612,8 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	width: 50%;
 	padding: 0 17px 0 0;
 	box-sizing: border-box;
@@ -3526,11 +3631,11 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	height: 50%;
 }
@@ -3548,7 +3653,7 @@ figure {
 	display: -ms-flexbox;
 	display: flex;
 	display: -webkit-flex;
-	width: 1280px;
+	max-width: 1280px;
 	margin: 205px auto 0;
 }
 
@@ -3559,8 +3664,8 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	width: 40%;
 	padding: 0 17px 0 0;
 	box-sizing: border-box;
@@ -3587,8 +3692,8 @@ figure {
 .cellar4-box .cellar2-box2 {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: column-reverse;
-	        flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
 }
 
 
@@ -3597,8 +3702,8 @@ figure {
 .cellar5-l {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .cellar5-l li:nth-child(1) {
@@ -3613,12 +3718,8 @@ figure {
 /*第六屏*/
 
 .cellar6-box {
-	width: 1280px;
+	max-width: 1280px;
 	margin: 220px auto 0;
-}
-
-.cellar6-figure {
-	height: 580px;
 }
 
 .cellar6-box .cellar7-c {
@@ -3646,8 +3747,8 @@ figure {
 .cellar7-l li:nth-child(2n+0) {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .cellar7-l li:nth-child(2n+0) .cellar7-left {
@@ -3657,8 +3758,8 @@ figure {
 .cellar7-l li:nth-child(2n+0) .cellar7-box {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .cellar7-l li:nth-child(2n+0) .cellar7-c {
@@ -3684,12 +3785,12 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-justify-content: center;
 	width: 50%;
 	padding: 0 30px 0 0;
@@ -3810,11 +3911,11 @@ figure {
 	display: -webkit-flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	width: 50%;
 }
@@ -3829,16 +3930,6 @@ figure {
 
 .bath3-box {
 	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	display: -webkit-flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
 	height: 670px;
 }
 
@@ -3855,11 +3946,30 @@ figure {
 	z-index: 2;
 	width: 710px;
 	margin: 0;
+	color: #fff;
 	text-align: center;
 }
 
+.bath3-box3 {
+	position: relative;
+	z-index: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .35);
+}
+
 .bath3-box2 .u-cont1 {
-	color: #333;
+	color: #fff;
 }
 
 .bath3-box2 h1 {
@@ -3872,16 +3982,16 @@ figure {
 .bath4-box {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 	overflow: hidden;
 }
 
 .bath4-box .bath2-box2 {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 }
 
 .bath4-box .cuplist4-c {
@@ -3957,12 +4067,12 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
+	-ms-flex-align: end;
+	align-items: flex-end;
 	-webkit-align-items: flex-end;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 }
 
@@ -3989,8 +4099,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 130px;
 }
@@ -4043,20 +4153,20 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	margin-top: 180px;
 }
 
 .bath9-l img {
 	display: block;
-	width: 710px;
-	height: 405px;
+	width: 707px;
+	height: 470px;
 }
 
 .bath9-l .cuplist4-c {
@@ -4071,8 +4181,8 @@ figure {
 .bath9-l li:nth-child(2n+0) {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
-	    -ms-flex-direction: row-reverse;
-	        flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .bath9-l li:first-child {
@@ -4082,11 +4192,11 @@ figure {
 .bath9-l li:first-child {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
 	-webkit-align-items: flex-start;
 }
 
@@ -4102,12 +4212,12 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	width: 100%;
 }
@@ -4126,12 +4236,24 @@ figure {
 	position: relative;
 }
 
+.stairs1-box:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .3);
+}
+
 .stairs1-figure {
-	height: 800px;
+	height: 840px;
 }
 
 .stairs1-box .stairs2-box {
 	position: absolute;
+	z-index: 4;
 	left: 50%;
 	top: 245px;
 	margin: 0 0 0 -500px;
@@ -4148,6 +4270,7 @@ figure {
 .stairs2-box .cuplist1-box2 {
 	width: 820px;
 	margin: 0 0 70px;
+	color: #fff;
 	text-align: left;
 }
 
@@ -4170,8 +4293,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	padding: 135px 115px 135px 90px;
 	margin-top: 20px;
@@ -4191,8 +4314,8 @@ figure {
 	display: flex;
 	display: -webkit-flex;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-align-items: center;
 }
 
@@ -4341,9 +4464,6 @@ figure {
 	}
 	.cellar7-left img {
 		height: 400px;
-	}
-	.cellar6-figure {
-		height: 525px;
 	}
 	/*浴室柜-案例*/
 	.bath7-box {
