@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-CN">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="static/styles/lib/animate.css" />
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 
@@ -14,9 +13,9 @@
 		<div class="cuplist-container container">
 			<div class="main" data-modal-background-content>
 				<!--第一屏-->
-				<div class="cuplist1-box">
+				<div class="cuplist1-box js-parallax-sec">
 					<div class="cuplist1-figurebox">
-						<figure class="cuplist1-figure figure" style="background: url(static/images/furniture/tu2.jpg);" data-bottom-top="transform:translateY(-100px);" data-top-bottom="transform:translateY(100px);"></figure>
+						<figure class="cuplist1-figure figure img-trans js-parallax" style="background: url(static/images/furniture/tu2.jpg);"></figure>
 					</div>
 					<div class="cuplist1-box2">
 						<h1>经典美式，整体橱柜。</h1>
@@ -214,52 +213,17 @@
 			</div>
 		</div>
 		<!--js-->
-		<script src="static/scripts/lib/jquery-1.8.3.min.js"></script>
-		<script src="static/scripts/dialog.js"></script>
-		<script src="static/scripts/lib/skrollr.min.js"></script>
-		<script src="static/scripts/lib/wow.min.js"></script>
+		<script src="static/scripts/require.js"></script>
+        <script src="static/scripts/main.js"></script>
 		<script>
-			//进入动画初始化
-			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
-				new WOW().init();
-			}
-			//视差效果
-			var s = skrollr.init({
-				edgeStrategy: 'set',
-				easing: {
-					WTF: Math.random,
-					inverted: function(p) {
-						return 1 - p;
-					}
+			require(['jquery', 'parallax', 'openModal', 'wow'], function($, parallax) {
+				//进入动画初始化
+				if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+					new WOW().init();
 				}
-			});
-		</script>
-		<script>
-			//列表页全屏图片收缩
-			function showFullImg(winWidth, winHeight, scrollTop) {
-				$('.bg-mark').each(function() {
-					var percent, originPercent,
-						rate = 0.5,
-						originWidthRate = 0.20,
-						offsetTop = $(this).offset().top,
-						diffHeight = (winHeight + scrollTop) - offsetTop;
-					originPercent = originWidthRate * 100 + '%';
-					if(offsetTop <= scrollTop + winHeight) {
-						percent = (winWidth * originWidthRate - diffHeight * rate) / winWidth * 100 + '%';
-						if(parseInt(percent) < -10) {} else {
-
-						}
-						if(parseInt(percent) <= 0) {
-							$(this).find('.left-mark, .right-mark').addClass('is-max');
-						} else {
-							$(this).find('.left-mark, .right-mark').removeClass('is-max');
-						}
-						$(this).find('.left-mark, .right-mark').width(percent);
-					} else {
-						$(this).find('.left-mark, .right-mark').width(originPercent);
-					}
-				});
-			}
+				// 视差效果
+				parallax('js-parallax-sec', -30, 30, 1)
+			})
 		</script>
 	</body>
 

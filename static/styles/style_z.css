@@ -2,7 +2,6 @@
   定义页面样式
   通用样式
 */
-
 .pub-h {
 	font-size: 40px;
 	color: #333;
@@ -40,37 +39,37 @@
 .pub-p {
 	font-size: 18px;
 	color: #666;
-	line-height: 25px;
+	line-height: 27px;
 }
 
 .pub-p1 {
 	font-size: 22px;
 	color: #666;
-	line-height: 29px;
+	line-height: 30px;
 }
 
 .pub-p2 {
 	font-size: 20px;
 	color: #666;
-	line-height: 27px;
+	line-height: 29px;
 }
 
 .pub-p3 {
 	font-size: 16px;
 	color: #666;
-	line-height: 23px;
+	line-height: 25px;
 }
 
 .pub-p4 {
 	font-size: 26px;
 	color: #404040;
-	line-height: 35px;
+	line-height: 37px;
 }
 
 .pub-p22 {
 	font-size: 22px;
 	color: #404040;
-	line-height: 35px;
+	line-height: 37px;
 }
 
 .pub-font-60 {
@@ -454,6 +453,10 @@
 	display: none;
 }
 
+.dis-inline {
+	display: inline-block;
+}
+
 .pub-border-box {
 	box-sizing: border-box;
 }
@@ -701,7 +704,7 @@
 	display: none;
 	background-color: #f2f2f2;
 	padding-top: 160px;
-	padding-bottom: 130px;
+	padding-bottom: 10px;
 }
 
 .household-container .section3 {
@@ -780,8 +783,8 @@
 .household-container .foot-left-img {
 	position: relative;
 	overflow: hidden;
-	width: 115px;
-	height: 105px;
+	width: 78px;
+	height: 68px;
 	box-sizing: border-box;
 	padding-left: 10px;
 	float: left;
@@ -798,7 +801,6 @@
 
 .household-container .foot-left-info {
 	position: relative;
-	margin-top: 15px;
 	float: left;
 	width: 255px;
 	margin-left: 25px;
@@ -868,7 +870,7 @@
 	position: relative;
 	width: 1150px;
 	height: auto;
-	margin: 274px auto 0 auto;
+	margin: 155px auto 0 auto;
 }
 
 .household-container .section3-div2-header-img>img {
@@ -1037,13 +1039,13 @@
 .household-container .section4-col4-child {
 	position: relative;
 	overflow: hidden;
-	width: 80px;
+	width: 70px;
 	display: inline-block;
 }
 
 .household-container .section4-col4-child>img {
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	display: block;
 	border-radius: 50%;
 }
@@ -1361,6 +1363,10 @@
 	display: block;
 }
 
+a.anli-a:hover{
+	color: #54a0ff;
+}
+
 .household-container .section7-div2 {
 	position: relative;
 	width: 100%;
@@ -1423,6 +1429,8 @@
 	transition: all .3s;
 }
 
+.door-container .d-section9 .swiper-buttons-prev:hover,
+.door-container .d-section9 .swiper-buttons-next:hover,
 .household-container .section7-div2 .swiper-buttons-prev:hover,
 .household-container .section7-div2 .swiper-buttons-next:hover{
 	background-color: #000;
@@ -1644,8 +1652,8 @@
 }
 
 .stairs-container .idea2 {
-	width: 110px;
-	height: 110px;
+	width: 70px;
+	height: 70px;
 	display: inline-block;
 }
 
@@ -1694,9 +1702,9 @@
 }
 
 .stairs-container .s-section4-col5-child>img {
-	width: 100%;
-	height: 110px;
-	display: block;
+	width: 85px;
+	height: 85px;
+	display: inline-block;
 }
 
 .stairs-container .s-section4-col5-child>p {
@@ -1915,8 +1923,8 @@
 
 .stairs-container .s-section8 .swiper-img {
 	position: relative;
-	width: 110px;
-	height: 110px;
+	width: 76px;
+	height: 76px;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -2056,14 +2064,14 @@
 }
 
 .door-container .d-section2-col5-child {
-	width: 110px;
+	width: 72px;
 	height: auto;
 	display: inline-block;
 }
 
 .door-container .d-section2-child-img {
 	width: 100%;
-	height: 110px;
+	height: 72px;
 	display: block;
 	border-radius: 50%;
 }
@@ -2169,8 +2177,8 @@
 }
 
 .door-container .d-section3-col4-img {
-	width: 128px;
-	height: 128px;
+	width: 70px;
+	height: 70px;
 	display: inline-block;
 	border-radius: 50%;
 }
@@ -2284,6 +2292,12 @@
 	margin-top: 10px;
 }
 
+.door-container .d-section5 .open-dropmenu-btn.active,
+.door-container .d-section6 .open-dropmenu-btn.active{
+	-webkit-transform: translateY(230px) rotate(45deg);	
+	transform: translateY(230px) rotate(45deg);	
+}
+
 
 /* 精湛的工艺 */
 
@@ -2348,8 +2362,8 @@
 }
 
 .door-container .section6-col5-img {
-	width: 96px;
-	height: 96px;
+	width: 70px;
+	height: 70px;
 	border-radius: 50%;
 	display: inline-block;
 }
@@ -2556,8 +2570,7 @@
 .cellar-container .c-section2-div1 {
 	position: relative;
 	width: 100%;
-	background: url(../images/cd-background-1.jpg) no-repeat center center;
-	height: 980px;
+	height: 976px;
 	text-align: center;
 }
 
@@ -2595,11 +2608,10 @@
 }
 
 .cellar-container .c-setion2-content .col5-img {
-	width: 110px;
-	height: 110px;
+	width: 87px;
+	height: 87px;
 	display: inline-block;
 	border-radius: 50%;
-	background-color: #fff;
 }
 
 .cellar-container .c-section2-div2 {
@@ -2704,7 +2716,6 @@
 	height: 725px;
 	display: block;
 	margin-top: 70px;
-	background: url(../images/cd-background-1.jpg) no-repeat center center;
 }
 
 .cellar-container .c-section4-info {
@@ -3035,7 +3046,9 @@
 	width: 100%;
 	height: 955px;
 	padding-top: 135px;
-	background-color: #666;
+	/*background-color: #666;*/
+	background: url(../images/board/inHolee/inHolee_1.png) no-repeat center center;
+	background-size: cover;
 }
 
 .inHolee-container .i-section1 .sec1-title{
@@ -3139,7 +3152,7 @@
 	text-align: left;
 	font-size: 16px;
 	color: #333;
-	line-height: 23px;
+	line-height: 28px;
 }
 
 .inHolee-container .i-div2-col6{
@@ -3151,6 +3164,7 @@
 }
 
 .inHolee-container .i-div2-col6>div{
+	position: relative;
 	width: 400px;
 	height: 217px;
 	display: inline-block;
@@ -3159,6 +3173,13 @@
 	padding: 50px 40px 0 30px;
 	vertical-align: top;
 	background-color: #ededed;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.inHolee-container .i-div2-col6 .col6-info{
+	position: relative;
+	z-index: 3;
 }
 
 .inHolee-container .i-div2-col6 .line{
@@ -3268,7 +3289,6 @@
 	color: #fff;
 	font-size: 16px;
 	cursor: pointer;
-	background-color: rgb(95,95,95);
 	transition: all .1s;
 }
 
@@ -3279,11 +3299,21 @@
 	width: 100%;
 	display: none;
 	transform: translateX(-50%) translateY(-50%);
+	z-index: 9;
 }
 
 .inHolee-container .i-sec4-info>div>img{
-	display: none;
 	transition: all .1s;
+}
+
+.i-sec4-info .img-back{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: none;
 }
 
 .inHolee-container .inHolee-container .i-sec4-info .child-line{
@@ -3455,6 +3485,7 @@
 	margin-top: 220px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 155px;
 	overflow: hidden;
 }
 
@@ -3474,14 +3505,14 @@
 
 /* 整体家居案例 --开始 */
 .hholdlist-container .type-0 .hholdlist-item-info{
-	padding-top: 115px;
+	padding-top: 95px;
 	text-align: center;
 }
 
 .hholdlist-container .type-1 .hholdlist-item-img{
 	width: 100%;
 	height: 800px;
-	margin-top: 80px;
+	margin-top: 66px;
 }
 
 .hholdlist-container .type-1 .hholdlist-item-info{
@@ -3535,7 +3566,7 @@
 
 .hholdlist-container .type-4{
 	width: 100%;
-	margin-top: 240px;
+	margin-top: 205px;
 }
 
 .hholdlist-container .type-4 .hholdlist-item-img{
@@ -3620,7 +3651,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 265px;
-	margin-bottom: 175px;
+	margin-bottom: 100px;
 }
 
 .hholdlist-container .type-7 .hholdlist-item-info{
