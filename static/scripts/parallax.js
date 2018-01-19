@@ -12,10 +12,11 @@ define(deps, function($, superscrollorama, TweenLine) {
         bottom: 往上滚动的值
         duration: 持续时间(s)
     */
-    function parallax(target, top, bottom, duration) {
+    function parallax(target, top, bottom, duration, center) {
         var target = $('.' + target);
         var wrapper = '';
         var duration = duration || 1;
+        var center = center || false
         var ele = target.find('.js-parallax');
         var eleHieght = ele.height();
         if(target.find('.js-parallax-wrapper').length != 0) {
@@ -23,8 +24,8 @@ define(deps, function($, superscrollorama, TweenLine) {
             wrapper.css({'height': eleHieght - (Math.abs(top) + bottom), 'overflow': 'hidden'})
         }
         var controller = $.superscrollorama({ 
-            triggerAtCenter: false, 
-            playoutAnimations: true
+            triggerAtCenter: center, 
+            playoutAnimations: true,
         });
         controller.addTween(target,
             TweenLite.fromTo(
