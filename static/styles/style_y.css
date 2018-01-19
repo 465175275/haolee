@@ -698,26 +698,47 @@ figure {
 	height: 83px;
 	background-size: 100% 100%!important;
 	background-repeat: no-repeat!important;
+	transition: all .2s ease-in;
 }
 
 .flow-icon1 {
-	background: url(../images/black.jpg);
+	background: url(../images/furniture/icon/21-1.png);
+}
+
+li:hover .flow-icon1 {
+	background: url(../images/furniture/icon/21-2.png);
 }
 
 .flow-icon2 {
-	background: url(../images/furniture/tu1.jpg);
+	background: url(../images/furniture/icon/22-1.png);
+}
+
+li:hover .flow-icon2 {
+	background: url(../images/furniture/icon/22-2.png);
 }
 
 .flow-icon3 {
-	background: url(../images/black.jpg);
+	background: url(../images/furniture/icon/23-1.png);
+}
+
+li:hover .flow-icon3 {
+	background: url(../images/furniture/icon/23-2.png);
 }
 
 .flow-icon4 {
-	background: url(../images/furniture/tu1.jpg);
+	background: url(../images/furniture/icon/24-1.png);
+}
+
+li:hover .flow-icon4 {
+	background: url(../images/furniture/icon/24-2.png);
 }
 
 .flow-icon5 {
-	background: url(../images/black.jpg);
+	background: url(../images/furniture/icon/25-1.png);
+}
+
+li:hover .flow-icon5 {
+	background: url(../images/furniture/icon/25-2.png);
 }
 
 .flow-l h1 {
@@ -871,7 +892,6 @@ figure {
 .cupboard-box1 {
 	position: relative;
 	width: 100%;
-	height: 900px;
 	overflow: hidden;
 }
 
@@ -888,7 +908,7 @@ figure {
 .cupboard-c1 {
 	position: absolute;
 	left: 0;
-	top: 180px;
+	top: 20%;
 	z-index: 2;
 	width: 100%;
 	color: #fff;
@@ -1136,7 +1156,7 @@ figure {
 .cupboard5-l {
 	width: 1490px;
 	margin: 10px auto 120px;
-	padding-bottom: 30px;
+	padding: 0 10px 30px;
 	overflow: hidden;
 }
 
@@ -1728,7 +1748,6 @@ figure {
 	align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
-	height: 900px;
 	overflow: hidden;
 }
 
@@ -1743,10 +1762,15 @@ figure {
 }
 
 .building1-t {
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
 	z-index: 5;
 	color: #fff;
 	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 .building1-t h1 {
@@ -1852,8 +1876,17 @@ figure {
 	align-items: center;
 	-webkit-align-items: center;
 	width: 100%;
-	height: 560px;
 	overflow: hidden;
+}
+
+.news1-box2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 1200px;
+	margin: 0 0 0 -600px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 .news1-figure {
@@ -2212,8 +2245,7 @@ figure {
 .enter5-t {
 	position: relative;
 	z-index: 3;
-	padding: 105px 0 0;
-	color: #fff;
+	padding: 55px 0 0;
 	text-align: center;
 }
 
@@ -2229,7 +2261,7 @@ figure {
 .swiper-enter,
 .enter5-box2 {
 	position: relative;
-	width: 1110px;
+	width: 100%;
 	margin: 85px auto 110px;
 }
 
@@ -2305,7 +2337,7 @@ figure {
 }
 
 .enter-prev {
-	left: -85px;
+	left: 20px;
 }
 
 .enter-prev:before {
@@ -2319,7 +2351,7 @@ figure {
 }
 
 .enter-next {
-	right: -85px;
+	right: 20px;
 }
 
 .enter5-box2 .swiper-button-disabled {
@@ -2334,7 +2366,6 @@ figure {
 /*第一屏*/
 
 .cuplist1-figurebox {
-	height: 790px;
 	overflow: hidden;
 }
 
@@ -3734,7 +3765,6 @@ figure {
 .cellar7-l {
 	max-width: 1280px;
 	margin: 140px auto 0;
-	overflow: hidden;
 }
 
 .cellar7-l li {
@@ -3889,7 +3919,7 @@ figure {
 }
 
 .bath1-box2 {
-	width: 650px;
+	max-width: 650px;
 }
 
 
@@ -4255,8 +4285,14 @@ figure {
 	position: absolute;
 	z-index: 4;
 	left: 50%;
-	top: 245px;
+	top: 50%;
 	margin: 0 0 0 -500px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.stairs2-box .cuplist1-box2 {
+	margin: 0!important;
 }
 
 
@@ -4483,6 +4519,11 @@ figure {
 	.bath7-box4 {
 		width: 390px;
 	}
+	/*新闻列表*/
+	.swiper-enter,
+	.enter5-box2 {
+		width: 1010px;
+	}
 }
 
 @media only screen and (max-width:1550px) {
@@ -4498,13 +4539,16 @@ figure {
 	}
 	/*整体橱柜*/
 	.cupboard5-l {
-		width: 1250px
+		width: 1200px
 	}
 	.cupboard5-l li {
-		margin-top: 50px;
-		margin-right: 50px;
-		width: 600px;
+		margin-top: 40px;
+		margin-right: 40px;
+		width: 580px;
 		padding: 40px 25px 55px 30px;
+	}
+	.cupboard5-l img {
+		margin-right: 35px;
 	}
 	.cupboard6-l {
 		width: 1250px;
