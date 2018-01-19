@@ -14,14 +14,21 @@ define(deps, function($, superscrollorama, TweenLine) {
     */
     function parallax(target, top, bottom, duration) {
         var target = $('.' + target);
+        var wrapper = '';
         var duration = duration || 1;
+        var ele = target.find('.js-parallax');
+        var eleHieght = ele.height();
+        if(target.find('.js-parallax-wrapper').length != 0) {
+            wrapper = target.find('.js-parallax-wrapper');
+            wrapper.css({'height': eleHieght - (Math.abs(top) + bottom), 'overflow': 'hidden'})
+        }
         var controller = $.superscrollorama({ 
             triggerAtCenter: false, 
             playoutAnimations: true
         });
         controller.addTween(target,
             TweenLite.fromTo(
-                target.find('.js-parallax'),
+                ele,
                 duration,
                 { y: top + 'px'}, 
                 { y: bottom + 'px'}
