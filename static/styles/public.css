@@ -781,6 +781,51 @@ template {
 	color: #fff;
 }
 
+.sub-nav + .container {
+	padding-top: 96px;
+}
+.sub-nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 56px;
+	z-index: 99;
+	width: 100%;
+	height: 39px;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 39px;
+	background-color: #fff;
+}
+
+.sub-nav-box {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sub-nav-icon img {
+	vertical-align: middle;
+}
+
+.sub-nav-icon a {
+	font-size: 16px;
+	color: #a5a5a5;
+}
+
+.sub-nav-list .sub-nav-item {
+	float: left;
+	margin-left: 42px;
+	font-size: 14px;
+}
+
+.sub-nav-list .sub-nav-item a {
+	color: #a5a5a5;
+}
+
+.sub-nav-list .sub-nav-item.on a,
+.sub-nav-list .sub-nav-item a:hover {
+	color: #3e3e3e;
+}
 
 /* 头部--结束  */
 
@@ -852,6 +897,7 @@ template {
 }
 
 .footer-bottom {
+	position: relative;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-top: 1px solid #9c9c9c;
@@ -863,8 +909,43 @@ template {
 }
 
 
+.footer-bottom .footer-qr-code {
+	position: absolute;
+	right: -110px;
+	bottom: 20px;
+	z-index: 9;
+	display: none;
+	width: 100px;
+	height: 100px;
+}
+
+.footer-bottom .footer-qr-code img {
+	width: 100%;
+	height: 100%;
+}
+
+.footer-bottom-right:hover i {
+	color: #fff;
+}
+
+.footer-bottom-right:hover + .footer-qr-code {
+	display: block;
+}
 /* 尾部结束 */
 
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #060707;
+}
+
+
+/*定义滑块及圆角*/
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
 
 /* 点击展开按钮 */
 
