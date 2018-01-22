@@ -231,7 +231,7 @@
 			-ms-flex-align: center;
 			align-items: center;
 			-webkit-align-items: center;
-			min-height: 100vh;
+			min-height: 90vh;
 		}
 		
 		.timber-c1 {
@@ -264,7 +264,7 @@
 			align-items: center;
 			-webkit-align-items: center;
 			margin-top: -20vh;
-			min-height: 100vh;
+			min-height: 90vh;
 			font-size: 28px;
 			line-height: 40px;
 		}
