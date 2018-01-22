@@ -3045,19 +3045,50 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: 955px;
-	padding-top: 135px;
-	/*background-color: #666;*/
-	background: url(../images/board/inHolee/inHolee_1.png) no-repeat center center;
-	background-size: cover;
+	overflow: hidden;
 }
 
 .inHolee-container .i-section1 .sec1-title{
+	position: relative;
 	width: 1200px;
 	height: 264px;
+	margin-top: 135px;
 	margin-left: auto;
 	margin-right: auto;
 	background: url(../images/i_back1.png) no-repeat center center;
 	z-index: 99;
+}
+
+.inHolee-container .logo-item-top{
+	position: absolute;
+	top: 10px;
+	left: 120px;
+	width: 65px;
+	height: 65px;
+}
+
+.inHolee-container .logo-item-right{
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	width: 65px;
+	height: 65px;
+}
+
+.inHolee-container .logo-item-bottom{
+	position: absolute;
+	bottom: 10px;
+	left: 120px;
+	width: 65px;
+	height: 65px;
+}
+
+.inHolee-container .logo-item-left{
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	width: 65px;
+	height: 65px;
 }
 
 .inHolee-container .i-section1 .sec1-info{
@@ -3112,6 +3143,7 @@ a.anli-a:hover{
 }
 
 .inHolee-container .i-div1-logo .logo-left{
+	position: relative;
 	width: 300px;
 	height: 270px;
 	float: left;
@@ -3121,7 +3153,13 @@ a.anli-a:hover{
 	width: 320px;
 	float: right;
 	padding-top: 25px;
+	display: none;
+	visibility: visible !important;
 }
+
+/*.inHolee-container .i-div1-logo .logo-right>div{
+	display: none;
+}*/
 
 .inHolee-container .i-sec-div2{
 	width: 100%;
@@ -3189,6 +3227,18 @@ a.anli-a:hover{
 	margin-top: 12px;
 	display: inline-block;
 	background-color: #909090;
+}
+
+.i-section1-figure{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1155px;
+	background-image: url(../images/brand/inHolee/inHolee_1.png);
+	background-size: 100% 100%!important;
+	background-position: center!important;
+	background-repeat: no-repeat!important;
 }
 
 /* 生产基地 */

@@ -9,7 +9,7 @@ define(deps, function($, superscrollorama, TweenLine) {
     /*  params 参数
         target: 滚动到的容器或目标
         top: 往上滚动的值
-        bottom: 往上滚动的值
+        bottom: 往下滚动的值
         duration: 持续时间(s)
     */
     function parallax(target, top, bottom, duration, center) {
