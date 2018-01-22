@@ -2171,7 +2171,8 @@ li:hover .flow-icon5 {
 	-webkit-transform: scale(1.1, 1.1);
 }
 
-.enter4-l li:hover a {
+.enter4-l li:hover a,
+.enter4-l li:hover h1 {
 	color: #000;
 }
 
@@ -2197,17 +2198,19 @@ li:hover .flow-icon5 {
 	margin-top: 14px;
 	display: block;
 	font-size: 20px;
-	color: #333;
+	color: #555;
 	font-weight: bold;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	transition: all .3s ease-in;
+	-webkit-transition: all .3s ease-in;
 }
 
 .enter4-l a {
 	display: block;
 	padding: 30px 100px;
-	color: #666;
+	color: #888;
 	overflow: hidden;
 	transition: all .3s ease-in;
 	-webkit-transition: all .3s ease-in;
@@ -2268,8 +2271,7 @@ li:hover .flow-icon5 {
 .enter5-box4 {
 	position: relative;
 	display: block;
-	width: 223px;
-	height: 284px;
+	width: 100%;
 }
 
 .enter5-box4 img {
@@ -2295,6 +2297,13 @@ li:hover .flow-icon5 {
 	transition: opacity .3s ease;
 	-webkit-transition: opacity .3s ease;
 	overflow: hidden;
+}
+
+.enter5-box5 {
+	height: 700px;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
 }
 
 .enter5-box4:hover .enter5-box3 {
@@ -2324,34 +2333,37 @@ li:hover .flow-icon5 {
 .enter-prev,
 .enter-next {
 	position: absolute;
-	top: 120px;
-	width: 40px;
-	height: 40px;
-	font-size: 25px!important;
+	top: 50%;
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+	font-size: 35px!important;
 	color: #bebdbd;
-	line-height: 40px;
+	line-height: 60px;
 	text-align: center;
 	border: 2px solid #bebdbd;
 	border-radius: 100%;
 	cursor: pointer;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 .enter-prev {
-	left: 20px;
+	left: 30px;
 }
 
 .enter-prev:before {
 	position: relative;
-	left: 4px;
+	left: 6px;
 }
 
 .enter-next:before {
 	position: relative;
-	left: -4px;
+	left: -6px;
 }
 
 .enter-next {
-	right: 20px;
+	right: 30px;
 }
 
 .enter5-box2 .swiper-button-disabled {
@@ -4518,11 +4530,6 @@ li:hover .flow-icon5 {
 	}
 	.bath7-box4 {
 		width: 390px;
-	}
-	/*新闻列表*/
-	.swiper-enter,
-	.enter5-box2 {
-		width: 1010px;
 	}
 }
 
