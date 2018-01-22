@@ -45,7 +45,7 @@
 		<div class="index-container container">
 			<div class="section">
 				<div class="banner-section">
-					<div class="banner-title">
+					<div class="banner-title fadeInUp">
 						<p>别墅整木专家</p>
 						<h1>以原木之道，治别墅之美。</h1>
 					</div>
@@ -68,7 +68,7 @@
 							<div class="polylogue-overlay js-overlay"></div>
 							<div class="polylogue-imageContent">
 								<div class="polylogue-image">
-									<video class="polylogue-movie js-polylogueMovie" poster="static/images/index/figure/figure_sec2_img.jpg" loop>
+									<video class="polylogue-movie js-polylogueMovie" poster="static/images/index/figure/figure_sec2_img.jpg">
 										<source src="https://www.ndc.co.jp//assets/movie/polylogue.mp4" type="video/mp4">
 									</video>
 								</div>
@@ -137,9 +137,9 @@
 				</div>
 			</div>
 			<!-- 木种部分 -->
-			<div class="woods-section section">
-				<figure class="woods-sec-figure section-figure">
-					<img src="static/images/index/figure/figure_sec3_img.jpg" alt="">
+			<div class="woods-section section js-parallax-sec1">
+				<figure class="woods-sec-figure section-figure js-parallax-wrapper">
+					<img class="img-trans js-parallax" src="static/images/index/figure/figure_sec3_img.jpg">
 				</figure>
 				<div class="section-top block-center">
 					<div class="section-top-subtitle">木种丰富</div>
@@ -333,9 +333,9 @@
 				</div>
 			</div>
 			<!-- 制作工艺部分 -->
-			<div class="craftsmanship-section section">
-				<figure class="craftsmanship-sec-figure section-figure">
-					<img src="static/images/index/figure/figure_sec4_img.jpg" alt="">
+			<div class="craftsmanship-section section js-parallax-sec2">
+				<figure class="craftsmanship-sec-figure section-figure js-parallax-wrapper">
+					<img class="img-trans js-parallax" src="static/images/index/figure/figure_sec4_img.jpg">
 				</figure>
 				<div class="section-top block-center">
 					<div class="section-top-subtitle fs-40">制作工艺</div>
@@ -507,9 +507,9 @@
 				</div>
 			</div>
 			<!-- 量身定制 -->
-			<div class="customize-section section">
-				<figure class="customize-sec-figure section-figure">
-					<img src="static/images/index/figure/figure_sec5_img.jpg" alt="">
+			<div class="customize-section section js-parallax-sec3">
+				<figure class="customize-sec-figure section-figure js-parallax-wrapper">
+					<img class="img-trans js-parallax" src="static/images/index/figure/figure_sec5_img.jpg">
 				</figure>
 				<div class="section-top block-center">
 					<div class="section-top-subtitle fs-40">量身定制</div>
@@ -520,31 +520,31 @@
 					<div class="section-top-list block-center">
 						<ul class="flex-box flex-between text-center">
 							<li>
-								<div class="customize-icon" style="background-color: #666;">
+								<div class="customize-icon">
 									<img src="static/images/index/icon/customize_icon1.jpg" alt="宫廷法式">
 								</div>
 								<p>宫廷法式</p>
 							</li>
 							<li>
-								<div class="customize-icon" style="background-color: #666;">
+								<div class="customize-icon">
 									<img src="static/images/index/icon/customize_icon2.jpg" alt="传统中式">
 								</div>
 								<p>传统中式</p>
 							</li>
 							<li>
-								<div class="customize-icon" style="background-color: #666;">
+								<div class="customize-icon">
 									<img src="static/images/index/icon/customize_icon3.jpg" alt="经典美式">
 								</div>
 								<p>经典美式</p>
 							</li>
 							<li>
-								<div class="customize-icon" style="background-color: #666;">
+								<div class="customize-icon">
 									<img src="static/images/index/icon/customize_icon4.jpg" alt="欧式古典">
 								</div>
 								<p>欧式古典</p>
 							</li>
 							<li>
-								<div class="customize-icon" style="background-color: #666;">
+								<div class="customize-icon">
 									<img src="static/images/index/icon/customize_icon5.jpg" alt="乡村田园">
 								</div>
 								<p>乡村田园</p>
@@ -719,10 +719,10 @@
 				</div>
 			</div>
 			<!-- 定制流程 -->
-			<div class="process-section section">
+			<div class="process-section section js-parallax-sec4">
 				<div class="section-top block-center">
-					<figure class="process-sec-figure section-figure">
-						<img src="static/images/index/figure/figure_sec7_img.jpg" alt="">
+					<figure class="process-sec-figure section-figure js-parallax-wrapper">
+						<img class="img-trans js-parallax" src="static/images/index/figure/figure_sec7_img.jpg">
 					</figure>
 					<div class="section-top-subtitle fs-24 text-white">定制流程</div>
 					<div class="section-top-headline text-white">
@@ -739,7 +739,7 @@
 					</div>
 					<div class="process-section-body-cont">
 						<div class="process-list block-center clearfix">
-							<ul class="process-list-left pull-left">
+							<ul class="process-list-left pull-left wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="10">
 								<li class="clearfix">
 									<div class="step pull-left">1</div>
 									<div class="pull-left">
@@ -769,7 +769,7 @@
 									</div>
 								</li>
 							</ul>
-							<ul class="process-list-right pull-right">
+							<ul class="process-list-right pull-right wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.1s" data-wow-offset="10">
 								<li class="clearfix">
 									<div class="step pull-left">5</div>
 									<div class="pull-left">
@@ -932,11 +932,16 @@
 		<script src="static/scripts/main.js"></script>
 		<script src="https://cdn.bootcss.com/stickyfill/2.0.3/stickyfill.min.js"></script>
 		<script>
-		require(['jquery', 'Swiper', 'openDropmenu'], function($, Swiper) {
+		require(['jquery', 'Swiper', 'parallax', 'openDropmenu', 'wow'], function($, Swiper, parallax) {
 			$(function() {
+				//进入动画初始化
+				if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+						new WOW().init();
+				}
 				/* stickyfill.js */
 				var elements = $('.sticky');
 				Stickyfill.add(elements);
+				
 				/* scrollMagic */
 				var TopScrollSection = {
 					parallax: function(_section) {
@@ -1061,6 +1066,40 @@
 				TopScrollSection.parallax('topPeople');
 				TopScrollSection.overlay('topPeople');
 				TopScrollSection.content('topPeople');
+				/* 视差效果 */
+				var parallaxArr = [
+					{
+						target: 'js-parallax-sec1',
+						top: -30,
+						bottom: 10,
+						duration: 1,
+						center: true
+					},
+					{
+						target: 'js-parallax-sec2',
+						top: -30,
+						bottom: 10,
+						duration: 1,
+						center: true
+					},
+					{
+						target: 'js-parallax-sec3',
+						top: -30,
+						bottom: 10,
+						duration: 1,
+						center: true
+					},
+					{
+						target: 'js-parallax-sec4',
+						top: -30,
+						bottom: 10,
+						duration: 1,
+						center: true
+					}
+				]
+				parallaxArr.forEach(function(item) {
+					parallax(item.target, item.top, item.bottom, item.duration, item.center);
+				})
 				/* 视频播放 */
 				$(window).on('scroll', function() {
 					var isInViewArea = getIsInViewArea('.topPolylogue');
