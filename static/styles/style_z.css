@@ -582,7 +582,6 @@
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
 	overflow: hidden;
 	transition: opacity 1s;
 	opacity: 1;
@@ -2563,21 +2562,7 @@ a.anli-a:hover{
 	opacity: 0;
 }
 
-@media only screen and (max-width: 1281px) {
-	.door-container .d-section6-auto{
-		width: 460px;
-	}
-	.door-container .d-section6-col5>div{
-		width: 100px;
-	}
-	.door-container .section6-col5-img{
-		width: 60px;
-		height: 60px;
-	}
-	.d-section8-left .info>h1{
-		font-size: 40px;
-	}
-}
+
 /* 套装门 -- 结束 */
 
 /* 酒窖 -- 开始  */
@@ -3121,16 +3106,6 @@ a.anli-a:hover{
 
 .cellar-container .c-section8-swiper.on .pub-back-pop{
 	opacity: 0;
-}
-
-/* 分辨率小于1280px的时候  */
-@media only screen and (min-width: 1275px) and (max-width: 1368px){
-	.c-section6 .c-sec6-swiper .child-info>p{
-		font-size: 30px;
-	}
-	.c-section4 .swiper-div .child-info>p:last-child{
-		font-size: 16px;
-	}
 }
 
 /* 酒窖 -- 结束  */
@@ -3855,6 +3830,22 @@ a.anli-a:hover{
 	.hholdlist-container .household-list-col4{
 		width: 1240px;
 	}
+	.household-container .section1-title,
+	.household-container .section7-div1>h1{
+		font-size: 40px;
+	}
+	
+	.household-container .section2-content>h1{
+		font-size: 32px;
+	}
+	.household-container .section2-content>p{
+		font-size: 18px;
+	}
+	
+	.household-container .section6-div1-info>h1{
+		font-size: 28px;
+		line-height: 36px;
+	}
 	
 	.hholdlist-container .type-5{
 		max-width: 600px;
@@ -3876,13 +3867,92 @@ a.anli-a:hover{
 		font-size: 14px;
 	}
 	
+	.stairs-container .swiper-container .child-info>p:first-child{
+		font-size: 25px;
+	}
+	
 	.stairs-container .s-section6 .swiper-container-horizontal>.swiper-pagination-bullets{
 		bottom: 205px !important;
 	}
 	
+	.stairs-container .s-section1-con>h1,
+	.stairs-container .s-section2-div1>h1,
+	.stairs-container .s-section3-div1>h1,
+	.stairs-container .s-section4-div1>h1,
+	.stairs-container .s-section5>h1,
+	.stairs-container .s-section7>h1,
+	.stairs-container .s-section8>h1,
+	.stairs-container .s-section9>h1{
+		font-size: 35px;
+	}
+	.stairs-container .s-section7-col3 .s-section7-col3-img .img-title, 
+	.stairs-container .s-section7-col31 .s-section7-col3-img .img-title{
+		font-size: 26px;
+	}
+	
+	/* 门 */
 	.door-container .d-section9-img .img-title{
 		font-size: 36px;
 	}
+	.door-container .d-section1-title>h1{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.door-container .d-section2-div1>h1,
+	.door-container .d-section9-title>h1{
+		font-size: 40px;
+	}
+	.door-container .d-section2-div1>p:nth-child(3){
+		font-size: 18px;
+	}
+	.door-container .main-child>h1,
+	.door-container .d-section7>h1{
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.door-container .d-section6-auto{
+		width: 460px;
+	}
+	.door-container .d-section6-col5>div{
+		width: 100px;
+	}
+	.door-container .section6-col5-img{
+		width: 60px;
+		height: 60px;
+	}
+	.door-container .d-section8-left .info>h1{
+		font-size: 36px;
+	}
+	
+	/* 酒窖 */
+	.cellar-container .c-section1-title>h1,
+	.cellar-container .c-setion2-content>h1,
+	.cellar-container .c-section4>h1,
+	.cellar-container .c-section8-title>h1{
+		font-size: 40px !important;
+	}
+	.cellar-container .c-div2-title>h1,
+	.cellar-container .c-sec6-title>h1,
+	.cellar-container .sec7-info>h1{
+		font-size: 35px;
+	}
+	.cellar-container .c-section8-title>p:first-child{
+		font-size: 22px;
+	}
+	.c-section6 .c-sec6-swiper .child-info>p{
+		font-size: 28px;
+	}
+	.c-section4 .swiper-div .child-info>p:last-child{
+		font-size: 16px;
+	}
+	.cellar-container .c-section8-swiper .img-title{
+		font-size: 34px;
+	}
+	
+	.hholdlist-container .type-2 .hholdlist-item-info>p:first-child,
+	.hholdlist-container .hholdlist-item-info>p:first-child,
+	.doorlist-container .doorlist-item-info>p:first-child{
+		font-size: 33px;
+	}
 }
-
 /* 整体家居案例 -- 结束 */
