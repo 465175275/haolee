@@ -252,6 +252,10 @@
 	margin-top: 80px;
 }
 
+.pub-margin-top95{
+	margin-top: 95px !important;
+}
+
 .pub-margin-top152{
 	margin-top: 152px;
 }
@@ -300,6 +304,14 @@
 	margin-left: 85px;
 }
 
+.pub-margin-left105 {
+	margin-left: 105px;
+}
+
+.pub-margin-left130 {
+	margin-left: 130px;
+}
+
 .pub-margin-left75 {
 	margin-left: 75px;
 }
@@ -340,6 +352,10 @@
 	padding: 0 10px;
 }
 
+.pub-padding-bottom30 {
+	padding-bottom: 30px;
+}
+
 .pub-text-indent {
 	text-indent: 30px;
 }
@@ -358,6 +374,10 @@
 
 .pub-line-height29 {
 	line-height: 29px;
+}
+
+.pub-line-height35 {
+	line-height: 35px;
 }
 
 .pub-line-height {
@@ -415,6 +435,16 @@
 .pub-margin-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.pub-back-pop{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: none;
 }
 
 .update-width {
@@ -542,6 +572,7 @@
 	position: relative;
 	height: auto;
 	width: 100%;
+	margin-top: 95px;
 }
 
 .household-container .section1 {
@@ -599,18 +630,18 @@
 	color: #fff;
 	text-align: center;
 	font-size: 60px;
-	transform: translateX(-50%) translateY(-100%);
+	transform: translateX(-50%) translateY(-70%);
 	transition: all .6s;
 	z-index: 2;
 }
 
 .household-container .section1-subline {
 	font-size: 24px;
-	color: #242424;
-	transform: translateX(150px);
+	color: #fff;
+	transform: translateX(0px);
 	transition-property: transform opacity;
 	transition-duration: .5s;
-	opacity: 0;
+	opacity: 1;
 }
 
 .household-container .section1-title>p:nth-child(1) {
@@ -658,7 +689,6 @@
 
 
 /* 首页的动画效果--开始 */
-
 .modify .section1 {
 	transform: translateY(-190px);
 	transition: all .6s;
@@ -677,7 +707,7 @@
 
 .modify .section1-subline {
 	opacity: 1;
-	transform: translateX(0);
+	color: #242424;
 	transition: all .6s;
 }
 
@@ -754,8 +784,8 @@
 	height: auto;
 	margin: 0 auto;
 	overflow: hidden;
-	padding-top: 55px;
-	padding-bottom: 88px;
+	padding-top: 65px;
+	padding-bottom: 90px;
 }
 
 .household-container .section3-foot-left {
@@ -1339,9 +1369,11 @@
 }
 
 .household-container .section7-div1 {
-	width: 600px;
+	max-width: 1050px;
 	height: auto;
 	margin: 0 auto;
+	padding-left: 85px;
+	box-sizing: border-box;
 	text-align: left;
 }
 
@@ -1419,7 +1451,7 @@ a.anli-a:hover{
 	position: relative;
 	height: 240px;
 	line-height: 240px;
-	flex: 0 0 350px;
+	flex: 0 0 345px;
 	box-sizing: border-box;
 	color: #fff;
 	font-size: 28px;
@@ -1442,11 +1474,6 @@ a.anli-a:hover{
 	top: 0;
 	width: 100%;
 	height: 100%;
-	transition: all .3s;
-}
-
-.household-container .section7-col6>div>img:hover{
-	transform: scale(1.1);
 	transition: all .3s;
 }
 
@@ -1507,7 +1534,7 @@ a.anli-a:hover{
 	/* 原木楼梯 */
 .stairs-container .s-section1 {
 	position: relative;
-	padding: 155px 0 120px 0;
+	padding: 90px 0 120px 0;
 	width: 100%;
 	height: auto;
 }
@@ -1691,7 +1718,7 @@ a.anli-a:hover{
 	width: 100%;
 	height: auto;
 	text-align: center;
-	margin-top: 110px;
+	margin-top: 130px;
 }
 
 .stairs-container .s-section4-col5-child {
@@ -1910,7 +1937,7 @@ a.anli-a:hover{
 .stairs-container .s-section8-swiper {
 	width: 980px;
 	height: auto;
-	margin: 80px auto 0 auto;
+	margin: 115px auto 0 auto;
 	padding: 0 100px;
 	position: relative;
 }
@@ -2032,7 +2059,7 @@ a.anli-a:hover{
 }
 
 .door-container .d-section1-img {
-	height: 964px;
+	height: auto;
 	width: 100%;
 	display: block;
 }
@@ -2060,13 +2087,18 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 90px;
 }
 
 .door-container .d-section2-col5-child {
 	width: 72px;
 	height: auto;
 	display: inline-block;
+}
+
+.door-container .d-section2 .open-dropmenu-btn.active{
+	-webkit-transform: translateY(210px) rotateZ(45deg);
+	transform: translateY(210px) rotateZ(45deg);
 }
 
 .door-container .d-section2-child-img {
@@ -2149,7 +2181,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 125px 0 144px 0;
+	padding: 155px 0 144px 0;
 	background-color: #f7f7f7;
 	text-align: center;
 }
@@ -2324,8 +2356,8 @@ a.anli-a:hover{
 
 .door-container .d-section6-div1-main>.main-child {
 	position: relative;
-	width: 50%;
-	height: 700px;
+	width: 48%;
+	height: auto;
 	overflow: hidden;
 	display: inline-block;
 	float: left;
@@ -2475,7 +2507,7 @@ a.anli-a:hover{
 
 .door-container .section8-col3-img {
 	width: 100%;
-	height: 180px;
+	height: auto;
 	display: block;
 }
 
@@ -2511,10 +2543,6 @@ a.anli-a:hover{
 	padding-bottom: 100px;
 }
 
-.door-container .d-section9-img .swiper-img {
-	height: 575px;
-}
-
 .door-container .d-section9-img .img-title {
 	position: absolute;
 	top: 50%;
@@ -2523,6 +2551,21 @@ a.anli-a:hover{
 	font-size: 44px;
 	color: #fff;
 	text-align: center;
+}
+@media only screen and (max-width: 1281px) {
+	.door-container .d-section6-auto{
+		width: 460px;
+	}
+	.door-container .d-section6-col5>div{
+		width: 100px;
+	}
+	.door-container .section6-col5-img{
+		width: 60px;
+		height: 60px;
+	}
+	.d-section8-left .info>h1{
+		font-size: 40px;
+	}
 }
 /* 套装门 -- 结束 */
 
@@ -2570,16 +2613,16 @@ a.anli-a:hover{
 .cellar-container .c-section2-div1 {
 	position: relative;
 	width: 100%;
-	height: 976px;
+	height: auto;
 	text-align: center;
 }
 
 .cellar-container .c-setion2-content {
+	position: absolute;
+	top: 200px;
+	left: 50%;
 	width: 840px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 200px;
-	text-align: center;
+	transform: translateX(-50%);
 }
 
 .cellar-container .c-setion2-content>p {
@@ -2713,7 +2756,7 @@ a.anli-a:hover{
 
 .cellar-container .c-section4-img {
 	width: 100%;
-	height: 725px;
+	height: auto;
 	display: block;
 	margin-top: 70px;
 }
@@ -2755,8 +2798,7 @@ a.anli-a:hover{
 
 .cellar-container .c-section4 .swiper-container .child-img {
 	width: 100%;
-	height: 570px;
-	opacity: .6;
+	height: auto;
 }
 
 .cellar-container .c-section4 .swiper-container .child-info {
@@ -2800,8 +2842,7 @@ a.anli-a:hover{
 
 .cellar-container .c-sec5-div1{
 	width: 100%;
-	background: url(../images/cd-background-1.jpg) no-repeat center center;
-	height: 840px;
+	height: auto;
 }
 
 .cellar-container .c-sec5-div2{
@@ -2863,6 +2904,26 @@ a.anli-a:hover{
 	line-height: 25px;
 }
 
+.cellar-container .c-section2-img{
+	position: relative;
+	width: 100%;
+	height: 978px;
+	background-image: url(../images/cellar/overview/cellar_8.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cellar-container .c-section2-img1{
+	position: relative;
+	width: 100%;
+	height: 978px;
+	background-image: url(../images/cellar/overview/cellar_2.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 /* 私人酒窖的风格 */
 .cellar-container .c-section6{
 	position: relative;
@@ -2875,6 +2936,7 @@ a.anli-a:hover{
 	max-width: 670px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 .cellar-container .c-sec6-swiper{
@@ -2889,7 +2951,7 @@ a.anli-a:hover{
 
 .cellar-container .c-sec6-swiper .swiper-container .child-img {
 	width: 100%;
-	height: 480px;
+	height: auto;
 	opacity: .6;
 }
 
@@ -2920,7 +2982,7 @@ a.anli-a:hover{
 .cellar-container .c-sec6-swiper .swiper-button-next {
 	width: 80px;
 	height: 120px;
-	top: 28%;
+	top: 35%;
 	right: 95px;
 	background-size: 80px 120px;
 	background-image: url(../images/icon/slide-next.png);
@@ -2929,7 +2991,7 @@ a.anli-a:hover{
 .cellar-container .c-sec6-swiper .swiper-button-prev {
 	width: 80px;
 	height: 120px;
-	top: 28%;
+	top: 35%;
 	left: 95px;
 	background-size: 80px 120px;
 	background-image: url(../images/icon/slide-prev.png);
@@ -2961,9 +3023,25 @@ a.anli-a:hover{
 .cellar-container .c-section7{
 	position: relative;
 	width: 100%;
+	height: auto;
+}
+
+.cellar-container .c-section7-img{
+	position: relative;
+	width: 100%;
 	height: 860px;
-	padding-top: 160px;
-	background: url(../images/cd-background-1.jpg) no-repeat center center;
+	background-image: url(../images/cellar/overview/cellar_18.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+
+.cellar-container .c-section7-all{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	width: 100%;
+	transform: translateX(-50%);
 }
 
 .cellar-container .sec7-info{
@@ -3005,10 +3083,6 @@ a.anli-a:hover{
 .cellar-container .c-section8-swiper .swiper-container {
 	position: relative;
 	padding-bottom: 100px;
-}
-
-.cellar-container .c-section8-swiper .swiper-img {
-	height: 575px;
 }
 
 .cellar-container .c-section8-swiper .img-title {
@@ -3561,7 +3635,7 @@ a.anli-a:hover{
 
 .hholdlist-container .type-1 .hholdlist-item-img{
 	width: 100%;
-	height: 800px;
+	height: auto;
 	margin-top: 66px;
 }
 
@@ -3576,7 +3650,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-2 {
-	width: 1300px;
+	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -3595,7 +3669,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-3{
-	max-width: 1300px;
+	max-width: 1240px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 160px;
@@ -3621,7 +3695,7 @@ a.anli-a:hover{
 
 .hholdlist-container .type-4 .hholdlist-item-img{
 	width: 100%;
-	height: 800px;
+	height: auto;
 }
 
 .hholdlist-container .type-4 .hholdlist-item-info{
@@ -3634,7 +3708,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .household-list-col4{
-	width: 1290px;
+	width: 1260px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -3643,7 +3717,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-5{
-	max-width: 630px;
+	max-width: 610px;
 	height: auto;
 	display: inline-block;
 	vertical-align: top;
@@ -3662,7 +3736,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-6{
-	width: 1300px;
+	width: 1280px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -3696,7 +3770,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-7{
-	max-width: 1300px;
+	max-width: 1280px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -3716,6 +3790,20 @@ a.anli-a:hover{
 	width: 100%;
 	height: 680px;
 	margin-top: 75px;
+}
+/* 分辨率小于1280px的时候  */
+@media only screen and (max-width: 1281px) {
+	.hholdlist-container .type-2,
+	.hholdlist-container .type-3,
+	.hholdlist-container .type-6,
+	.hholdlist-container .type-7,
+	.hholdlist-container .household-list-col4{
+		width: 1240px;
+	}
+	.hholdlist-container .type-5{
+		max-width: 600px;
+	}
+	
 }
 
 /* 整体家居案例 -- 结束 */
