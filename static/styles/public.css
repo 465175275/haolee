@@ -804,13 +804,16 @@ template {
 	margin-right: auto;
 }
 
-.sub-nav-icon img {
-	vertical-align: middle;
-}
-
 .sub-nav-icon a {
 	font-size: 16px;
 	color: #a5a5a5;
+}
+
+.sub-nav-icon img {
+	width: auto;
+	height: 19px;
+	margin-right: 2px;
+	vertical-align: middle;
 }
 
 .sub-nav-list .sub-nav-item {
@@ -943,7 +946,8 @@ template {
 
 /*定义滑块及圆角*/
 ::-webkit-scrollbar-thumb {
-    width: 10px;
+	width: 6px;
+	border: 2px solid #060707;
     border-radius: 5px;
     background-color: #fff;
 }

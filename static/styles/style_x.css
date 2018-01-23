@@ -985,7 +985,10 @@
 }
 
 .cabinet-container .design-section .section-top {
-	padding-left: 130px;
+	width: 1185px;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 60px;
 }
 
 .cabinet-container .design-section .section-top-subtitle {
