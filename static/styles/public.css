@@ -829,7 +829,69 @@ template {
 .sub-nav-list .sub-nav-item a:hover {
 	color: #3e3e3e;
 }
-
+/* 产品目录 */
+.product-nav-sec {
+	position: absolute;
+	right: 65px;
+	top: 30%;
+	z-index: 90;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.product-nav-container {
+	height: 378px;
+	text-align: center;
+}
+.product-nav-container .product-nav-item {
+	width: 70px;
+	height: 60px !important;
+	padding-top: 10px;
+	border: 1px solid #bfbfbf;
+	border-radius: 50%;
+}
+.product-nav-container .iconfont {
+	font-size: 30px;
+	color: #bfbfbf;
+}
+.product-nav-container .product-nav-item:hover,
+.product-nav-container .product-nav-item.active {
+	background-color: #bfbfbf;
+}
+.product-nav-container .product-nav-item.active .iconfont,
+.product-nav-container .product-nav-item:hover .iconfont,
+.product-nav-container .product-nav-item.active p,
+.product-nav-container .product-nav-item:hover p {
+	color: #fff;
+}
+.product-nav-container p {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #b1b1b1;
+}
+.product-nav-sec .slide-btn i {
+	font-size: 32px;
+	color: #bfbfbf;
+} 
+.product-nav-sec .slide-btn-prev {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	z-index: 100;
+	margin-left: -16px;
+	-webkit-transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+}
+.product-nav-sec .slide-btn-next {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -16px;
+	-webkit-transform: rotateZ(90deg);
+	transform: rotateZ(90deg);
+}
+.product-nav-sec .slide-btn.swiper-button-disabled {
+	opacity: .2;
+}
 /* 头部--结束  */
 
 
