@@ -7,11 +7,10 @@
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 
 	<body>
-				<!-- 头部 -->
+		<!-- 头部 -->
 		<div class="header-nav">
 			<!-- logo -->
 			<div class="header-nav-box">
@@ -280,7 +279,11 @@
 				</div>
 			</div>
 		</div>
-				<!-- 尾部 -->
+		<!-- 返回顶部 -->
+		<div class="to-top" id="to-top">
+			<i class="iconfont icon-top"></i>
+		</div>
+		<!-- 尾部 -->
 		<div class="footer">
 			<div class="footer-container block-center">
 				<div class="footer-top clearfix">
@@ -360,13 +363,11 @@
 				</div>
 			</div>
 		</div>
-
-			
 		<!--js-->
 		<script src="static/scripts/require.js"></script>
 		<script src="static/scripts/main.js"></script>
 		<script>
-			require(['jquery', 'parallax', 'Swiper', 'openModal', 'wow'], function($, parallax, Swiper) {
+			require(['jquery', 'parallax', 'Swiper', 'openModal', 'wow', 'toTop'], function($, parallax, Swiper) {
 				$(function() {
 					//进入动画初始化
 					if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {

@@ -7,11 +7,10 @@
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 
 	<body>
-				<!-- 头部 -->
+		<!-- 头部 -->
 		<div class="header-nav">
 			<!-- logo -->
 			<div class="header-nav-box">
@@ -64,7 +63,7 @@
 				<!--第一屏-->
 				<div class="cuplist1-box js-parallax-sec">
 					<div class="cuplist1-figurebox js-parallax-wrapper">
-				
+
 						<img src="static/images/cupboard/list/1.jpg" class="img-trans js-parallax img-block">
 					</div>
 					<div class="cuplist1-box2">
@@ -262,7 +261,11 @@
 				</div>
 			</div>
 		</div>
-				<!-- 尾部 -->
+		<!-- 返回顶部 -->
+		<div class="to-top" id="to-top">
+			<i class="iconfont icon-top"></i>
+		</div>
+		<!-- 尾部 -->
 		<div class="footer">
 			<div class="footer-container block-center">
 				<div class="footer-top clearfix">
@@ -343,12 +346,11 @@
 			</div>
 		</div>
 
-			
 		<!--js-->
 		<script src="static/scripts/require.js"></script>
 		<script src="static/scripts/main.js"></script>
 		<script>
-			require(['jquery', 'parallax', 'showFullImg', 'openModal', 'wow'], function($, parallax, showFullImg) {
+			require(['jquery', 'parallax', 'showFullImg', 'openModal', 'wow', 'toTop'], function($, parallax, showFullImg) {
 				//进入动画初始化
 				if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
 					new WOW().init();

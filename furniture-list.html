@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/lib/animate.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 
 	<body>
@@ -480,6 +479,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- 返回顶部 -->
+		<div class="to-top" id="to-top">
+			<i class="iconfont icon-top"></i>
+		</div>			
 		<!-- 尾部 -->
 		<div class="footer">
 			<div class="footer-container block-center">
@@ -565,7 +568,7 @@
 		<script src="static/scripts/require.js"></script>
 		<script src="static/scripts/main.js"></script>
 		<script>
-			require(['jquery', 'parallax', 'Swiper', 'showFullImg', 'openModal', 'wow'], function($, parallax, Swiper, showFullImg) {
+			require(['jquery', 'parallax', 'Swiper', 'showFullImg', 'openModal', 'wow', 'toTop'], function($, parallax, Swiper, showFullImg) {
 				$(function() {
 					//进入动画初始化
 					if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
