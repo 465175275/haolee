@@ -35,7 +35,9 @@ requirejs.config({
         /** 3d旋转轮播效果1 */
         'featureCarousel1': 'lib/jquery.featureCarousel.min',
         /** 3d旋转轮播效果2 */
-        'featureCarousel2': 'lib/jquery.featureCarousel2.min'
+        'featureCarousel2': 'lib/jquery.featureCarousel2.min',
+        /* 返回顶部 */
+        'toTop': 'toTop'
     },
     shim: {
         /** 引入swiper依赖css文件 */
