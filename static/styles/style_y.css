@@ -2236,8 +2236,7 @@ li:hover .flow-icon5 {
 .enter5-section {
 	position: relative;
 	margin-top: 90px;
-	margin-bottom: 160px;
-	height: 680px;
+	overflow: hidden
 }
 
 .enter5-figure {
@@ -2269,7 +2268,7 @@ li:hover .flow-icon5 {
 .enter5-box2 {
 	position: relative;
 	width: 100%;
-	margin: 85px auto 110px;
+	margin: 85px auto 50px;
 }
 
 .enter5-box4 {
