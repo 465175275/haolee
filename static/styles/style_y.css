@@ -598,8 +598,8 @@ figure {
 	background: rgba(92, 92, 92, 1);
 	border-radius: 5px;
 	cursor: pointer;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
 }
 
 .carousel-container1 #carousel-left:hover,
@@ -784,8 +784,8 @@ li:hover .flow-icon5 {
 	margin-top: 15px;
 	font-size: 20px;
 	color: #208bff;
-	-webkit-transition: color .3s ease;
-	transition: color .3s ease;
+	-webkit-transition: color .2s ease;
+	transition: color .2s ease;
 }
 
 .case-more:hover {
@@ -1171,8 +1171,8 @@ li:hover .flow-icon5 {
 	background: #f2f2f2;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	transition: all .3s ease-in;
-	-webkit-transition: all .3s ease-in;
+	transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
 }
 
 .cupboard5-l li:hover {
@@ -1512,8 +1512,8 @@ li:hover .flow-icon5 {
 	border: 2px solid #e8e8e8;
 	border-radius: 100%;
 	cursor: pointer;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
 }
 
 .carousel-container #carousel-left:hover,
@@ -1725,8 +1725,8 @@ li:hover .flow-icon5 {
 	color: #808080;
 	border: 2px solid #808080;
 	border-radius: 20px;
-	transition: all .3s ease;
-	-webkit-transition: all .3s ease;
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;
 }
 
 .aux-link:hover {
@@ -1953,8 +1953,8 @@ li:hover .flow-icon5 {
 }
 
 .pagintion span {
-	transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
 	cursor: pointer;
 	width: 21px;
 	height: 21px;
