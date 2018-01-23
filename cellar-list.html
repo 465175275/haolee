@@ -7,7 +7,6 @@
 		<title>豪利</title>
 		<link rel="stylesheet" href="static/styles/public.css" />
 		<link rel="stylesheet" href="static/styles/style_y.css" />
-		<link rel="stylesheet" href="http://at.alicdn.com/t/font_512007_ogl612z39qk3mcxr.css" />
 	</head>
 
 	<body>
@@ -27,7 +26,7 @@
 							<a href="index.html">首页</a>
 						</li>
 						<li class="active">
-							<a href="pro_household.html">产品目录</a>
+							<a href="household.html">产品目录</a>
 						</li>
 						<li>
 							<a href="cooperation.html">合作加盟</a>
@@ -50,10 +49,10 @@
 				</div>
 				<div class="sub-nav-list pull-right">
 					<div class="sub-nav-item">
-						<a href="pro_cellar.html">概述</a>
+						<a href="cellar.html">概述</a>
 					</div>
 					<div class="sub-nav-item on">
-						<a href="pro_cellar-list.html">案例</a>
+						<a href="cellar-list.html">案例</a>
 					</div>
 				</div>
 			</div>
@@ -244,6 +243,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- 返回顶部 -->
+		<div class="to-top" id="to-top">
+			<i class="iconfont icon-top"></i>
+		</div>			
 		<!-- 尾部 -->
 		<div class="footer">
 			<div class="footer-container block-center">
@@ -329,7 +332,7 @@
 		<script src="static/scripts/require.js"></script>
 		<script src="static/scripts/main.js"></script>
 		<script>
-			require(['jquery', 'parallax', 'openModal', 'wow'], function($, parallax) {
+			require(['jquery', 'parallax', 'openModal', 'wow', 'toTop'], function($, parallax) {
 				$(function() {
 					//进入动画初始化
 					if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
