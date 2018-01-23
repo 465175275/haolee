@@ -1591,12 +1591,12 @@ a.anli-a:hover{
 }
 
 .stairs-container .s-section2-div1-img {
-	height: 784px;
+	height: auto;
 	width: 100%;
 }
 
 .stairs-container .s-section2-div1-img>img {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	display: block;
 }
@@ -1708,8 +1708,8 @@ a.anli-a:hover{
 	text-align: center;
 }
 
-.mucai-img {
-	height: 510px;
+.stairs-container .mucai-img {
+	height: auto;
 	width: 100%;
 	display: block;
 }
@@ -1800,7 +1800,7 @@ a.anli-a:hover{
 
 .stairs-container .gongyi-img {
 	width: 100%;
-	height: 630px;
+	height: auto;
 	display: block;
 	margin-top: 85px;
 	background-color: #fff;
@@ -1826,7 +1826,7 @@ a.anli-a:hover{
 
 .stairs-container .swiper-container .child-img {
 	width: 100%;
-	height: 480px;
+	height: auto;
 	opacity: .6;
 }
 
@@ -1969,6 +1969,9 @@ a.anli-a:hover{
 .stairs-container .s-section8 .swiper-button-next,
 .stairs-container .s-section8 .swiper-button-prev {
 	top: 30%;
+	width: 18px !important;
+	height: 38px !important;;
+	background-size: 18px 38px;
 }
 
 .stairs-container .s-section8 .swiper-button-next,
@@ -2011,7 +2014,7 @@ a.anli-a:hover{
 .stairs-container .s-section9 .swiper-img {
 	position: relative;
 	width: 100%;
-	height: 460px;
+	height: auto;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -2023,6 +2026,9 @@ a.anli-a:hover{
 .stairs-container .s-section9 .swiper-button-next,
 .stairs-container .s-section9 .swiper-button-prev {
 	top: 40%;
+	width: 18px !important;
+	height: 38px !important;;
+	background-size: 18px 38px;
 }
 
 
@@ -2999,6 +3005,7 @@ a.anli-a:hover{
 
 .cellar-container .c-sec6-swiper .swiper-wrapper {
 	padding-top: 80px;
+	margin-left: -30px;
 }
 
 .cellar-container .c-section6 .swiper-slide-active{
@@ -3111,6 +3118,16 @@ a.anli-a:hover{
 	transform: rotate(180deg);
 }
 
+/* 分辨率小于1280px的时候  */
+@media only screen and (min-width: 1275px) and (max-width: 1368px){
+	.c-section6 .c-sec6-swiper .child-info>p{
+		font-size: 30px;
+	}
+	.c-section4 .swiper-div .child-info>p:last-child{
+		font-size: 16px;
+	}
+}
+
 /* 酒窖 -- 结束  */
 
 /* 走进豪利 -- 开始 */
@@ -3118,19 +3135,19 @@ a.anli-a:hover{
 .inHolee-container .i-section1{
 	position: relative;
 	width: 100%;
-	height: 955px;
+	height: auto;
 	overflow: hidden;
 }
 
 .inHolee-container .i-section1 .sec1-title{
-	position: relative;
-	width: 1200px;
-	height: 264px;
-	margin-top: 135px;
+	position: absolute;
+	top: 15%;
+	width: 63%;
+	left: 50%;
+	transform: translateX(-50%);
 	margin-left: auto;
 	margin-right: auto;
-	background: url(../images/i_back1.png) no-repeat center center;
-	z-index: 99;
+	z-index: 9;
 }
 
 .inHolee-container .logo-item-top{
@@ -3139,6 +3156,7 @@ a.anli-a:hover{
 	left: 120px;
 	width: 65px;
 	height: 65px;
+	cursor: pointer;
 }
 
 .inHolee-container .logo-item-right{
@@ -3147,6 +3165,7 @@ a.anli-a:hover{
 	right: 10px;
 	width: 65px;
 	height: 65px;
+	cursor: pointer;
 }
 
 .inHolee-container .logo-item-bottom{
@@ -3155,6 +3174,7 @@ a.anli-a:hover{
 	left: 120px;
 	width: 65px;
 	height: 65px;
+	cursor: pointer;
 }
 
 .inHolee-container .logo-item-left{
@@ -3163,6 +3183,7 @@ a.anli-a:hover{
 	left: 10px;
 	width: 65px;
 	height: 65px;
+	cursor: pointer;
 }
 
 .inHolee-container .i-section1 .sec1-info{
@@ -3304,15 +3325,9 @@ a.anli-a:hover{
 }
 
 .i-section1-figure{
-	position: absolute;
-	left: 0;
-	top: 0;
 	width: 100%;
-	height: 1155px;
-	background-image: url(../images/brand/inHolee/inHolee_1.png);
-	background-size: 100% 100%!important;
-	background-position: center!important;
-	background-repeat: no-repeat!important;
+	display: block;
+	margin: 0px;
 }
 
 /* 生产基地 */
@@ -3328,7 +3343,7 @@ a.anli-a:hover{
 
 .inHolee-container .i-sec3-swiper{
 	position: relative;
-	max-width: 1280px;
+	max-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 110px;
@@ -3354,6 +3369,14 @@ a.anli-a:hover{
 	background-color: #d5d5d5;
 	color: #fff;
 	cursor: pointer;
+}
+
+.inHolee-container .i-section1-info{
+	position: absolute;
+	width: 1200px;
+	top: 42%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .inHolee-container .i-sec3-swiper .absolutes-left{
@@ -3487,6 +3510,25 @@ a.anli-a:hover{
 
 .inHolee-container .i-info-child10{
 	width: 350px;
+}
+
+/* 分辨率小于1280px的时候  */
+@media only screen and (min-width: 1275px) and (max-width: 1365px){
+	.inHolee-container .i-section1 .sec1-title{
+		top: 10%;
+	}
+	.inHolee-container .i-section1-info{
+		top: 38%;
+	}
+	.inHolee-container .i-sec3-swiper{
+		max-width: 1200px;
+	}
+	.inHolee-container .i-div2-col6{
+		max-width: 1240px;
+	}
+	.inHolee-container .i-div2-col6>div{
+		width: 380px;
+	}
 }
 
 /* 走进豪利 -- 结束 */
