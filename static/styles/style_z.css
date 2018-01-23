@@ -444,7 +444,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,.5);
-	display: none;
+	opacity: 0;
 }
 
 .update-width {
@@ -573,6 +573,7 @@
 	height: auto;
 	width: 100%;
 	margin-top: 95px;
+	overflow: hidden;
 }
 
 .household-container .section1 {
@@ -1248,6 +1249,10 @@
 	text-align: center;
 }
 
+.household-container .section5-col6.on .pub-back-pop{
+	opacity: .5;
+}
+
 .household-container .section5-col6>div>img {
 	position: absolute;
 	left: 0;
@@ -1356,8 +1361,8 @@
 	height: 1px;
 	left: 0;
 	text-align: center;
+	z-index: 9;
 }
-
 
 /* 案例展示 */
 
@@ -1821,7 +1826,7 @@ a.anli-a:hover{
 }
 
 .stairs-container .s-section6 .swiper-slide {
-	padding-bottom: 250px;
+	padding-bottom: 260px;
 }
 
 .stairs-container .swiper-container .child-img {
@@ -1830,28 +1835,17 @@ a.anli-a:hover{
 	opacity: .6;
 }
 
-.stairs-container .swiper-container .child-info {
-	width: 150%;
-	position: absolute;
-	bottom: 10px;
-	display: none;
-	z-index: 99;
-	transition: all .8s ease-in-out;
-	-ms-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
-}
-
-.stairs-container .child-img.active-o {
+.stairs-container .swiper-container .swiper-slide-active .child-img {
 	opacity: 1;
 }
 
-.stairs-container .child-info.active-o {
-	-ms-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
+.stairs-container .swiper-container .child-info {
+	width: 150%;
+	position: absolute;
+	bottom: 20px;
+	opacity: 0;
+	z-index: 99;
+	transition: all .4s ease-in-out;
 }
 
 .stairs-container .s-section6 .swiper-button-next {
@@ -1874,7 +1868,6 @@ a.anli-a:hover{
 
 
 /* 服务范围  */
-
 .stairs-container .s-section7 {
 	position: relative;
 	width: 100%;
@@ -1963,7 +1956,7 @@ a.anli-a:hover{
 }
 
 .stairs-container .s-section8 .swiper-container {
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 .stairs-container .s-section8 .swiper-button-next,
@@ -1986,7 +1979,6 @@ a.anli-a:hover{
 
 
 /* 案例展示 */
-
 .s-section9 {
 	position: relative;
 	width: 100%;
@@ -2031,7 +2023,13 @@ a.anli-a:hover{
 	background-size: 18px 38px;
 }
 
-
+.s-section6 .swiper-slide-active .child-info{
+	opacity: 1;
+	-ms-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+}
 /* 楼梯 -- 结束 */
 
 
@@ -2046,8 +2044,8 @@ a.anli-a:hover{
 
 .door-container .d-section1-title {
 	position: absolute;
-	left: 405px;
-	top: 210px;
+	left: 20%;
+	top: 17%;
 }
 
 .door-container .d-section1-info {
@@ -2553,11 +2551,18 @@ a.anli-a:hover{
 	position: absolute;
 	top: 50%;
 	width: 100%;
-	margin-top: -22px;
+	margin-top: -18px;
 	font-size: 44px;
 	color: #fff;
 	text-align: center;
+	display: none;
+	z-index: 9;
 }
+
+.door-container .d-section9-img.on .pub-back-pop{
+	opacity: 0;
+}
+
 @media only screen and (max-width: 1281px) {
 	.door-container .d-section6-auto{
 		width: 460px;
@@ -2810,21 +2815,17 @@ a.anli-a:hover{
 .cellar-container .c-section4 .swiper-container .child-info {
 	width: 80%;
 	position: absolute;
-	display: none;
+	opacity: 0;
 	z-index: 99;
 	color: #fff;
-	transition: all .8s ease-in-out;
-	-ms-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
+	transition: all .3s ease-in-out;
 }
 
 .cellar-container .c-section4 .swiper-pagination {
 	transform: rotate(180deg);
 }
 
-.cellar-container .c-section4 .child-img.active-o {
+.cellar-container .c-section4 .swiper-slide-active .pub-back-pop {
 	opacity: 1;
 }
 
@@ -2832,11 +2833,12 @@ a.anli-a:hover{
 	padding-bottom: 70px;
 }
 
-.cellar-container .c-section4 .child-info.active-o {
-	-ms-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
+.cellar-container .c-section4 .swiper-slide-active .child-info{
+	opacity: 1;
+	-ms-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
 }
 
 /* 核心步骤 */
@@ -2961,28 +2963,29 @@ a.anli-a:hover{
 	opacity: .6;
 }
 
+.cellar-container .c-sec6-swiper .swiper-slide-active .child-img{
+	opacity: 1;
+}
+
 .cellar-container .c-sec6-swiper .swiper-container .child-info {
 	width: 100%;
 	position: absolute;
 	bottom: 70px;
-	display: none;
+	opacity: 0;
 	z-index: 99;
-	transition: all .8s ease-in-out;
-	-ms-transform: translateY(0px);
-	-moz-transform: translateY(0px);
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
+	transition: all .4s ease-in-out;
+}
+
+.cellar-container .c-sec6-swiper .swiper-slide-active .child-info{
+	opacity: 1;
+	-ms-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
 }
 
 .cellar-container .c-sec6-swiper .child-img.active-o {
 	opacity: 1;
-}
-
-.stairs-container .c-sec6-swiper .child-info.active-o {
-	-ms-transform: translateY(10px);
-	-moz-transform: translateY(10px);
-	-webkit-transform: translateY(10px);
-	transform: translateY(10px);
 }
 
 .cellar-container .c-sec6-swiper .swiper-button-next {
@@ -3020,10 +3023,6 @@ a.anli-a:hover{
 	-webkit-transition: 600ms;
 	transition: 600ms;
 	transform: scale(1.2);
-}
-
-.cellar-container .c-section6 .swiper-pagination{
-	transform: translateX(30px);
 }
 
 /* 服务流程 */
@@ -3100,6 +3099,8 @@ a.anli-a:hover{
 	font-size: 44px;
 	color: #fff;
 	text-align: center;
+	z-index: 9;
+	display: none;
 }
 
 .cellar-container .c-section8 .swiper-buttons-prev:hover,
@@ -3116,6 +3117,10 @@ a.anli-a:hover{
 .cellar-container .c-section4 .update-swiper-next{
 	left: 28%!important;
 	transform: rotate(180deg);
+}
+
+.cellar-container .c-section8-swiper.on .pub-back-pop{
+	opacity: 0;
 }
 
 /* 分辨率小于1280px的时候  */
@@ -3621,6 +3626,7 @@ a.anli-a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .doorlist-container .doorlist-col4 .type-4{
@@ -3633,6 +3639,7 @@ a.anli-a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 208px;
+	overflow: hidden;
 }
 
 .doorlist-container .type-5 .doorlist-item-img{
@@ -3692,9 +3699,10 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-2 {
-	width: 1280px;
+	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
 }
 
 .hholdlist-container .type-2 .hholdlist-item-img{
@@ -3756,6 +3764,7 @@ a.anli-a:hover{
 	margin-right: auto;
 	margin-top: 195px;
 	text-align: justify;
+	overflow: hidden;
 }
 
 .hholdlist-container .type-5{
@@ -3783,6 +3792,7 @@ a.anli-a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 270px;
+	overflow: hidden;
 }
 
 .hholdlist-container .type-6 .hholdlist-item-info{
@@ -3791,6 +3801,7 @@ a.anli-a:hover{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	overflow: hidden;
 }
 
 .hholdlist-container .type-6 .hholdlist-item-img{
@@ -3818,6 +3829,7 @@ a.anli-a:hover{
 	margin-right: auto;
 	margin-top: 265px;
 	margin-bottom: 100px;
+	overflow: hidden;
 }
 
 .hholdlist-container .type-7 .hholdlist-item-info{
@@ -3833,8 +3845,9 @@ a.anli-a:hover{
 	height: 680px;
 	margin-top: 75px;
 }
+
 /* 分辨率小于1280px的时候  */
-@media only screen and (max-width: 1281px) {
+@media only screen and (min-width: 1275px) and (max-width: 1365px){
 	.hholdlist-container .type-2,
 	.hholdlist-container .type-3,
 	.hholdlist-container .type-6,
@@ -3842,10 +3855,34 @@ a.anli-a:hover{
 	.hholdlist-container .household-list-col4{
 		width: 1240px;
 	}
+	
 	.hholdlist-container .type-5{
 		max-width: 600px;
 	}
 	
+	.stairs-container .s-section6 .swiper-button-next,
+	.stairs-container .s-section6 .swiper-button-prev{
+		width: 55px;
+		height: 95px;
+		background-size:55px 95px;
+		top: 23%;
+	}
+	
+	.stairs-container .s-section6 .swiper-slide{
+		padding-bottom: 280px;
+	}
+	
+	.stairs-container .swiper-container .child-info>p:last-child{
+		font-size: 14px;
+	}
+	
+	.stairs-container .s-section6 .swiper-container-horizontal>.swiper-pagination-bullets{
+		bottom: 205px !important;
+	}
+	
+	.door-container .d-section9-img .img-title{
+		font-size: 36px;
+	}
 }
 
 /* 整体家居案例 -- 结束 */
