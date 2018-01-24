@@ -1263,6 +1263,10 @@ template {
 	transform: translateY(calc(100vh + 2px))
 }
 
+.layer-content.no-more-top {
+	top: 56px;
+}
+
 [data-modal-background-content] {
 	position: relative;
 	z-index: 1;
