@@ -1,9 +1,10 @@
 define([
     'jquery',
 ], function(require, factory) {
-    var top = $('#to-top');
+    var $top = $('#to-top');
+    var $nav = $('.product-nav-sec');
     'use strict';
-    top.click(function() {
+    $top.click(function() {
         $('html,body').animate({
             scrollTop: 0
         }, 400)
@@ -11,9 +12,11 @@ define([
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
         if(scrollTop >= 1000) {
-            top.show();
+            $top.addClass('roll-up');
+            $nav.addClass('roll-up');
         } else {
-            top.hide();
+            $top.removeClass('roll-up');
+            $nav.removeClass('roll-up');
         }
     })
 });

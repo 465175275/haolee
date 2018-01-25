@@ -38,7 +38,7 @@
 			</div>
 		</div>
 		<!-- 产品目录导航 -->
-		<div class="product-nav-sec">
+		<div class="product-nav-sec swiper-no-swiping">
 			<div class="product-nav-container swiper-container swiper-container-vertical" data-index="5">
 				<div class="swiper-wrapper swiper-no-swiping">
 					<a class="product-nav-item swiper-slide" href="household.html">
@@ -656,8 +656,8 @@
 					var navSwiper = new Swiper('.product-nav-container', {
 						direction : 'vertical',
 						slidesPerView : 'auto',
+						noSwiping : true,
 						slidesPerGroup : 4,
-						spaceBetween : 30,
 						noSwiping: true,
 						initialSlide: navIndex,
 						navigation: {

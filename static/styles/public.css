@@ -855,6 +855,43 @@ template {
 	padding-top: 10px;
 	border: 1px solid #bfbfbf;
 	border-radius: 50%;
+	-webkit-transition: all .6s 0s ease;
+	transition: all .6s 0s ease;
+}
+.product-nav-container .product-nav-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.product-nav-sec.roll-up .product-nav-item:first-child,
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(5) {
+	-webkit-transform:translateY(160px);
+			transform:translateY(160px);
+			opacity: 0;
+}
+
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(2),
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(6) {
+	-webkit-transform:translateY(58px);
+			transform:translateY(58px);
+			opacity: 0;
+}
+
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(3),
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(7) {
+	-webkit-transform:translateY(-44px);
+			transform:translateY(-44px);
+			opacity: 0;
+}
+
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(4),
+.product-nav-sec.roll-up .product-nav-item:nth-of-type(8) {
+	-webkit-transform:translateY(-146px);
+			transform:translateY(-146px);
+			opacity: 0;
+}
+
+.product-nav-sec.roll-up .slide-btn {
+	display: none;
 }
 
 .product-nav-container .iconfont {
@@ -922,17 +959,19 @@ template {
 
 .to-top {
 	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	z-index: 90;
-	display: none;
-	width: 60px;
-	height: 60px;
+	right: 65px;
+	top: calc(30% + 190px);
+	z-index: -1;
+	width: 71px;
+	height: 71px;
 	text-align: center;
 	line-height: 60px;
 	border-radius: 50%;
-	background-color: #060707;
+	background-color: #bfbfbf;
 	cursor: pointer;
+	opacity: 0;
+	-webkit-transition: all .1s ease .2s;
+	transition: all .1s ease .2s;
 }
 
 .to-top i {
@@ -940,6 +979,10 @@ template {
 	color: #fff;
 }
 
+.to-top.roll-up {
+	opacity: 1;
+	z-index: 100;
+}
 
 /* 尾部开始 */
 
