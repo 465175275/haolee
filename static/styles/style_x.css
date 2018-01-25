@@ -11,11 +11,23 @@
 }
 
 .fs-24 {
-	font-size: 20px !important;
+	font-size: 24px !important;
 }
 
 .fs-22 {
 	font-size: 22px !important;
+}
+
+.fs-28 {
+	font-size: 28px !important;
+}
+
+.fs-30 {
+	font-size: 30px !important;
+}
+
+.fs-32 {
+	font-size: 32px !important;
 }
 
 .fs-36 {
@@ -38,6 +50,10 @@
 	font-size: 56px !important;
 }
 
+.fs-60 {
+	font-size: 60px !important;
+}
+
 .text-333 {
 	color: #333;
 }
@@ -46,12 +62,28 @@
 	color: #fff !important;
 }
 
+.mar35 {
+	margin: 35px 0 0 35px;
+}
+
 .mt0 {
 	margin-top: 0px !important;
 }
 
+.mt10 {
+	margin-top: 10px !important;
+}
+
+.mt15 {
+	margin-top: 15px !important;
+}
+
 .mt20 {
 	margin-top: 20px !important;
+}
+
+.mt25 {
+	margin-top: 25px !important;
 }
 
 .mt30 {
@@ -68,6 +100,10 @@
 
 .mt120 {
 	margin-top: 120px !important;
+}
+
+.mb160 {
+	margin-bottom: 160px !important;
 }
 
 .ml20 {
@@ -88,6 +124,18 @@
 
 .ml60 {
 	margin-left: 60px !important;
+}
+
+.line-28 {
+	line-height: 28px!important;
+}
+
+.letter-3 {
+	letter-spacing: 4px;
+}
+
+.indent-1 {
+	text-indent: 1em;
 }
 
 .nopad {
@@ -194,6 +242,16 @@
 	color: #666;
 }
 
+.index-container .section-body-cont .part {
+	margin-bottom: 130px;
+}
+
+.index-container .section-body-cont .part .part-descr {
+	margin-top: 25px;
+	line-height: 28px;
+	color: #333;
+}
+
 .section-body-cont .all-part .part-img {
 	width: 100%;
 	margin-top: 45px;
@@ -226,7 +284,7 @@
 
 .index-container .banner-title {
 	position: absolute;
-	top: 38%;
+	top: 37%;
 	left: 0;
 	right: 0;
 	margin-top: -54px;
@@ -236,6 +294,7 @@
 .index-container .banner-title h1 {
 	font-size: 60px;
 	color: #fff;
+	letter-spacing: 6px;
 }
 
 .index-container .banner-title p {
@@ -245,6 +304,7 @@
 	text-align: center;
 	color: #fff;
 	text-indent: -60px;
+	letter-spacing: 3px;
 }
 
 .index-container .banner-img img {
@@ -256,10 +316,8 @@
 
 .index-container .slogen-section {
 	width: 820px;
-	padding-top: 45px;
-	padding-bottom: 125px;
-	margin-left: auto;
-	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 85px;
 }
 
 .index-container .slogen-text {
@@ -409,7 +467,7 @@
 
 .polylogue-bodyContent,
 .people-bodyContent {
-	display: table-cell;
+	margin-top: 11%;
 	vertical-align: middle;
 }
 
@@ -418,28 +476,28 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 100%;
-	padding-left: 20%;
+	padding-left: 18%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .polylogue-subheadline,
 .people-subheadline {
-	font-size: 32px;
+	font-size: 24px;
 	color: #666;
 }
 
 .polylogue-headline,
 .people-headline {
 	margin-top: 20px;
-	font-size: 50px;
+	font-size: 60px;
 	color: #424242;
 }
 
 .polylogue-text {
 	width: 560px;
 	padding-bottom: 15px;
-	margin-top: 25px;
+	margin-top: 14px;
 	font-size: 16px;
 	line-height: 30px;
 	color: #333;
@@ -470,7 +528,16 @@
 }
 
 .people-headline {
-	line-height: 72px;
+	margin-top: 13px;
+	line-height: 70px;
+}
+
+.people-inner {
+	padding-left: 16.5%;
+}
+
+.people-bodyContent {
+	margin-top: 16%!important;
 }
 
 .people-images-content {
@@ -527,18 +594,38 @@
 
 /* 木种部分 */
 
+.woods-section .section-body {
+	padding-bottom: 80px;
+}
+
+.woods-section .open-dropmenu-btn {
+	bottom: 140px;
+}
+
+.woods-section .open-dropmenu-tip {
+	bottom: 100px;
+}
+
+.woods-section .open-dropmenu-btn.active {
+	-webkit-transform: translateY(210px) rotateZ(45deg);
+	transform: translateY(210px) rotateZ(45deg);
+}
+
 .woods-section .section-top {
-	width: 810px;
+	width: 820px;
+	padding-top: 70px;
+	padding-bottom: 195px;
 }
 
 .woods-section .section-top-list ul {
+	margin-top: 80px;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
 .woods-section .section-top-list li {
 	width: 25%;
-	margin-top: 90px;
+	margin-bottom: 100px;
 	text-align: center;
 }
 
@@ -553,7 +640,10 @@
 }
 
 .woods-section .section-top-list li p {
-	margin-top: 30px;
+	margin-top: 15px;
+	font-size: 18px;
+	color: #666;
+	letter-spacing: 4px;
 }
 
 .woods-section .section-body-cont {
@@ -572,6 +662,10 @@
 	width: 790px;
 }
 
+.woods-section .width-710 {
+	width: 710px;
+}
+
 .woods-section .width-300 {
 	width: 300px;
 }
@@ -580,16 +674,42 @@
 	width: 445px;
 }
 
+.woods-section .section-top-headline {
+	font-size: 50px;
+	line-height: 50px;
+	margin: 30px 0 37px;
+}
+
 
 /* 制作工艺部分 */
 
+.craftsmanship-section .section-body-cont .part .part-descr {
+	margin-top: 15px;
+}
+
+.craftsmanship-section .section-body-cont .part {
+	margin-bottom: 160px;
+}
+
+.craftsmanship-section .open-dropmenu-btn.active,
+.customize-section .open-dropmenu-btn.active {
+	-webkit-transform: translateY(205px) rotateZ(45deg);
+	transform: translateY(205px) rotateZ(45deg);
+}
+
+.craftsmanship-section .section-top-headline {
+	margin-bottom: 30px;
+}
+
 .craftsmanship-section .section-top {
+	padding-top: 75px;
 	width: 820px;
+	padding-bottom: 260px;
 }
 
 .craftsmanship-section .section-top-list {
 	margin-top: 100px;
-	width: 680px;
+	width: 675px;
 }
 
 .craftsmanship-section .section-top-list li {
@@ -604,19 +724,19 @@
 }
 
 .craftsmanship-section .section-top-list li p {
-	margin-top: 10px;
+	margin-top: 15px;
 	font-size: 14px;
 	color: #333;
 }
 
 .craftsmanship-section .section-body-cont {
-	width: 1280px;
+	max-width: 1280px;
 }
 
 @media screen and (max-width: 1440px) {
-	.craftsmanship-section .section-body-cont {
+	/*.craftsmanship-section .section-body-cont {
 		width: 100%;
-	}
+	}*/
 }
 
 .craftsmanship-section .width-410 {
@@ -627,12 +747,21 @@
 	width: 1165px;
 }
 
+.craftsmanship-section .width-1165 .part-title {
+	font-size: 26px;
+}
+
+.craftsmanship-section .section-body-cont .part .part-descr {
+	line-height: 28px;
+}
+
 .craftsmanship-section .width-1080 {
 	width: 1080px;
 }
 
 .craftsmanship-section .width-965 {
 	width: 965px;
+	margin-bottom: 135px;
 }
 
 .craftsmanship-section .width-1130 {
@@ -646,9 +775,14 @@
 
 /* 量身定制 */
 
+.customize-section .section-body {
+	padding-bottom: 100px;
+}
+
 .customize-section .section-top {
 	width: 910px;
 	padding-bottom: 180px;
+	padding-top: 80px;
 }
 
 .customize-section .section-top-list {
@@ -662,7 +796,7 @@
 }
 
 .customize-section .section-top-list li {
-	margin-bottom: 90px;
+	margin-bottom: 80px;
 }
 
 .customize-section .section-top-list li:nth-of-type(3n-1) {
@@ -675,18 +809,27 @@
 	height: 120px;
 }
 
+.customize-section .customize-icon img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .customize-section .section-top-list li p {
+	font-size: 18px;
 	margin-top: 20px;
 	color: #424242;
 }
 
 .customize-section .section-body-cont {
 	width: 1170px;
-	padding-top: 60px;
+	padding-top: 75px;
 }
 
 .customize-section .width-1085 {
 	width: 1085px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .customize-section .width-790 {
@@ -702,12 +845,12 @@
 
 .service-section .section-top {
 	width: 71.875%;
-	padding-top: 180px;
+	padding-top: 190px;
 	padding-bottom: 160px;
 }
 
 .service-section .section-top-list {
-	margin-top: 100px;
+	margin-top: 115px;
 }
 
 .service-section .section-top-list li {
@@ -744,10 +887,11 @@
 	right: 0;
 	z-index: 10;
 	margin-top: -10px;
-	font-size: 20px;
+	font-size: 26px;
 	text-align: center;
 	color: #fff;
 }
+
 
 /* 定制流程 */
 
@@ -758,14 +902,14 @@
 
 .index-container .process-section .section-top-subtitle {
 	position: absolute;
-	top: 29%;
+	top: 25%;
 	left: 20%;
 	text-align: left;
 }
 
 .index-container .process-section .section-top-headline {
 	position: absolute;
-	top: 32%;
+	top: 28.5%;
 	left: 20%;
 	font-size: 50px;
 	line-height: 68px;
@@ -775,13 +919,14 @@
 .index-container .process-section .section-body {
 	width: 1160px;
 	padding-top: 0px;
+	padding-bottom: 90px;
 }
 
 .index-container .process-section-body-text {
 	padding-left: 80px;
 	padding-right: 300px;
 	margin-top: 45px;
-	margin-bottom: 130px;
+	margin-bottom: 140px;
 	line-height: 30px;
 }
 
@@ -791,13 +936,13 @@
 }
 
 .index-container .process-list ul {
-	width: 345px;
+	width: 335px;
 }
 
 .index-container .process-list li {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #a4a4a4;
-	margin-bottom: 100px;
+	margin-bottom: 110px;
 }
 
 .index-container .process-list .step {
@@ -813,12 +958,12 @@
 }
 
 .index-container .process-list .step-title {
-	font-size: 26px;
+	font-size: 24px;
 	color: #333;
 }
 
 .index-container .process-list .step-text {
-	margin-top: 10px;
+	margin-top: 20px;
 	font-size: 18px;
 	color: #666;
 }
@@ -828,6 +973,11 @@
 
 .index-container .cases-section {
 	background-color: #f5f5f5;
+}
+
+.index-container .cases-section .section-top-headline {
+	margin: 0;
+	line-height: 1;
 }
 
 .index-container .cases-section .section-top {
@@ -840,7 +990,8 @@
 }
 
 .index-container .cases-section .section-body {
-	padding-top: 90px;
+	padding: 110px 0;
+	margin-bottom: 20px;
 }
 
 .index-container .cases-section .cases-container {
@@ -857,7 +1008,7 @@
 }
 
 .index-container .cases-section .cases-item-info {
-	margin-top: 50px;
+	margin-top: 45px;
 	text-align: center;
 	opacity: 0;
 	-webkit-transition: all .4s ease-in;
@@ -865,13 +1016,13 @@
 }
 
 .index-container .cases-section .cases-item-info .cases-item-name {
-	font-size: 30px;
+	font-size: 32px;
 	color: #333;
 }
 
 .index-container .cases-section .cases-item-info .cases-item-descr {
 	width: 615px;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 16px;
@@ -912,6 +1063,14 @@
 	font-size: 26px;
 }
 
+.index-container .cases-section .icon-arrow-left:before {
+	position: relative;
+	left: 3px;
+}
+.index-container .cases-section .icon-arrow-right:before {
+	position: relative;
+	left: -2px;
+}
 .index-container .cases-section .cases-slide-btn.prev {
 	left: 4%;
 }
@@ -1056,7 +1215,6 @@
 	.cabinet-container .design-section .section-bottom-title {
 		font-size: 28px;
 	}
-	
 	.cabinet-container .design-section .section-bottom-descr {
 		font-size: 16px;
 	}
@@ -1500,8 +1658,8 @@
 
 .cooperation-container .slogen-descr {
 	width: 880px;
-	padding-top: 65px;
-	padding-bottom: 140px;
+	padding-top: 63px;
+	padding-bottom: 138px;
 	font-size: 18px;
 	color: #333;
 	line-height: 32px;
@@ -1512,7 +1670,7 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 43%;
+	top: 47%;
 	z-index: 9;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -1524,7 +1682,7 @@
 }
 
 .cooperation-container .slogen-headline {
-	margin-top: 20px;
+	margin-top: 30px;
 	font-size: 20px;
 	color: #fff;
 }
@@ -1550,12 +1708,13 @@
 }
 
 .cooperation-container .advantage-section .section-body {
-	width: 960px;
-	padding-top: 60px;
+	width: 950px;
+	padding-top: 63px;
+	padding-bottom: 48px;
 }
 
 .cooperation-container .section-body-paragraph {
-	width: 610px;
+	width: 600px;
 	font-size: 18px;
 	line-height: 32px;
 	color: #333;
@@ -1564,14 +1723,14 @@
 .cooperation-container .advantage-section .section-body-list {
 	overflow: hidden;
 	width: 100%;
-	margin-top: 140px;
+	margin-top: 143px;
 }
 
 .cooperation-container .advantage-section .section-body-list ul li {
 	position: relative;
 	float: left;
-	width: 440px;
-	margin-bottom: 150px;
+	width: 435px;
+	margin-bottom: 180px;
 }
 
 .cooperation-container .advantage-section .section-body-list ul li:nth-of-type(even) {
@@ -1589,13 +1748,13 @@
 }
 
 .cooperation-container .advantage-item h4 {
-	padding-top: 10px;
+	padding-top: 15px;
 	font-size: 34px;
 	color: #000;
 }
 
 .cooperation-container .advantage-item p {
-	margin-top: 15px;
+	margin-top: 23px;
 	font-size: 14px;
 	line-height: 22px;
 	color: #808080;
@@ -1605,8 +1764,8 @@
 	overflow: hidden;
 	width: 360px;
 	height: 2px;
-	margin-top: 28px;
-	margin-left: 80px;
+	margin-top: 35px;
+	margin-left: 75px;
 }
 
 .bottom-line {
@@ -1616,13 +1775,13 @@
 }
 
 .cooperation-container .training-section {
-	padding-top: 170px;
+	padding-top: 175px;
 	padding-bottom: 250px;
 	background-color: #fafafa;
 }
 
 .cooperation-container .training-section .section-body {
-	width: 1260px;
+	max-width: 1280px;
 }
 
 .cooperation-container .training-figure {
@@ -1630,8 +1789,15 @@
 	height: 545px;
 }
 
+.cooperation-container .training-figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
 .cooperation-container .training-section .section-body-cont {
-	width: 520px;
+	width: 500px;
+	margin-right: 30px;
 }
 
 .cooperation-container .training-section .section-body-cont-headline {
@@ -1659,16 +1825,16 @@
 
 .cooperation-container .demand-section .section-body {
 	width: 1180px;
-	padding-top: 60px;
-	padding-bottom: 210px;
+	padding-top: 64px;
+	padding-bottom: 230px;
 }
 
 .cooperation-container .demand-section .section-body-paragraph {
-	margin-left: 110px;
+	margin-left: 120px;
 }
 
 .cooperation-container .demand-section .part {
-	margin-top: 90px;
+	margin-top: 80px;
 	margin-bottom: 0px;
 }
 
@@ -1678,7 +1844,8 @@
 }
 
 .cooperation-container .demand-section .part-descr {
-	margin-top: 20px;
+	margin-top: 23px;
+	line-height: 32px;
 }
 
 .cooperation-container .demand-section .width-515 {
@@ -1686,7 +1853,7 @@
 }
 
 .cooperation-container .process-section {
-	padding-bottom: 150px;
+	padding-bottom: 155px;
 	background-color: #fafafa;
 }
 
@@ -1698,12 +1865,13 @@
 
 .cooperation-container .process-section .section-top-headline {
 	font-size: 30px;
+	line-height: 30px;
 	color: #000;
 	text-align: center;
 }
 
 .cooperation-container .process-section .section-top-subtitle {
-	margin-top: -30px;
+	margin-top: -15px;
 	font-size: 16px;
 	line-height: 26px;
 	color: #333;
@@ -1711,9 +1879,9 @@
 }
 
 .cooperation-container .process-section .process-list-container {
-	width: 820px;
-	padding-left: 140px;
-	padding-right: 140px;
+	width: 920px;
+	padding-left: 97px;
+	padding-right: 97px;
 	padding-bottom: 110px;
 }
 
@@ -1756,6 +1924,7 @@
 }
 
 .cooperation-container .map-container {
+	margin: 20px 0;
 	width: 100%;
 	height: 965px;
 }
@@ -1882,12 +2051,17 @@
 	transform: translateY(calc(0));
 	color: #fff;
 	font-size: 40px;
-	line-height: 64px;
-	margin-top: 160px;
+	line-height: 40px!important;
+	margin-top: 10.5%;
 	position: absolute;
 	top: 0;
 	left: 50%;
-	margin-left: -490px;
+	margin-left: -475px;
+}
+
+.plan-box2-2 .section-top-headline {
+	margin-top: 16px;
+	line-height: 57px!important;
 }
 
 .plan-box2.active .plan-box2-2 {
