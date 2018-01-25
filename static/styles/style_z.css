@@ -39,25 +39,25 @@
 .pub-p {
 	font-size: 18px;
 	color: #666;
-	line-height: 27px;
+	line-height: 30px;
 }
 
 .pub-p1 {
 	font-size: 22px;
 	color: #666;
-	line-height: 30px;
+	line-height: 34px;
 }
 
 .pub-p2 {
 	font-size: 20px;
 	color: #666;
-	line-height: 29px;
+	line-height: 32px;
 }
 
 .pub-p3 {
 	font-size: 16px;
 	color: #666;
-	line-height: 25px;
+	line-height: 28px;
 }
 
 .pub-p4 {
@@ -69,7 +69,7 @@
 .pub-p22 {
 	font-size: 22px;
 	color: #404040;
-	line-height: 37px;
+	line-height: 34px;
 }
 
 .pub-font-60 {
@@ -232,8 +232,12 @@
 	margin-top: 50px !important;
 }
 
+.pub-margin-top58 {
+	margin-top: 58px !important;
+}
+
 .pub-margin-top60 {
-	margin-top: 60px;
+	margin-top: 60px !important;
 }
 
 .pub-margin-top65 {
@@ -256,12 +260,16 @@
 	margin-top: 95px !important;
 }
 
+.pub-margin-bottom115{
+	margin-top: 115px !important;
+}
+
 .pub-margin-top152{
 	margin-top: 152px;
 }
 
 .pub-margin-top188{
-	margin-top: 188px;
+	margin-top: 188px !important;
 }
 
 .pub-margin-top140{
@@ -276,8 +284,16 @@
 	margin-top: 220px;
 }
 
+.pub-margin-top230{
+	margin-top: 230px !important;
+}
+
 .pub-margin-top240{
 	margin-top: 240px !important;
+}
+
+.pub-margin-top250{
+	margin-top: 250px !important;
 }
 
 .pub-margin-top265{
@@ -305,7 +321,11 @@
 }
 
 .pub-margin-left105 {
-	margin-left: 105px;
+	margin-left: 108px;
+}
+
+.pub-margin-left125 {
+	margin-left: 125px;
 }
 
 .pub-margin-left130 {
@@ -344,16 +364,24 @@
 	padding-top: 220px !important;
 }
 
+.pub-padding-top195 {
+	padding-top: 195px !important;
+}
+
 .pub-padding-normal {
 	padding: 0 !important;
 }
 
 .pub-padding-left10 {
-	padding: 0 10px;
+	padding: 0 15px;
 }
 
 .pub-padding-bottom30 {
 	padding-bottom: 30px;
+}
+
+.pub-padding-bottom20 {
+	padding-bottom: 20px;
 }
 
 .pub-text-indent {
@@ -373,7 +401,11 @@
 }
 
 .pub-line-height29 {
-	line-height: 29px;
+	line-height: 29px !important;
+}
+
+.pub-line-height32 {
+	line-height: 32px !important;
 }
 
 .pub-line-height35 {
@@ -382,6 +414,10 @@
 
 .pub-line-height {
 	line-height: 45px;
+}
+
+.pub-line-height48 {
+	line-height: 48px !important;
 }
 
 .pub-line-height50 {
@@ -414,6 +450,10 @@
 
 .pub-height115 {
 	height: 115px;
+}
+
+.pub-height100 {
+	height: 100px;
 }
 
 .pub-height42 {
@@ -449,6 +489,10 @@
 
 .update-width {
 	width: 540px !important;
+}
+
+.update-width580 {
+	width: 580px !important;
 }
 
 .update-width1 {
@@ -602,6 +646,7 @@
 
 .household-container .section1-back>img {
 	width: 100%;
+	min-height: 100%;
 	display: block;
 }
 
@@ -701,7 +746,7 @@
 
 .modify .section2-content {
 	opacity: 1;
-	transform: translateY(100px);
+	transform: translateY(80px);
 	transition: all .6s;
 }
 
@@ -785,7 +830,7 @@
 	margin: 0 auto;
 	overflow: hidden;
 	padding-top: 65px;
-	padding-bottom: 90px;
+	padding-bottom: 100px;
 }
 
 .household-container .section3-foot-left {
@@ -860,7 +905,7 @@
 
 .household-container .div2-header-child {
 	position: relative;
-	margin-bottom: 115px;
+	margin-bottom: 118px;
 }
 
 .household-container .div2-header-child>img {
@@ -872,14 +917,14 @@
 .household-container .div2-header-child>h1 {
 	margin-top: 40px;
 	margin-left: 20px;
-	font-size: 30px;
-	color: #333;
+	font-size: 34px;
+	color: #262626;
 }
 
 .household-container .div2-header-child>p {
-	margin-top: 20px;
+	margin-top: 23px;
 	margin-left: 20px;
-	line-height: 25px;
+	line-height: 30px;
 	font-size: 18px;
 	color: #666;
 }
@@ -918,25 +963,25 @@
 .household-container .div2-header-img-info>p:first-child {
 	font-size: 18px;
 	color: #333;
-	margin-top: 62px;
+	margin-top: 60px;
 }
 
 .household-container .div2-header-img-info>h1 {
 	font-size: 42px;
 	color: #333;
-	margin-top: 56px;
+	margin-top: 58px;
 }
 
 .household-container .div2-header-img-info>p:last-child {
 	font-size: 18px;
 	color: #4c4c4c;
 	margin-top: 44px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .household-container .section3-div2-header-foot {
 	position: relative;
-	padding-top: 145px;
+	padding-top: 148px;
 	width: 1000px;
 	height: auto;
 	margin: 0 auto;
@@ -949,12 +994,12 @@
 }
 
 .household-container .div2-header-foot-left {
-	width: 530px;
+	width: 538px;
 	height: 310px;
 	overflow: hidden;
 	float: left;
 	box-sizing: border-box;
-	padding-top: 65px;
+	padding-top: 62px;
 	padding-right: 110px;
 }
 
@@ -967,7 +1012,7 @@
 	font-size: 18px;
 	color: #666;
 	margin-top: 34px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .household-container .div2-header-foot-right {
@@ -1016,7 +1061,7 @@
 	font-size: 18px;
 	color: #666;
 	margin-top: 32px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .household-container .div2-header-foot1-right {
@@ -1042,11 +1087,11 @@
 	text-align: center;
 	background-color: #f7f7f7;
 	margin-top: 134px;
-	padding-bottom: 200px;
+	padding-bottom: 210px;
 }
 
 .household-container .section4-div1>div>h1 {
-	padding-top: 115px;
+	padding-top: 112px;
 	font-size: 40px;
 	color: #333;
 }
@@ -1056,14 +1101,14 @@
 	margin: 25px auto 0 auto;
 	font-size: 18px;
 	color: #666;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .household-container .section4-div1-col4 {
 	width: auto;
 	height: auto;
 	text-align: center;
-	margin-top: 55px;
+	margin-top: 70px;
 }
 
 .household-container .section4-col4-child {
@@ -1123,7 +1168,7 @@
 .household-container .div2-child1-left {
 	width: 530px;
 	box-sizing: border-box;
-	padding-top: 66px;
+	padding-top: 62px;
 	padding-right: 104px;
 	float: left;
 }
@@ -1150,7 +1195,7 @@
 	font-size: 18px;
 	color: #666;
 	margin-top: 34px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .household-container .section4-div2-child2 {
@@ -1181,13 +1226,13 @@
 	font-size: 18px;
 	color: #666;
 	margin-top: 34px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .household-container .div2-child2-left-img {
 	width: 100%;
 	height: 310px;
-	margin-top: 30px;
+	margin-top: 33px;
 	overflow: hidden;
 }
 
@@ -1220,12 +1265,11 @@
 	background-color: #fff;
 	padding: 120px 0 155px 0;
 	text-align: center;
-	e
 }
 
 .household-container .section5>p {
 	width: 550px;
-	margin: 24px auto 0 auto;
+	margin: 26px auto 0 auto;
 }
 
 .household-container .section5-col6 {
@@ -1271,7 +1315,7 @@
 	position: relative;
 	width: 890px;
 	margin: 0 auto;
-	padding: 150px 0 187px 0;
+	padding: 146px 0 187px 0;
 }
 
 .household-container .section6-div1-info {
@@ -1309,22 +1353,21 @@
 	width: 100%;
 	text-align: center;
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 23px;
 }
-
 
 /* 专业高效隐藏部分 */
 
 .household-container .section6-div2 {
 	display: none;
 	background-color: #f2f2f2;
-	padding: 160px 0 100px 0;
+	padding: 169px 0 100px 0;
 }
 
 .household-container .section6-div2-child {
-	width: 1020px;
+	width: 980px;
 	height: auto;
-	margin: 0 auto 80px auto;
+	margin: 0 auto 83px auto;
 	overflow: hidden;
 }
 
@@ -1342,7 +1385,7 @@
 }
 
 .household-container .section6-child-info {
-	width: 560px;
+	width: 515px;
 	height: auto;
 	float: right;
 	box-sizing: border-box;
@@ -1351,7 +1394,7 @@
 }
 
 .household-container .section6-child-info>p {
-	margin-top: 30px;
+	margin-top: 35px;
 }
 
 .household-container .col6-img-title{
@@ -1367,7 +1410,7 @@
 
 .household-container .section7 {
 	position: relative;
-	padding: 120px 0 146px 0;
+	padding: 120px 0 135px 0;
 	width: 100%;
 	background-color: #fff;
 }
@@ -1376,7 +1419,7 @@
 	max-width: 1050px;
 	height: auto;
 	margin: 0 auto;
-	padding-left: 85px;
+	padding-left: 90px;
 	box-sizing: border-box;
 	text-align: left;
 }
@@ -1418,8 +1461,8 @@ a.anli-a:hover{
 	height: 480px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 120px;
-	padding-bottom: 80px;
+	margin-top: 124px;
+	padding-bottom: 90px;
 }
 
 .household-container .swiper-slide,
@@ -1538,7 +1581,7 @@ a.anli-a:hover{
 	/* 原木楼梯 */
 .stairs-container .s-section1 {
 	position: relative;
-	padding: 90px 0 120px 0;
+	padding: 90px 0 130px 0;
 	width: 100%;
 	height: auto;
 }
@@ -1558,7 +1601,7 @@ a.anli-a:hover{
 .stairs-container .s-section1-img {
 	width: 100%;
 	height: 777px;
-	margin-top: 65px;
+	margin-top: 68px;
 }
 
 .stairs-container .s-section1-img>img {
@@ -1575,7 +1618,7 @@ a.anli-a:hover{
 
 .stairs-container .s-section2-div1 {
 	position: relative;
-	padding: 92px 0 222px 0;
+	padding: 105px 0 225px 0;
 	background-color: #f7f7f7;
 	text-align: center;
 }
@@ -1590,7 +1633,7 @@ a.anli-a:hover{
 	width: 680px;
 	margin: 28px auto 0 auto;
 	font-size: 16px;
-	line-height: 25px;
+	line-height: 28px;
 	color: #666;
 }
 
@@ -1624,7 +1667,7 @@ a.anli-a:hover{
 .stairs-container .s-div2-con-left {
 	width: 530px;
 	padding-right: 92px;
-	padding-top: 65px;
+	padding-top: 62px;
 	box-sizing: border-box;
 	float: left;
 }
@@ -1642,7 +1685,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 60px 0 126px 0;
+	padding: 90px 0 126px 0;
 	background-color: #fff;
 	text-align: center;
 }
@@ -1658,7 +1701,7 @@ a.anli-a:hover{
 	width: 1000px;
 	height: auto;
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 110px;
 	overflow: hidden;
 }
 
@@ -1771,7 +1814,7 @@ a.anli-a:hover{
 
 .stairs-container .s-section4-div2-child>h1,
 .stairs-container .s-section4-div2-child>p {
-	padding: 0 15px 0 38px;
+	padding: 0 20px 0 38px;
 }
 
 .stairs-container .s-div2-child-left {
@@ -1798,7 +1841,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-top: 70px;
+	padding-top: 85px;
 	text-align: center;
 }
 
@@ -1806,7 +1849,7 @@ a.anli-a:hover{
 	width: 100%;
 	height: auto;
 	display: block;
-	margin-top: 85px;
+	margin-top: 90px;
 	background-color: #fff;
 }
 
@@ -1871,7 +1914,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 100px 0 160px 0;
+	padding: 120px 0 160px 0;
 	text-align: center;
 	background-color: #f7f7f7;
 }
@@ -1922,7 +1965,7 @@ a.anli-a:hover{
 .stairs-container .s-section8 {
 	position: relative;
 	width: 100%;
-	padding: 65px 0 85px 0;
+	padding: 95px 0 85px 0;
 	text-align: center;
 }
 
@@ -1978,11 +2021,11 @@ a.anli-a:hover{
 
 
 /* 案例展示 */
-.s-section9 {
+.stairs-container .s-section9 {
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 70px 0 100px 0;
+	padding: 95px 0 100px 0;
 	text-align: center;
 	background-color: #f7f7f7;
 }
@@ -1990,7 +2033,7 @@ a.anli-a:hover{
 .stairs-container .s-section9-swiper {
 	width: 900px;
 	height: auto;
-	margin: 80px auto 0 auto;
+	margin: 63px auto 0 auto;
 	padding: 0 150px;
 	position: relative;
 }
@@ -1998,8 +2041,7 @@ a.anli-a:hover{
 .stairs-container .s-section9 .swiper-slide {
 	width: 430px;
 	height: auto;
-	padding-bottom: 50px;
-	background-color: #f7f7f7;
+	padding-bottom: 60px;
 }
 
 .stairs-container .s-section9 .swiper-img {
@@ -2044,7 +2086,7 @@ a.anli-a:hover{
 .door-container .d-section1-title {
 	position: absolute;
 	left: 20%;
-	top: 17%;
+	top: 22%;
 }
 
 .door-container .d-section1-info {
@@ -2121,7 +2163,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 125px 0 140px 0;
+	padding: 128px 0 140px 0;
 	background-color: #f2f2f2;
 	display: none;
 }
@@ -2184,7 +2226,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 155px 0 144px 0;
+	padding: 155px 0 148px 0;
 	background-color: #f7f7f7;
 	text-align: center;
 }
@@ -2193,13 +2235,13 @@ a.anli-a:hover{
 	width: 1130px;
 	height: 780px;
 	overflow: hidden;
-	margin: 50px auto 0 auto;
+	margin: 45px auto 0 auto;
 }
 
 .door-container .d-section3-col4 {
 	width: 1060px;
 	height: auto;
-	margin: 90px auto 0 auto;
+	margin: 115px auto 0 auto;
 	text-align: center;
 }
 
@@ -2258,9 +2300,9 @@ a.anli-a:hover{
 
 .door-container .d-section4-p {
 	width: 330px;
-	margin: 30px auto 0 auto;
+	margin: 35px auto 0 auto;
 	text-align: justify;
-	line-height: 25px;
+	line-height: 26px;
 	font-size: 16px;
 	color: #666;
 }
@@ -2278,7 +2320,7 @@ a.anli-a:hover{
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding: 135px 0 270px 0;
+	padding: 135px 0 275px 0;
 	background-color: #f7f7f7;
 }
 
@@ -2314,7 +2356,7 @@ a.anli-a:hover{
 
 .door-container .d-section5-child-col2 {
 	position: relative;
-	width: 480px;
+	width: 490px;
 	height: auto;
 	display: inline-block;
 	overflow: hidden;
@@ -2324,7 +2366,7 @@ a.anli-a:hover{
 	width: 490px;
 	height: 340px;
 	display: block;
-	margin-top: 10px;
+	margin-top: 38px;
 }
 
 .door-container .d-section5 .open-dropmenu-btn.active,
@@ -2393,7 +2435,7 @@ a.anli-a:hover{
 	height: 100%;
 	display: inline-block;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .door-container .section6-col5-img {
@@ -2406,7 +2448,7 @@ a.anli-a:hover{
 .door-container .d-section6-div2 {
 	position: relative;
 	width: 100%;
-	padding: 125px 0 30px;
+	padding: 125px 0 25px;
 	background-color: #f2f2f2;
 	display: none;
 }
@@ -2425,7 +2467,7 @@ a.anli-a:hover{
 .door-container .d-section7-col3 {
 	width: 1090px;
 	height: auto;
-	margin-top: 145px;
+	margin-top: 148px;
 	text-align: justify;
 	text-justify: distribute-all-lines;
 }
@@ -2493,7 +2535,7 @@ a.anli-a:hover{
 }
 
 .door-container .section8-right-main {
-	width: 84%;
+	width: 88%;
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: justify;
@@ -2503,7 +2545,7 @@ a.anli-a:hover{
 .door-container .section8-right-main>div {
 	width: 28%;
 	height: auto;
-	margin-bottom: 75px;
+	margin-bottom: 78px;
 	display: inline-block;
 	text-align: center;
 }
@@ -2527,7 +2569,7 @@ a.anli-a:hover{
 .door-container .d-section9-title {
 	max-width: 71%;
 	margin: 0 auto;
-	padding-left: 4%;
+	padding-left: 4.5%;
 	box-sizing: border-box;
 }
 
@@ -3520,6 +3562,7 @@ a.anli-a:hover{
 	padding: 0 0 70px;
 	box-sizing: border-box;
 	text-align: center;	
+	margin-top: 125px;
 }
 
 .doorlist-container .type-0 .doorlist-item-img{
@@ -3536,7 +3579,7 @@ a.anli-a:hover{
 
 .doorlist-container .type-1 .doorlist-item-info{
 	max-width: 830px;
-	padding: 210px 0 65px;
+	padding: 218px 0 65px;
 	padding-left: 45px;
 	text-align: left;
 }
@@ -3566,7 +3609,7 @@ a.anli-a:hover{
 .doorlist-container .type-3{
 	max-width: 1120px;
 	height: auto;
-	margin-top: 216px;
+	margin-top: 218px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -3630,7 +3673,7 @@ a.anli-a:hover{
 
 .doorlist-container .type-6{
 	max-width: 1070px;
-	margin-top: 220px;
+	margin-top: 180px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 155px;
@@ -3664,7 +3707,7 @@ a.anli-a:hover{
 }
 
 .hholdlist-container .type-1 .hholdlist-item-info{
-	margin-top: 75px;
+	margin-top: 70px;
 }
 
 .hholdlist-container .type-1 .type-width{
@@ -3728,7 +3771,7 @@ a.anli-a:hover{
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 76px;
 	text-align: center;
 }
 
@@ -3752,13 +3795,13 @@ a.anli-a:hover{
 .hholdlist-container .type-5 .hholdlist-item-img{
 	width: 100%;
 	height: 570px;
-	margin-top: 60px;
+	margin-top: 64px;
 }
 
 .hholdlist-container .type-5 .hholdlist-item-info{
 	max-width: 504px;
 	height: auto;
-	margin-left: 40px;
+	margin-left: 45px;
 }
 
 .hholdlist-container .type-6{
@@ -3782,7 +3825,7 @@ a.anli-a:hover{
 .hholdlist-container .type-6 .hholdlist-item-img{
 	width: 100%;
 	height: auto;
-	margin-top: 70px;
+	margin-top: 72px;
 	text-align: justify;
 }
 
@@ -3802,13 +3845,13 @@ a.anli-a:hover{
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 265px;
+	margin-top: 255px;
 	margin-bottom: 100px;
 	overflow: hidden;
 }
 
 .hholdlist-container .type-7 .hholdlist-item-info{
-	max-width: 750px;
+	max-width: 870px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -3818,7 +3861,6 @@ a.anli-a:hover{
 .hholdlist-container .type-7 .hholdlist-item-img{
 	width: 100%;
 	height: 680px;
-	margin-top: 75px;
 }
 
 /* 分辨率小于1280px的时候  */
