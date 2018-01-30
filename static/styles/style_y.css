@@ -486,6 +486,10 @@ figure {
 	-webkit-box-sizing: border-box;
 }
 
+.furn-box2 img {
+	height: 320px;
+}
+
 .furn-box3 {
 	width: 100%;
 	padding: 0 10px;
