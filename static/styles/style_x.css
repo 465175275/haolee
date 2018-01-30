@@ -1067,10 +1067,12 @@
 	position: relative;
 	left: 3px;
 }
+
 .index-container .cases-section .icon-arrow-right:before {
 	position: relative;
 	left: -2px;
 }
+
 .index-container .cases-section .cases-slide-btn.prev {
 	left: 4%;
 }
