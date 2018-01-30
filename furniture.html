@@ -139,19 +139,22 @@
 						<li><img src="static/images/furniture/icon/2.png">
 							<div class="design-c1">
 								<h1>舒适性</h1>
-								<p>一件家具的功能是相当重要的，它必须能够体现 出本身存在的价值。实用功能的涵义就是家具要 包含通常可以接受的已被限定的目的。</p>
+								<p>一件家具不仅得具备它应有的功能，而且还必须 具有相当的舒适度。你要想一整晚能好好的躺在 床上休息，床就必须具备足够的高度、强度与舒 适度来保证这一点。
+								</p>
 							</div>
 						</li>
 						<li><img src="static/images/furniture/icon/3.png">
 							<div class="design-c1">
 								<h1>耐用性</h1>
-								<p>一件家具的功能是相当重要的，它必须能够体现 出本身存在的价值。实用功能的涵义就是家具要 包含通常可以接受的已被限定的目的。</p>
+								<p>一件家具应该能够长久地被使用，然而每件家具 的使用寿命也是不尽相同的，因为这个同他们的 主要功用息息相关。
+								</p>
 							</div>
 						</li>
 						<li><img src="static/images/furniture/icon/4.png">
 							<div class="design-c1">
 								<h1>审美性</h1>
-								<p>一件家具的功能是相当重要的，它必须能够体现 出本身存在的价值。实用功能的涵义就是家具要 包含通常可以接受的已被限定的目的。</p>
+								<p>审美性是指家具在保证实用的前提下，对其形体 和表面进行美化处理以满足人们的审美情趣和心 理要求。
+								</p>
 							</div>
 						</li>
 					</ul>
@@ -199,7 +202,7 @@
 				</ul>
 			</div>
 			<!--第四屏-所取材质-->
-			<section class="section">
+			<section class="section furniture4-section">
 				<div class="bg-fff position-r">
 					<img src="static/images/furniture/overview/4.jpg" class="img-block pt100">
 					<div class="u-tit wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0s" data-wow-offset="10">
@@ -438,6 +441,7 @@
 					<a class="case-more" href="">进一步了解更多案例 &gt;</a>
 				</div>
 				<div class="swiper-container swiper-case">
+
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="case-img"><img src="static/images/furniture/overview/2-4.jpg"></div>
@@ -459,13 +463,14 @@
 					<div class="swiper-pagination"></div>
 					<div class="case-prev iconfont icon-arrow-left"></div>
 					<div class="case-next iconfont icon-arrow-right"></div>
+
 				</div>
 			</div>
 		</div>
 		<!-- 返回顶部 -->
 		<div class="to-top" id="to-top">
 			<i class="iconfont icon-top"></i>
-		</div>			
+		</div>
 		<!-- 尾部 -->
 		<div class="footer">
 			<div class="footer-container block-center">
@@ -591,9 +596,12 @@
 					});
 					//第八屏轮播
 					var mySwiper = new Swiper('.swiper-case', {
-						pagination: '.swiper-pagination',
 						slidesPerView: 'auto',
 						centeredSlides: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
 						navigation: {
 							nextEl: '.case-next',
 							prevEl: '.case-prev',
@@ -606,7 +614,6 @@
 						direction: 'vertical',
 						slidesPerView: 'auto',
 						slidesPerGroup: 4,
-						spaceBetween: 30,
 						noSwiping: true,
 						initialSlide: navIndex,
 						navigation: {

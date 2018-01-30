@@ -10,12 +10,12 @@
 	font-size: 20px !important;
 }
 
-.fs-24 {
-	font-size: 24px !important;
-}
-
 .fs-22 {
 	font-size: 22px !important;
+}
+
+.fs-24 {
+	font-size: 24px !important;
 }
 
 .fs-28 {
@@ -28,6 +28,10 @@
 
 .fs-32 {
 	font-size: 32px !important;
+}
+
+.fs-34 {
+	font-size: 34px !important;
 }
 
 .fs-36 {
@@ -89,7 +93,9 @@
 .mt30 {
 	margin-top: 30px !important;
 }
-
+.mt35 {
+	margin-top: 35px !important;
+}
 .mt40 {
 	margin-top: 40px !important;
 }
@@ -101,7 +107,9 @@
 .mt120 {
 	margin-top: 120px !important;
 }
-
+.mt140 {
+	margin-top: 140px !important;
+}
 .mb160 {
 	margin-bottom: 160px !important;
 }
@@ -125,7 +133,9 @@
 .ml60 {
 	margin-left: 60px !important;
 }
-
+.line-26 {
+	line-height: 26px!important;
+}
 .line-28 {
 	line-height: 28px!important;
 }
@@ -284,7 +294,7 @@
 
 .index-container .banner-title {
 	position: absolute;
-	top: 37%;
+	top: 34%;
 	left: 0;
 	right: 0;
 	margin-top: -54px;
@@ -537,7 +547,7 @@
 }
 
 .people-bodyContent {
-	margin-top: 16%!important;
+	margin-top: 15%!important;
 }
 
 .people-images-content {
@@ -670,8 +680,8 @@
 	width: 300px;
 }
 
-.woods-section .width-445 {
-	width: 445px;
+.woods-section .width-450 {
+	width: 450px;
 }
 
 .woods-section .section-top-headline {
@@ -869,7 +879,7 @@
 	z-index: 5;
 	content: '';
 	background-color: #000;
-	opacity: .4;
+	opacity: .3;
 }
 
 .service-section .section-top-list li:hover::after {
@@ -1741,6 +1751,7 @@
 
 .cooperation-container .advantage-item {
 	padding-left: 100px;
+	padding-right: 20px;
 }
 
 .cooperation-container .advantage-item img {
@@ -1809,7 +1820,7 @@
 }
 
 .cooperation-container .training-section .section-body-cont-subtitle {
-	margin-top: 20px;
+	margin-top: 25px;
 	font-size: 42px;
 	color: #000;
 }
@@ -1861,7 +1872,7 @@
 
 .cooperation-container .process-section .section-top {
 	width: 750px;
-	padding-top: 108px;
+	padding-top: 90px;
 	padding-bottom: 90px;
 }
 
