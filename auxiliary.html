@@ -788,16 +788,18 @@
 					}
 
 					//进入时滚动条位置
-					if(window.location.hash == "#0") {
-						$("body,html").animate({
-							scrollTop: 0
-						}, 600, 'easeInOutExpo');
-					} else {
-						var cotentOffset = $(window).height();
-						$("body,html").animate({
-							scrollTop: cotentOffset - 100
-						}, 1000, 'easeInOutExpo');
-					}
+					setTimeout(function() {
+						if(window.location.hash == "#0") {
+							$("body,html").animate({
+								scrollTop: 0
+							}, 600);
+						} else {
+							var cotentOffset = $(window).height();
+							$("body,html").animate({
+								scrollTop: cotentOffset - 100
+							}, 900);
+						}
+					}, 0)
 					//nav色块位置
 					var liActive = $(".proNav li.active").index();
 					$(".proNav .bg").animate({
