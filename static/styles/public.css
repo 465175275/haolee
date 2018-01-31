@@ -994,14 +994,13 @@ template {
 }
 
 .footer .footer-container {
-	width: 990px;
+	max-width: 1280px;
 	font-size: 14px;
 	color: #9c9c9c;
 }
 
 .footer-top {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 60px 140px 67px 130px;
 }
 
 
@@ -1011,21 +1010,21 @@ template {
 
 .footer-link-colum {
 	float: left;
-	margin-right: 120px;
+	margin-right: 170px;
 }
 
 .footer-link h3 {
 	margin-bottom: 20px;
-	font-size: 14px;
+	font-size: 20px;
 	color: #fff;
 }
 
 .footer-link ul li {
-	margin-top: 13px;
+	margin-top: 18px;
 }
 
 .footer-link-item {
-	font-size: 12px;
+	font-size: 16px;
 	color: #9c9c9c;
 }
 
@@ -1034,7 +1033,7 @@ template {
 }
 
 .footer-contact h3 {
-	font-size: 14px;
+	font-size: 18px;
 	color: #9c9c9c;
 }
 
@@ -1047,30 +1046,31 @@ template {
 .footer-contact-time {
 	padding-top: 15px;
 	border-top: 1px solid #9c9c9c;
-	font-size: 14px;
+	font-size: 18px;
 	color: #9c9c9c;
 }
 
 .footer-bottom {
 	position: relative;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	border-top: 1px solid #9c9c9c;
 }
 
 .footer-bottom i {
-	font-size: 22px;
+	font-size: 30px;
 	vertical-align: middle;
 }
 
 .footer-bottom .footer-qr-code {
 	position: absolute;
-	right: -110px;
-	bottom: 20px;
-	z-index: 9;
-	display: none;
-	width: 100px;
-	height: 100px;
+    right: 0px;
+    bottom: 90px;
+    z-index: 9;
+ 	display: none; 
+    width: 115px;
+    height: 115px;
+    border-radius: 10px;
 }
 
 .footer-bottom .footer-qr-code img {

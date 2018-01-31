@@ -93,9 +93,11 @@
 .mt30 {
 	margin-top: 30px !important;
 }
+
 .mt35 {
 	margin-top: 35px !important;
 }
+
 .mt40 {
 	margin-top: 40px !important;
 }
@@ -108,16 +110,26 @@
 	margin-top: 120px !important;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+.mt140 {
+	margin-top: 140px !important;
+}
+>>>>>>> 6571f9adeccda1617631eeea23d6a2f04ecb1556
 
 .mb70 {
 	margin-bottom: 70px !important;
 }
 
+<<<<<<< HEAD
 =======
 .mt140 {
 	margin-top: 140px !important;
 }
 >>>>>>> 5a5343b27177cde8baf40a7d82c6f531fd29f140
+=======
+>>>>>>> 6571f9adeccda1617631eeea23d6a2f04ecb1556
 .mb160 {
 	margin-bottom: 160px !important;
 }
@@ -141,9 +153,11 @@
 .ml60 {
 	margin-left: 60px !important;
 }
+
 .line-26 {
 	line-height: 26px!important;
 }
+
 .line-28 {
 	line-height: 28px!important;
 }
@@ -1085,12 +1099,10 @@
 	position: relative;
 	left: 3px;
 }
-
 .index-container .cases-section .icon-arrow-right:before {
 	position: relative;
 	left: -2px;
 }
-
 .index-container .cases-section .cases-slide-btn.prev {
 	left: 4%;
 }
@@ -1759,7 +1771,6 @@
 
 .cooperation-container .advantage-item {
 	padding-left: 100px;
-	padding-right: 20px;
 }
 
 .cooperation-container .advantage-item img {
@@ -1828,7 +1839,7 @@
 }
 
 .cooperation-container .training-section .section-body-cont-subtitle {
-	margin-top: 25px;
+	margin-top: 20px;
 	font-size: 42px;
 	color: #000;
 }
@@ -1880,7 +1891,7 @@
 
 .cooperation-container .process-section .section-top {
 	width: 750px;
-	padding-top: 90px;
+	padding-top: 108px;
 	padding-bottom: 90px;
 }
 
