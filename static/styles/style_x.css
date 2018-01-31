@@ -93,9 +93,11 @@
 .mt30 {
 	margin-top: 30px !important;
 }
+
 .mt35 {
 	margin-top: 35px !important;
 }
+
 .mt40 {
 	margin-top: 40px !important;
 }
@@ -107,9 +109,15 @@
 .mt120 {
 	margin-top: 120px !important;
 }
+
 .mt140 {
 	margin-top: 140px !important;
 }
+
+.mb70 {
+	margin-bottom: 70px !important;
+}
+
 .mb160 {
 	margin-bottom: 160px !important;
 }
@@ -133,9 +141,11 @@
 .ml60 {
 	margin-left: 60px !important;
 }
+
 .line-26 {
 	line-height: 26px!important;
 }
+
 .line-28 {
 	line-height: 28px!important;
 }
@@ -1077,12 +1087,10 @@
 	position: relative;
 	left: 3px;
 }
-
 .index-container .cases-section .icon-arrow-right:before {
 	position: relative;
 	left: -2px;
 }
-
 .index-container .cases-section .cases-slide-btn.prev {
 	left: 4%;
 }
@@ -1124,7 +1132,7 @@
 
 .cabinet-container .slogen-section {
 	width: 100%;
-	padding-top: 150px;
+	padding-top: 115px;
 	padding-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
@@ -1136,13 +1144,13 @@
 }
 
 .cabinet-container .slogen-headline {
-	margin-top: 20px;
-	font-size: 46px;
+	margin-top: 25px;
+	font-size: 58px;
 	color: #444;
 }
 
 .cabinet-container .slogen-banner {
-	margin-top: 70px;
+	margin-top: 60px;
 }
 
 .cabinet-container .slogen-banner img {
@@ -1159,7 +1167,7 @@
 	width: 1185px;
 	margin-left: auto;
 	margin-right: auto;
-	text-indent: 60px;
+	text-indent: 125px;
 }
 
 .cabinet-container .design-section .section-top-subtitle {
@@ -1169,7 +1177,7 @@
 }
 
 .cabinet-container .design-section .section-top-headline {
-	margin-top: 20px;
+	margin-top: 10px;
 	text-align: left;
 	color: #333;
 }
@@ -1190,7 +1198,7 @@
 
 .cabinet-container .design-section .section-bottom-part {
 	position: relative;
-	width: 49.6%;
+	width: 49.8%;
 }
 
 .cabinet-container .design-section .section-bottom-part img {
@@ -1233,7 +1241,7 @@
 }
 
 .cabinet-container .advantage-section {
-	padding-top: 150px;
+	padding-top: 153px;
 	padding-bottom: 130px;
 }
 
@@ -1282,7 +1290,7 @@
 }
 
 .cabinet-container .advantage-item-title {
-	margin-top: 20px;
+	margin-top: 25px;
 	font-size: 26px;
 	color: #404040;
 }
@@ -1296,7 +1304,7 @@
 }
 
 .cabinet-container .material-section {
-	padding-top: 70px;
+	padding-top: 75px;
 	background-color: #f7f7f7;
 }
 
@@ -1307,7 +1315,7 @@
 
 .cabinet-container .material-section .section-top-list {
 	width: 955px;
-	margin-top: 74px;
+	margin-top: 90px;
 }
 
 .cabinet-container .material-icon {
@@ -1353,7 +1361,7 @@
 }
 
 .cabinet-container .section-body-cont .part .part-descr {
-	margin-top: 15px;
+	margin-top: 20px;
 	font-size: 18px;
 }
 
@@ -1368,7 +1376,7 @@
 
 .cabinet-container .craftsmanship-section .section-top-headline {
 	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .cabinet-container .craftsmanship-sec-figure {
@@ -1405,7 +1413,7 @@
 }
 
 .cabinet-container .craftsmanship-item-title {
-	margin-top: 50px;
+	margin-top: 25px;
 	font-size: 34px;
 	color: #262626;
 }
@@ -1418,7 +1426,7 @@
 }
 
 .cabinet-container .style-section {
-	padding-top: 140px;
+	padding-top: 130px;
 	padding-bottom: 170px;
 	background-color: #f7f7f7;
 }
@@ -1429,12 +1437,12 @@
 
 .cabinet-container .style-section .section-top {
 	width: 530px;
-	margin-top: 60px;
+	margin-top: 65px;
 }
 
 .cabinet-container .style-section .section-top-headline {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .cabinet-container .style-section .section-body {
@@ -1558,7 +1566,7 @@
 }
 
 .cabinet-container .cases-section .section-top-headline {
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 }
 
 .cases-list-containerbox {
@@ -1570,7 +1578,7 @@
 
 .cabinet-container .cases-list-container {
 	width: 900px;
-	padding-bottom: 110px;
+	padding-bottom: 130px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
@@ -1751,7 +1759,6 @@
 
 .cooperation-container .advantage-item {
 	padding-left: 100px;
-	padding-right: 20px;
 }
 
 .cooperation-container .advantage-item img {
@@ -1820,7 +1827,7 @@
 }
 
 .cooperation-container .training-section .section-body-cont-subtitle {
-	margin-top: 25px;
+	margin-top: 20px;
 	font-size: 42px;
 	color: #000;
 }
@@ -1872,7 +1879,7 @@
 
 .cooperation-container .process-section .section-top {
 	width: 750px;
-	padding-top: 90px;
+	padding-top: 108px;
 	padding-bottom: 90px;
 }
 
