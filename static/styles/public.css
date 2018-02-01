@@ -1173,6 +1173,7 @@ template {
 
 .for-more-btn i {
 	font-size: 16px;
+    margin-left: -8px;
 }
 
 .for-more-btn span {
