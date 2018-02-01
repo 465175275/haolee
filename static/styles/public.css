@@ -842,6 +842,7 @@ template {
 	z-index: 90;
 	padding-top: 55px;
 	padding-bottom: 55px;
+	
 }
 
 .product-nav-container {
@@ -861,6 +862,7 @@ template {
 .product-nav-container .product-nav-item:not(:last-child) {
 	margin-bottom: 30px;
 }
+
 
 .product-nav-sec.roll-up .product-nav-item:first-child,
 .product-nav-sec.roll-up .product-nav-item:nth-of-type(5) {
