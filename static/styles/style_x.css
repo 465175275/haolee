@@ -1399,6 +1399,8 @@
 	width: 42%;
 	min-height: 380px;
 	text-align: center;
+	padding: 0 20px;
+	box-sizing: border-box;	
 }
 
 .cabinet-container .craftsmanship-item-icon {
