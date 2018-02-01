@@ -962,7 +962,7 @@ template {
 .to-top {
 	position: fixed;
 	right: 65px;
-	top: calc(30% + 190px);
+	top: calc(30% + 217px);
 	z-index: -1;
 	width: 71px;
 	height: 71px;
